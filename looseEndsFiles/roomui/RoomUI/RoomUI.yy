@@ -1,0 +1,15 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"looseEnds",
+    "path":"looseEnds.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[],
+  "visible":true,
+}
