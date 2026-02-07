@@ -46,7 +46,7 @@ if xspd == 0 && yspd == 0
 if instance_exists(objTextbox){
 	movSpd = 0;
 }else{
-	movSpd = 1}
+	movSpd = .5}
 
 //special sprite interactions
 
