@@ -6,8 +6,8 @@
   "name":"objCouch",
   "overriddenProperties":[],
   "parent":{
-    "name":"interactions",
-    "path":"folders/gameplay/interactions.yy",
+    "name":"objects",
+    "path":"folders/items/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,11 +26,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"sprInteraction",
-    "path":"sprites/sprInteraction/sprInteraction.yy",
+    "name":"sprCouch",
+    "path":"sprites/sprCouch/sprCouch.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

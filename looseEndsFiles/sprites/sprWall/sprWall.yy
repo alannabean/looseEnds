@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"interactions",
-    "path":"folders/gameplay/interactions.yy",
+    "name":"collisions",
+    "path":"folders/gameplay/interactions/collisions.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

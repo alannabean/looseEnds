@@ -8,12 +8,12 @@
   "name":"objBed",
   "overriddenProperties":[],
   "parent":{
-    "name":"interactions",
-    "path":"folders/gameplay/interactions.yy",
+    "name":"objects",
+    "path":"folders/items/objects.yy",
   },
   "parentObjectId":{
-    "name":"objSpeaker",
-    "path":"objects/objSpeaker/objSpeaker.yy",
+    "name":"objParentObject",
+    "path":"objects/objParentObject/objParentObject.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,11 +31,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"sprInteraction",
-    "path":"sprites/sprInteraction/sprInteraction.yy",
+    "name":"sprBed",
+    "path":"sprites/sprBed/sprBed.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

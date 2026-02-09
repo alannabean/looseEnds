@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objSpeaker",
+  "%Name":"objFridge",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objSpeaker",
+  "name":"objFridge",
   "overriddenProperties":[],
   "parent":{
-    "name":"textboxes",
-    "path":"folders/gameplay/textboxes.yy",
+    "name":"objects",
+    "path":"folders/items/objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objParentObject",
+    "path":"objects/objParentObject/objParentObject.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprFridge",
+    "path":"sprites/sprFridge/sprFridge.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

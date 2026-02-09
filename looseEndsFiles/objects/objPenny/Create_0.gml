@@ -1,3 +1,4 @@
+
 movSpd = .5;
 
 sprWalk = sprPennyWalking;

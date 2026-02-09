@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"objPenny",
+  "%Name":"objParentObject",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objPenny",
+  "name":"objParentObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"penny",
-    "path":"folders/player/penny.yy",
+    "name":"interactions",
+    "path":"folders/gameplay/interactions.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,11 +29,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":{
-    "name":"sprPennyIdle",
-    "path":"sprites/sprPennyIdle/sprPennyIdle.yy",
-  },
+  "solid":true,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objPenny",
+  "%Name":"objDoor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objPenny",
+  "name":"objDoor",
   "overriddenProperties":[],
   "parent":{
-    "name":"penny",
-    "path":"folders/player/penny.yy",
+    "name":"collisions",
+    "path":"folders/gameplay/interactions/collisions.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objParentObject",
+    "path":"objects/objParentObject/objParentObject.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,9 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPennyIdle",
-    "path":"sprites/sprPennyIdle/sprPennyIdle.yy",
+    "name":"sprDoor",
+    "path":"sprites/sprDoor/sprDoor.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

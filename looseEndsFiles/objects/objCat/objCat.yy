@@ -9,10 +9,13 @@
   "name":"objCat",
   "overriddenProperties":[],
   "parent":{
-    "name":"gingerbread",
-    "path":"folders/gameplay/interactions/gingerbread.yy",
+    "name":"NPCs",
+    "path":"folders/NPCs.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objParentObject",
+    "path":"objects/objParentObject/objParentObject.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +32,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"sprGingerbreadAwake",
     "path":"sprites/sprGingerbreadAwake/sprGingerbreadAwake.yy",

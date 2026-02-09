@@ -6,8 +6,8 @@
   "name":"objWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"interactions",
-    "path":"folders/gameplay/interactions.yy",
+    "name":"collisions",
+    "path":"folders/gameplay/interactions/collisions.yy",
   },
   "parentObjectId":null,
   "persistent":false,

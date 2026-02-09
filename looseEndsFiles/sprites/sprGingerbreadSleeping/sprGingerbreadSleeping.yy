@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"sprites",
-    "path":"folders/gameplay/interactions/gingerbread/sprites.yy",
+    "path":"folders/NPCs/sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
