@@ -1,0 +1,1 @@
+myText[0] = "No need to go into Mom's room.";

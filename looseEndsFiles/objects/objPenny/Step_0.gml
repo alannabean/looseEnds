@@ -34,6 +34,8 @@ if place_meeting (x, y + yspd, objWall)
 yspd = 0;
 }
 
+
+//door movement
 if place_meeting(x + xspd, y, objDoor)
 {
 room_goto(targetRoom);
@@ -61,7 +63,7 @@ if instance_exists(objTextbox){
 
 //special sprite interactions
 
-if place_meeting(x + xspd, y, objCouch)
+/*if place_meeting(x + xspd, y, objCouch)
 {
 xspd = 0;
 sprite_index = sprSitKnit;
