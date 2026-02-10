@@ -34,6 +34,7 @@ if place_meeting (x, y + yspd, objWall)
 yspd = 0;
 }
 
+
 if place_meeting(x + xspd, y, objDoor)
 {
 room_goto(targetRoom);

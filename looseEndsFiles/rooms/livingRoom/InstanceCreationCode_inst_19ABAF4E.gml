@@ -1,1 +1,1 @@
-myText[0] = "It's too rainy to go out.";
+myText[0] = "No need to go into Mom's room.";

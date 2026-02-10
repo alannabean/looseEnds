@@ -1,3 +1,5 @@
+
+
 //if the player collides with the object and space bar is pressed, create a textbox
 
 if place_meeting(x, y, objPenny){
