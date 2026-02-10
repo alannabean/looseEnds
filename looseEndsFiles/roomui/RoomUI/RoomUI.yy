@@ -5,8 +5,8 @@
   "locked":false,
   "name":"RoomUI",
   "parent":{
-    "name":"looseEnds",
-    "path":"looseEnds.yyp",
+    "name":"looseEndsFiles",
+    "path":"looseEndsFiles.yyp",
   },
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",

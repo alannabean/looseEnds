@@ -1,11 +1,10 @@
 event_inherited();
+
+myText[0] = "meooooooooooow";
+myText[1] = "mrow";
+myText[2] = "prrrrrrrrrrrr";
+
 randomize();
-
-catOptions = ["meooooooooooow", "mrow", "prrrrrrrrrrrr"];
-var chosenIndexCat = irandom(array_length(catOptions)-1);
-var chosenOptionCat = catOptions[chosenIndexCat];
-
-myText[0] = chosenOptionCat;
 
 x = random_range(48,200);
 y = random_range(120,140);
