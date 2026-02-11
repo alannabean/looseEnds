@@ -45,7 +45,7 @@ if place_meeting (x, y + yspd, objDoor)
 room_goto(targetRoom);
 }
 
-if keyboard_check_pressed(vk_shift){
+if keyboard_check_pressed(vk_return){
 	room_goto(room_last);
 }
 

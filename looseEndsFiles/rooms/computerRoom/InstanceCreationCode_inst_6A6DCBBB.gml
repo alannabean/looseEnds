@@ -1,1 +1,1 @@
-myText[0] = "DOCS";
+myText[0] = "- - - - - DOCS - - - - -";

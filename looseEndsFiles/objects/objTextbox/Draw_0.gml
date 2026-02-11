@@ -2,7 +2,7 @@
 //computer text
 if instance_exists(objComputerManager){
 //draw textbox
-draw_sprite_ext(sprTextbox, 0, textboxEmailX, textboxEmailY, .75, 3.5, 0, c_white, 1);
+draw_sprite(sprComputerText, 0, textboxEmailX, textboxEmailY);
 
 //set font
 draw_set_font(fntMain);
@@ -11,7 +11,7 @@ draw_set_font(fntMain);
 
 if (charCount < string_length(text[page])){
 
-charCount += 1;
+charCount += 48;
 
 }
 // copy part of the text
@@ -19,7 +19,7 @@ textPart = string_copy(text[page], 1, charCount);
 
 //draw part of the text 
 
-	draw_text_ext(textboxEmailX+xBuffer, textboxEmailY+yBuffer, textPart, stringHeight, boxWidth - (4*xBuffer));
+	draw_text_ext(textboxEmailX+xBuffer, textboxEmailY+yBuffer, textPart, 16, 124);
 }
 else{//overworld text
 	//draw textbox

@@ -1,1 +1,1 @@
-myText[0] = ("TRASH = = = = = = = = = =");
+myText[0] = ("- - - -  TRASH  - - - -");

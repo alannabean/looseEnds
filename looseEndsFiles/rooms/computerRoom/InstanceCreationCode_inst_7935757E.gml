@@ -1,2 +1,2 @@
-myText[0] = "PRESS SHIFT TO EXIT";
+myText[0] = "PRESS RETURN TO EXIT";
 

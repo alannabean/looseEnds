@@ -92,8 +92,8 @@
   ],
   "name":"computerRoom",
   "parent":{
-    "name":"computer",
-    "path":"folders/computer.yy",
+    "name":"rooms",
+    "path":"folders/environment/rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

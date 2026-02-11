@@ -1,1 +1,1 @@
-myText[0] = "CALENDAR";
+myText[0] ="- - -  CALENDAR  - - -";
