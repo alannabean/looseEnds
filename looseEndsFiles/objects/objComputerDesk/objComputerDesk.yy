@@ -3,13 +3,15 @@
   "%Name":"objComputerDesk",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"objComputerDesk",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/items/objects.yy",
+    "name":"computer",
+    "path":"folders/computer.yy",
   },
   "parentObjectId":{
     "name":"objParentObject",

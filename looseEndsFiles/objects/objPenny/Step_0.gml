@@ -45,6 +45,9 @@ if place_meeting (x, y + yspd, objDoor)
 room_goto(targetRoom);
 }
 
+if keyboard_check_pressed(vk_shift){
+	room_goto(room_last);
+}
 
 x += xspd;
 y += yspd;
@@ -73,22 +76,13 @@ yspd = 0;
 sprite_index = sprSitKnit;
 }
 
-/*if place_meeting(x + xspd, y, objBed)
-{
-xspd = 0;
-yspd = 0;
-
-sprite_index = sprSleep;
+//turn penny into cursor while on the computer
+if instance_exists(objComputerManager){
+	sprite_index = sprCursor;
+	movSpd = 1.5;	
 }
 
-if place_meeting (x, y + yspd, objBed)
-{
-yspd = 0;
-xspd = 0;
 
-sprite_index = sprSleep;
-}
-*/
 
 depth = -bbox_bottom;
 

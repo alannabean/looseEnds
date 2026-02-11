@@ -6,8 +6,8 @@ myText[2] = "prrrrrrrrrrrr";
 
 randomize();
 
-x = random_range(48,200);
-y = random_range(120,140);
+//x = random_range(48,200);
+//y = random_range(120,140);
 
 
 
