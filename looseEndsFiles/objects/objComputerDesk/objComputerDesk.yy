@@ -10,8 +10,8 @@
   "name":"objComputerDesk",
   "overriddenProperties":[],
   "parent":{
-    "name":"computer",
-    "path":"folders/computer.yy",
+    "name":"objects",
+    "path":"folders/items/objects.yy",
   },
   "parentObjectId":{
     "name":"objParentObject",
