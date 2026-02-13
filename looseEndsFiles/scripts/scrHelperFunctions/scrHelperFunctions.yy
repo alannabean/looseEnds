@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrHelperFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrHelperFunctions",
+  "parent":{
+    "name":"Chatterbox",
+    "path":"folders/Chatterbox.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

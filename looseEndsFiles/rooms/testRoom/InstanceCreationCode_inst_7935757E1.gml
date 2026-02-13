@@ -1,0 +1,2 @@
+myText[0] = "PRESS RETURN TO EXIT";
+

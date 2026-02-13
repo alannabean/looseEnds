@@ -1,0 +1,122 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2273,-600
+__PrivCrochet_tags: 
+title: Start
+---
+\n 
+    -> 
+        <<jump Trash>>
+    -> 
+        <<jump Email>>
+    -> 
+        <<jump Docs>>
+    -> 
+        <<jump Calendar>>
+    -> 
+        <<jump Help>>
+    -> 
+        <<jump Back>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1589,-993
+__PrivCrochet_tags: 
+title: Quit
+---
+Computer: Goodbye.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1673,-1004
+__PrivCrochet_tags: 
+title: Trash
+---
+---------TRASH----------
+    -> (0) 
+    -> Back
+    <<jump Start>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1459,-1009
+__PrivCrochet_tags: 
+title: Email
+---
+---------Email---------
+
+    -> New(2)
+        <<jump emailNew>>
+    -> Back
+        <<jump Start>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1230,-995
+__PrivCrochet_tags: 
+title: Docs
+---
+------DOCS------
+    -> Back
+    <<jump Start>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1008,-993
+__PrivCrochet_tags: 
+title: Calendar
+---
+-------CALENDAR-------
+    -> Back
+    <<jump Start>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -788,-993
+__PrivCrochet_tags: 
+title: Help
+---
+-------HELP--------
+    -> Back
+    <<jump Start>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -568,-993
+__PrivCrochet_tags: 
+title: Back
+---
+-------BACK-------
+-> Press Return to go back
+-> Back
+    <<jump Start>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1339,-1396
+__PrivCrochet_tags: 
+title: Cass0
+---
+To: Penny \nFrom: Cass \nSubject: i'm pretending to work right now by sending you this email
+my boss is being an actual psychopath this week so it's in my best interest to look busy, even though there's nothing for me to do until the client signs off on our proposal?? 
+
+corporate america never ceases to amaze. consider yourself lucky that right now you don't have to participate in this farce. \nxoxoxoxo, \ncass
+
+<<jump emailNew>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1038,-1556
+__PrivCrochet_tags: 
+title: emailNew
+---
+-----NEW MESSAGES-----
+    -> june 2, 2013
+        <<jump Cass0>>
+    
+    -> june 1, 2013
+        <<jump Max0>>
+
+    -> back
+        <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -797,-1243
+__PrivCrochet_tags: 
+title: Max0
+---
+To: Penny \nFrom: Max \nSubject: re: thinking of you today
+Hey, \nSorry it's taken me so long to reply. It's been busy here, and the time difference makes me lose track. Appreciate your message; same to you. -M
+<<jump emailNew>>
+===

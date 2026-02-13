@@ -1,0 +1,1 @@
+myText[0] ="- - -  CALENDAR  - - -";
