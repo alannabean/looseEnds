@@ -8,7 +8,7 @@ if place_meeting(x, y, objPenny){
 	myTextbox.creator = self;
 	
 	
-	alarm[0] = random_range(120,360);
+	alarm[0] = random_range(60,120);
 
 		}
 	}

@@ -10,8 +10,8 @@
   "name":"objChatterbox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Chatterbox",
-    "path":"folders/Chatterbox.yy",
+    "name":"textboxes",
+    "path":"folders/gameplay/textboxes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

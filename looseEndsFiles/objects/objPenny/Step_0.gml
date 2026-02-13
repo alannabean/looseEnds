@@ -76,10 +76,10 @@ yspd = 0;
 sprite_index = sprSitKnit;
 }
 
-//turn penny into cursor while on the computer
+//suspend avatar while on the computer
 if instance_exists(objComputerManager){
-	sprite_index = sprCursor;
-	movSpd = 1.5;	
+	sprite_index = noone;
+	movSpd = 0;	
 }
 
 

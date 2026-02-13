@@ -1,91 +1,84 @@
 #__PrivCrochet_version:1
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -2273,-600
+__PrivCrochet_colorID: 2
+__PrivCrochet_position: -2280,-609
 __PrivCrochet_tags: 
 title: Start
 ---
 \n 
-    -> 
+    ->      ---TRASH---     
         <<jump Trash>>
-    -> 
+    ->      ---EMAIL---     
         <<jump Email>>
-    -> 
+    ->      ---DOCS---
         <<jump Docs>>
-    -> 
+    ->      --CALENDAR--
         <<jump Calendar>>
-    -> 
+    ->      ---HELP---      
         <<jump Help>>
-    -> 
+    ->      ---BACK---
         <<jump Back>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -1589,-993
-__PrivCrochet_tags: 
-title: Quit
----
-Computer: Goodbye.
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -1673,-1004
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -1770,-1064
 __PrivCrochet_tags: 
 title: Trash
 ---
----------TRASH----------
-    -> (0) 
+\n
+    -> (0)
     -> Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1459,-1009
+__PrivCrochet_position: -1526,-1064
 __PrivCrochet_tags: 
 title: Email
 ---
----------Email---------
-
+\n
     -> New(2)
         <<jump emailNew>>
     -> Back
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1230,-995
+__PrivCrochet_position: -1273,-1065
 __PrivCrochet_tags: 
 title: Docs
 ---
-------DOCS------
+\n
     -> Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1008,-993
+__PrivCrochet_position: -1043,-1065
 __PrivCrochet_tags: 
 title: Calendar
 ---
--------CALENDAR-------
+\n
     -> Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -788,-993
+__PrivCrochet_position: -791,-1061
 __PrivCrochet_tags: 
 title: Help
 ---
--------HELP--------
+\n
     -> Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -568,-993
+__PrivCrochet_position: -554,-1055
 __PrivCrochet_tags: 
 title: Back
 ---
--------BACK-------
--> Press Return to go back
+\n
+-> Press Return to exit
+    <<jump Start>>
 -> Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1339,-1396
+__PrivCrochet_position: -1790,-1500
 __PrivCrochet_tags: 
 title: Cass0
 ---
@@ -97,11 +90,11 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump emailNew>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1038,-1556
+__PrivCrochet_position: -1523,-1578
 __PrivCrochet_tags: 
 title: emailNew
 ---
------NEW MESSAGES-----
+\n
     -> june 2, 2013
         <<jump Cass0>>
     
@@ -112,7 +105,7 @@ title: emailNew
         <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -797,-1243
+__PrivCrochet_position: -1785,-1741
 __PrivCrochet_tags: 
 title: Max0
 ---

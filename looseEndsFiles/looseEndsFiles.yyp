@@ -82,7 +82,6 @@
     {"id":{"name":"bedRoom","path":"rooms/bedRoom/bedRoom.yy",},},
     {"id":{"name":"computerRoom","path":"rooms/computerRoom/computerRoom.yy",},},
     {"id":{"name":"livingRoom","path":"rooms/livingRoom/livingRoom.yy",},},
-    {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"__ChatterboxArrayCopyPart","path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},},
     {"id":{"name":"__ChatterboxArrayToString","path":"scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy",},},
@@ -244,7 +243,6 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"roomId":{"name":"livingRoom","path":"rooms/livingRoom/livingRoom.yy",},},
     {"roomId":{"name":"computerRoom","path":"rooms/computerRoom/computerRoom.yy",},},
     {"roomId":{"name":"bedRoom","path":"rooms/bedRoom/bedRoom.yy",},},

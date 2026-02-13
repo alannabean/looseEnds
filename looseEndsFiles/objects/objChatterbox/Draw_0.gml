@@ -5,7 +5,9 @@ draw_set_valign(fa_left);
 if IsChatterbox(chatterbox) and text != undefined
 
 {
-	draw_text_ext(100, 32, text, 16, 140);
+	
+	draw_sprite(sprComputerText, 0, textboxEmailX, textboxEmailY);
+	draw_text_ext(104, 36, text, 13, 128);
 	
 	if ChatterboxGetOptionCount(chatterbox)
 	{
@@ -13,8 +15,8 @@ if IsChatterbox(chatterbox) and text != undefined
 		{
 			if ChatterboxGetOptionConditionBool(chatterbox, i)
 			{
-				_yy = (room_height/9.5) * (i +2);
-				_xx = (90);
+				_yy = (room_height/9.75) * (i + 2);
+				_xx = (104);
 				
 				var _icon = "";
 				if (option_index == i) _icon = "> ";
