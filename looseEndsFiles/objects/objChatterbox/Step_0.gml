@@ -27,3 +27,13 @@ if ChatterboxIsStopped(chatterbox)
 {
 	instance_destroy();
 }
+
+
+if ((ChatterboxGetCurrent(chatterbox) = "Calendar") && !instance_exists(objCalendar)){
+	
+	instance_create_layer(113, 50, "chatterboxDrawLayer", objCalendar);
+	
+	
+}else if (ChatterboxGetCurrent(chatterbox) != "Calendar") && instance_exists(objCalendar){
+	instance_destroy(objCalendar);
+}

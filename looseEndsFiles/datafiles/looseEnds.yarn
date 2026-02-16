@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -2280,-609
+__PrivCrochet_position: -2287,-617
 __PrivCrochet_tags: 
 title: Start
 ---
@@ -19,7 +19,7 @@ title: Start
         <<jump Back>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1770,-1064
+__PrivCrochet_position: -1830,-1104
 __PrivCrochet_tags: 
 title: Trash
 ---
@@ -29,36 +29,47 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1526,-1064
+__PrivCrochet_position: -1539,-1116
 __PrivCrochet_tags: 
 title: Email
 ---
-\n
-    -> New(2)
+<<set $emailNumber = 2>>
+
+<<if visited("Cass0")>>
+    <<set $emailNumber -= 1>>
+<<endif>>
+<<if visited("Max0")>>
+    <<set $emailNumber -= 1>>
+<<endif>>
+\n 
+    -> New ({$emailNumber})
         <<jump emailNew>>
     -> Back
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1273,-1065
+__PrivCrochet_position: -1271,-1120
 __PrivCrochet_tags: 
 title: Docs
 ---
 \n
+    -> resume_final_FINAL_v5
+        <<jump Resume>>
     -> Back
-    <<jump Start>>
+        <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1043,-1065
+__PrivCrochet_position: -1010,-1126
 __PrivCrochet_tags: 
 title: Calendar
 ---
 \n
+
     -> Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -791,-1061
+__PrivCrochet_position: -747,-1118
 __PrivCrochet_tags: 
 title: Help
 ---
@@ -67,13 +78,15 @@ title: Help
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -554,-1055
+__PrivCrochet_position: -476,-1114
 __PrivCrochet_tags: 
 title: Back
 ---
 \n
--> Press Return to exit
-    <<jump Start>>
+-> Quit?
+    Goodbye.
+    <<changeRoom("bedRoom")>>
+    <<stop>>
 -> Back
     <<jump Start>>
 ===
@@ -90,26 +103,35 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump emailNew>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1523,-1578
+__PrivCrochet_position: -1529,-1584
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
-    -> june 2, 2013
+    -> june 2, 2012
         <<jump Cass0>>
     
-    -> june 1, 2013
+    -> june 1, 2012
         <<jump Max0>>
 
     -> back
         <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1785,-1741
+__PrivCrochet_position: -1788,-1745
 __PrivCrochet_tags: 
 title: Max0
 ---
 To: Penny \nFrom: Max \nSubject: re: thinking of you today
 Hey, \nSorry it's taken me so long to reply. It's been busy here, and the time difference makes me lose track. Appreciate your message; same to you. -M
 <<jump emailNew>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -790,-1481
+__PrivCrochet_tags: 
+title: Resume
+---
+job job job job job
+
+    <<jump Docs>>
 ===

@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"objChatterbox",
+  "%Name":"objCalendar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objChatterbox",
+  "name":"objCalendar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Chatterbox",
-    "path":"folders/Chatterbox.yy",
+    "name":"computer",
+    "path":"folders/computer.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprCalendar",
+    "path":"sprites/sprCalendar/sprCalendar.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

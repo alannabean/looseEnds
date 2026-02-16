@@ -9,6 +9,7 @@ if IsChatterbox(chatterbox) and text != undefined
 	draw_sprite(sprComputerText, 0, textboxEmailX, textboxEmailY);
 	draw_text_ext(104, 36, text, 13, 128);
 	
+	
 	if ChatterboxGetOptionCount(chatterbox)
 	{
 		for (var i = 0; i < ChatterboxGetOptionCount(chatterbox); i++)
