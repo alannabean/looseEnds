@@ -63,16 +63,15 @@ if instance_exists(objTextbox){
 }else{
 	movSpd = .5}
 
-//special sprite interactions
+//change character sprite on couch
 
-if place_meeting(x + xspd, y, objCouch)
+if (place_meeting(x + xspd, y, objCouch) && xspd = 0 && yspd = 0)
 {
-xspd = 0;
 sprite_index = sprSitKnit;
 }
-if place_meeting (x, y + yspd, objCouch)
+
+if (place_meeting (x, y + yspd, objCouch) && xspd = 0 && yspd = 0)
 {
-yspd = 0;
 sprite_index = sprSitKnit;
 }
 

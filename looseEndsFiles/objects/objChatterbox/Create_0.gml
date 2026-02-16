@@ -6,9 +6,14 @@ ChatterboxAddFunction("changeRoom", function(_roomName){
 	});
 	
 
+
+
 chatterbox = ChatterboxCreate();
+
 ChatterboxJump(chatterbox, "Start");
+global.date = ChatterboxVariableGet("todayDate");
 chatterbox_update();
+
 
 option_index = 0;
 

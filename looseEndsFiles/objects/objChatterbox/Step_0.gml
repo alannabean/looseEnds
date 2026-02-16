@@ -1,5 +1,6 @@
 var _count = ChatterboxGetOptionCount(chatterbox);
 
+
 if ChatterboxIsWaiting(chatterbox) and keyboard_check_pressed(vk_space)
 {
 	ChatterboxContinue(chatterbox);

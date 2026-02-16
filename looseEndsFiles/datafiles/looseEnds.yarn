@@ -1,9 +1,11 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -2287,-617
+__PrivCrochet_position: -2295,-624
 __PrivCrochet_tags: 
 title: Start
 ---
+<<set $todayDate = 2>>
+
 \n 
     ->      ---TRASH---     
         <<jump Trash>>
@@ -29,7 +31,7 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1539,-1116
+__PrivCrochet_position: -1544,-1119
 __PrivCrochet_tags: 
 title: Email
 ---
@@ -103,17 +105,15 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump emailNew>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1529,-1584
+__PrivCrochet_position: -1544,-1599
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
     -> june 2, 2012
         <<jump Cass0>>
-    
     -> june 1, 2012
         <<jump Max0>>
-
     -> back
         <<jump Email>>
 ===
@@ -127,11 +127,11 @@ Hey, \nSorry it's taken me so long to reply. It's been busy here, and the time d
 <<jump emailNew>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -790,-1481
+__PrivCrochet_position: -794,-1485
 __PrivCrochet_tags: 
 title: Resume
 ---
-job job job job job
+\njob job job job job \nblah blah blah blah \nvery responsible \netc
 
     <<jump Docs>>
 ===
