@@ -14,7 +14,7 @@ for (rows = 0; rows < 5; rows++){
 			//ternerary operation — if the number is less than 10, the offset is 3
 			digitOffset = (dateNumber < 10) ? 3 : 0;
 			
-			if (global.date == dateNumber){
+			if (global.todayDate == dateNumber){
 				draw_set_color(#e4da6c);
 			}
 			else{

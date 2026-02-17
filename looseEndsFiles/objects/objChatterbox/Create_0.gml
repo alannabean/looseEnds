@@ -1,17 +1,17 @@
 ChatterboxLoadFromFile("looseEnds.yarn");
 
-
 ChatterboxAddFunction("changeRoom", function(_roomName){
 	room_goto(asset_get_index(_roomName));
 	});
-	
 
-
+ChatterboxAddFunction("getTodayDate", function(){
+	return global.todayDate;
+	});
 
 chatterbox = ChatterboxCreate();
 
 ChatterboxJump(chatterbox, "Start");
-global.date = ChatterboxVariableGet("todayDate");
+
 chatterbox_update();
 
 

@@ -1,4 +1,6 @@
 
 event_inherited();
 
-myText[0] = "It's not time for bed yet.";
+newDayDebounceFlag = false;
+
+myText[0] = "Time to go to sleep...";

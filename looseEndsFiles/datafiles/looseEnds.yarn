@@ -1,24 +1,22 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -2295,-624
+__PrivCrochet_position: -2297,-629
 __PrivCrochet_tags: 
 title: Start
 ---
-<<set $todayDate = 2>>
-
-\n 
-    ->      ---TRASH---     
-        <<jump Trash>>
-    ->      ---EMAIL---     
-        <<jump Email>>
-    ->      ---DOCS---
-        <<jump Docs>>
-    ->      --CALENDAR--
-        <<jump Calendar>>
-    ->      ---HELP---      
-        <<jump Help>>
-    ->      ---BACK---
-        <<jump Back>>
+<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>>\n
+->      ---TRASH---     
+    <<jump Trash>>
+->      ---EMAIL---     
+    <<jump Email>>
+->      ---DOCS---
+    <<jump Docs>>
+->      --CALENDAR--
+    <<jump Calendar>>
+->      ---HELP---      
+    <<jump Help>>
+->      ---BACK---
+    <<jump Back>>
 ===
 __PrivCrochet_colorID: 1
 __PrivCrochet_position: -1830,-1104
@@ -31,12 +29,15 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1544,-1119
+__PrivCrochet_position: -1545,-1120
 __PrivCrochet_tags: 
 title: Email
 ---
-<<set $emailNumber = 2>>
+<<set $emailNumber = $todayDate>>
 
+<<if visited("Cass1")>>
+    <<set $emailNumber -= 1>>
+<<endif>>
 <<if visited("Cass0")>>
     <<set $emailNumber -= 1>>
 <<endif>>
@@ -50,7 +51,7 @@ title: Email
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1271,-1120
+__PrivCrochet_position: -1273,-1123
 __PrivCrochet_tags: 
 title: Docs
 ---
@@ -93,7 +94,7 @@ title: Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1790,-1500
+__PrivCrochet_position: -1791,-1502
 __PrivCrochet_tags: 
 title: Cass0
 ---
@@ -102,29 +103,31 @@ my boss is being an actual psychopath this week so it's in my best interest to l
 
 corporate america never ceases to amaze. consider yourself lucky that right now you don't have to participate in this farce. \nxoxoxoxo, \ncass
 
-<<jump emailNew>>
+<<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1544,-1599
+__PrivCrochet_position: -1552,-1446
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
-    -> june 2, 2012
-        <<jump Cass0>>
-    -> june 1, 2012
-        <<jump Max0>>
-    -> back
-        <<jump Email>>
+-> june 3, 2012 <<if $todayDate < 3 == false>>
+    <<jump Cass1>>
+-> june 2, 2012 <<if $todayDate < 2 == false>>
+    <<jump Max0>>
+-> june 1, 2012 <<if $todayDate < 1 == false>>
+    <<jump Cass0>>
+-> back
+    <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1788,-1745
+__PrivCrochet_position: -1789,-1746
 __PrivCrochet_tags: 
 title: Max0
 ---
 To: Penny \nFrom: Max \nSubject: re: thinking of you today
 Hey, \nSorry it's taken me so long to reply. It's been busy here, and the time difference makes me lose track. Appreciate your message; same to you. -M
-<<jump emailNew>>
+<<jump Email>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -794,-1485
@@ -134,4 +137,16 @@ title: Resume
 \njob job job job job \nblah blah blah blah \nvery responsible \netc
 
     <<jump Docs>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1332,-1566
+__PrivCrochet_tags: 
+title: Cass1
+---
+To: Penny \nFrom: Cass \nSubject: re: literally the only thing i know how to do is knit
+that's not true! if i recall from college, you're also very adept at downing a $9 bottle of wine and beating everyone's high score in Mario Kart. don't be so hard on yourself! 
+
+for real, though, i know it's tough right now, but i don't worry about you for a second. you'll find something great soon. \nxoxoxoxo, \ncass
+
+<<jump Email>>
 ===

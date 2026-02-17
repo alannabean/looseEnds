@@ -61,25 +61,43 @@ if xspd == 0 && yspd == 0
 if instance_exists(objTextbox){
 	movSpd = 0;
 }else{
-	movSpd = .5}
-
+	movSpd = speedVal;}
+	
+	
 //change character sprite on couch
 
-if (place_meeting(x + xspd, y, objCouch) && xspd = 0 && yspd = 0)
+if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprSitKnit;
 }
 
-if (place_meeting (x, y + yspd, objCouch) && xspd = 0 && yspd = 0)
+if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprSitKnit;
 }
+
+if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true))
+{
+sprite_index = sprSleep;
+image_xscale = 1;
+movSpd = 0;
+}
+
+
+if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true))
+{
+sprite_index = sprSleep;
+image_xscale = 1;
+movSpd = 0;
+}
+
 
 //suspend avatar while on the computer
 if instance_exists(objComputerManager){
 	sprite_index = noone;
 	movSpd = 0;	
-}
+}else{
+	movSpd = speedVal;}
 
 
 

@@ -1,3 +1,13 @@
-depth = -10000;
+depth = -16000;
 
-image_blend =  make_colour_hsv(random(255), 128, 128);
+
+image_alpha = 0;
+
+pauseTimer = 0;
+
+pauseDuration = 30;
+
+alphaChange = .005;
+
+fadeCheck = false;
+
