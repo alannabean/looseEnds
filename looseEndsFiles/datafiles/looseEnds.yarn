@@ -72,13 +72,19 @@ title: Calendar
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -747,-1118
+__PrivCrochet_position: -750,-1121
 __PrivCrochet_tags: 
 title: Help
 ---
-\n
-    -> Back
-    <<jump Start>>
+If you ever get stuck, press Return. 
+<<random option>>
+-> 
+    \n \n \n \n \n \n(Write it all down, even if it's embarrassing.) 
+->
+    \n \n \n \n \n(Unfortunately you should probably drink some water.) 
+-> 
+    \n \n \n \n \n \n \n(It doesn't hurt to ask.)
+<<jump Start>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -476,-1114
@@ -111,11 +117,11 @@ __PrivCrochet_tags:
 title: emailNew
 ---
 \n
--> june 3, 2012 <<if $todayDate < 3 == false>>
+-> june 3, 2009 <<if $todayDate < 3 == false>>
     <<jump Cass1>>
--> june 2, 2012 <<if $todayDate < 2 == false>>
+-> june 2, 2009 <<if $todayDate < 2 == false>>
     <<jump Max0>>
--> june 1, 2012 <<if $todayDate < 1 == false>>
+-> june 1, 2009 <<if $todayDate < 1 == false>>
     <<jump Cass0>>
 -> back
     <<jump Email>>
@@ -130,7 +136,7 @@ Hey, \nSorry it's taken me so long to reply. It's been busy here, and the time d
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -794,-1485
+__PrivCrochet_position: -797,-1488
 __PrivCrochet_tags: 
 title: Resume
 ---

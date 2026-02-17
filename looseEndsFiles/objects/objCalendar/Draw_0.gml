@@ -1,6 +1,6 @@
 draw_self();
 
-draw_text(143, 55, "JUNE 2012");
+draw_text(143, 55, "JUNE 2009");
 
 dateNumber = 1; 
 
