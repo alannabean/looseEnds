@@ -1,6 +1,5 @@
 
-speedVal = .50;
-movSpd = speedVal;
+movSpd = .5;
 
 
 
