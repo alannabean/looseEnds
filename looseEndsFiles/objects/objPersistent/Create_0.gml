@@ -1,1 +1,2 @@
 global.todayDate = 1;
+

@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"objCraftManager",
+  "%Name":"objDish",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objCraftManager",
+  "name":"objDish",
   "overriddenProperties":[],
   "parent":{
-    "name":"crafts",
-    "path":"folders/crafts.yy",
+    "name":"objects",
+    "path":"folders/items/objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objParentObject",
+    "path":"objects/objParentObject/objParentObject.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprKnits",
-    "path":"sprites/sprKnits/sprKnits.yy",
+    "name":"sprDish",
+    "path":"sprites/sprDish/sprDish.yy",
   },
   "spriteMaskId":null,
   "visible":true,

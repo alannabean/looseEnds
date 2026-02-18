@@ -13,7 +13,7 @@
     {"name":"inst_6438863F1","path":"rooms/bedRoom/bedRoom.yy",},
     {"name":"inst_5EFAEF6B","path":"rooms/bedRoom/bedRoom.yy",},
     {"name":"inst_3CB0812B","path":"rooms/bedRoom/bedRoom.yy",},
-    {"name":"inst_30595064","path":"rooms/bedRoom/bedRoom.yy",},
+    {"name":"inst_3D632E3D","path":"rooms/bedRoom/bedRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,7 +27,7 @@
         {"$GMRInstance":"v4","%Name":"inst_6438863F1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6438863F1","objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":118.0,},
         {"$GMRInstance":"v4","%Name":"inst_5EFAEF6B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5EFAEF6B","objectId":{"name":"objBed","path":"objects/objBed/objBed.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":120.0,},
         {"$GMRInstance":"v4","%Name":"inst_3CB0812B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CB0812B","objectId":{"name":"objComputerDesk","path":"objects/objComputerDesk/objComputerDesk.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":120.0,},
-        {"$GMRInstance":"v4","%Name":"inst_30595064","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30595064","objectId":{"name":"objShelf","path":"objects/objShelf/objShelf.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":116.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3D632E3D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D632E3D","objectId":{"name":"objShelf","path":"objects/objShelf/objShelf.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":168.0,"y":116.0,},
       ],"layers":[],"name":"interactionLayer0","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"GUITest1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"GUITest1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -41,-2147483648,-39,805306368,1,-2147483648,-39,805306368,1,-2147483648,-39,805306368,1,-2147483648,

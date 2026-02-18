@@ -1,13 +1,15 @@
+randomize();
 event_inherited();
 
-myText[0] = "meooooooooooow";
-myText[1] = "mrow";
-myText[2] = "prrrrrrrrrrrr";
+randomText[0] = "meooooooooooow";
+randomText[1] = "mrow";
 
-randomize();
+myText[0] = randomText[array_length(randomText) - 1];
 
-//x = random_range(48,200);
-//y = random_range(120,140);
+sprite_index = choose(sprGingerbreadAwake, sprGingerbreadSleeping);
+
+x = random_range(80, 260);
+y = random_range(134, 144);
 
 
 

@@ -1,4 +1,4 @@
-
+depth = -bbox_bottom;
 //keyboard positions for player character
 rightKey = keyboard_check(vk_right);
 leftKey = keyboard_check(vk_left);
@@ -69,17 +69,27 @@ if instance_exists(objTextbox){
 if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprSitKnit;
+if (!instance_exists(objCraftManager)){
+	instance_create_layer(x, y, "textLayer", objCraftManager);
+}
+
 }
 
 if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprSitKnit;
+if (!instance_exists(objCraftManager)){
+	instance_create_layer(x, y, "textLayer", objCraftManager);
+}
+
+
 }
 
 if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true))
 {
 sprite_index = sprSleep;
 image_xscale = 1;
+
 }
 
 
@@ -87,6 +97,8 @@ if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (objBed.new
 {
 sprite_index = sprSleep;
 image_xscale = 1;
+
+
 }
 
 
@@ -98,5 +110,5 @@ if instance_exists(objComputerManager){
 
 
 
-depth = -bbox_bottom;
+
 
