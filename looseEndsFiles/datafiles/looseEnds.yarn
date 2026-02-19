@@ -112,11 +112,13 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1552,-1446
+__PrivCrochet_position: -1523,-1503
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
+-> june 4, 2009 <<if $todayDate < 4 == false>>
+    <<jump looseEndsEmail>>
 -> june 3, 2009 <<if $todayDate < 3 == false>>
     <<jump Cass1>>
 -> june 2, 2009 <<if $todayDate < 2 == false>>
@@ -127,7 +129,7 @@ title: emailNew
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1789,-1746
+__PrivCrochet_position: -1791,-1747
 __PrivCrochet_tags: 
 title: Max0
 ---
@@ -145,7 +147,7 @@ title: Resume
     <<jump Docs>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1332,-1566
+__PrivCrochet_position: -2035,-1502
 __PrivCrochet_tags: 
 title: Cass1
 ---
@@ -154,5 +156,23 @@ that's not true! if i recall from college, you're also very adept at downing a $
 
 for real, though, i know it's tough right now, but i don't worry about you for a second. you'll find something great soon. \nxoxoxoxo, \ncass
 
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -936,-768
+__PrivCrochet_tags: 
+title: poem0
+---
+most things i've loved have ended
+but i loved them anyway
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1622,-1985
+__PrivCrochet_tags: 
+title: looseEndsEmail
+---
+To: Penny \nFrom: Info@WIP.org \nSubject: Your application
+Dear Penelope, \nThank you for your application to volunteer for WIP. We'd be thrilled to have another knitter on board, and will be sending along instructions shortly. 
+Yours in fiber, \nWIP
 <<jump Email>>
 ===
