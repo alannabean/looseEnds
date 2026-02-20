@@ -11,9 +11,12 @@ knitX = objPenny.x - 12;
 knitY = objPenny.y - 11;
 }
 
-/*if (knitProgress > knitInterval){
+if (knitProgress > knitInterval){
 	objPenny.knitLevel += 1;
-	knitProgress = 0;}*/
+	knitProgress = 0;
+	
+
+	}
 
 if (knitProgress <= knitInterval) && objPenny.sprite_index == sprPennyKnittingYarn{
 		

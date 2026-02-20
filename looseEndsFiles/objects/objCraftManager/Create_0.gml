@@ -1,7 +1,7 @@
 
 depth = -16000;
 
-knitInterval = ((4800)/objPenny.knitLevel);
+knitInterval = ((2400)/objPenny.knitLevel);
 
 knitProgress = 0;
 
@@ -14,7 +14,7 @@ knitPartY = 0;
 knitPartWidth = sprite_width;
 knitPartHeight = (sprite_height/knitInterval);
 
-spriteKnit = 3;//random_range(0, 3);
+spriteKnit = random_range(0, 3);
 
 myTextbox = noone;
 
@@ -30,4 +30,5 @@ myText[6] = "forgetting to count -- but soon";
 myText[7] = "I got into the rhythm.";
 myText[8] = "I liked how it busied my hands";
 myText[9] = "and quieted my brain.";
+
 

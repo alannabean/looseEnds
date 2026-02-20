@@ -84,6 +84,7 @@
     {"id":{"name":"objShelf","path":"objects/objShelf/objShelf.yy",},},
     {"id":{"name":"objTextbox","path":"objects/objTextbox/objTextbox.yy",},},
     {"id":{"name":"objTitleManager","path":"objects/objTitleManager/objTitleManager.yy",},},
+    {"id":{"name":"objTransition","path":"objects/objTransition/objTransition.yy",},},
     {"id":{"name":"objWall","path":"objects/objWall/objWall.yy",},},
     {"id":{"name":"bedRoom","path":"rooms/bedRoom/bedRoom.yy",},},
     {"id":{"name":"computerRoom","path":"rooms/computerRoom/computerRoom.yy",},},
@@ -257,8 +258,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"livingRoom","path":"rooms/livingRoom/livingRoom.yy",},},
     {"roomId":{"name":"startRoom","path":"rooms/startRoom/startRoom.yy",},},
+    {"roomId":{"name":"livingRoom","path":"rooms/livingRoom/livingRoom.yy",},},
     {"roomId":{"name":"computerRoom","path":"rooms/computerRoom/computerRoom.yy",},},
     {"roomId":{"name":"bedRoom","path":"rooms/bedRoom/bedRoom.yy",},},
   ],

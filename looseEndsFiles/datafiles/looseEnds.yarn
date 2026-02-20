@@ -5,14 +5,14 @@ __PrivCrochet_tags:
 title: Start
 ---
 <<declare $todayDate = 0>><<set $todayDate = getTodayDate()>>\n
-->      ---TRASH---     
-    <<jump Trash>>
 ->      ---EMAIL---     
     <<jump Email>>
 ->      ---DOCS---
     <<jump Docs>>
 ->      --CALENDAR--
     <<jump Calendar>>
+->      ---TRASH---     
+    <<jump Trash>>
 ->      ---HELP---      
     <<jump Help>>
 ->      ---BACK---
@@ -72,7 +72,7 @@ title: Calendar
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -750,-1121
+__PrivCrochet_position: -751,-1123
 __PrivCrochet_tags: 
 title: Help
 ---
@@ -100,7 +100,7 @@ title: Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1791,-1502
+__PrivCrochet_position: -1752,-1500
 __PrivCrochet_tags: 
 title: Cass0
 ---
@@ -117,6 +117,8 @@ __PrivCrochet_tags:
 title: emailNew
 ---
 \n
+-> june 5, 2009 <<if $todayDate < 5 == false>>
+    <<jump Cass2>>
 -> june 4, 2009 <<if $todayDate < 4 == false>>
     <<jump looseEndsEmail>>
 -> june 3, 2009 <<if $todayDate < 3 == false>>
@@ -147,7 +149,7 @@ title: Resume
     <<jump Docs>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2035,-1502
+__PrivCrochet_position: -2037,-1505
 __PrivCrochet_tags: 
 title: Cass1
 ---
@@ -159,7 +161,7 @@ for real, though, i know it's tough right now, but i don't worry about you for a
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -936,-768
+__PrivCrochet_position: -756,-748
 __PrivCrochet_tags: 
 title: poem0
 ---
@@ -174,5 +176,43 @@ title: looseEndsEmail
 To: Penny \nFrom: Info@WIP.org \nSubject: Your application
 Dear Penelope, \nThank you for your application to volunteer for WIP. We'd be thrilled to have another knitter on board, and will be sending along instructions shortly. 
 Yours in fiber, \nWIP
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1321,-796
+__PrivCrochet_tags: 
+title: Title
+---
+\n \n \n*  LOOSE ENDS  *
+-> Start
+    <<jump StartGame>>
+-> About
+    <<jump AboutGame>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -832,-384
+__PrivCrochet_tags: 
+title: StartGame
+---
+<<changeRoom("livingRoom")>>
+===
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -1267,-306
+__PrivCrochet_tags: 
+title: AboutGame
+---
+\n \n \n by alanna okun \n   spring 2026   \n  itp nyu thesis
+
+-> back
+    <<jump Title>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2374,-1477
+__PrivCrochet_tags: 
+title: Cass2
+---
+To: Penny \nFrom: Cass \nSubject: re: if this rain doesn't stop soon i swear to god
+if it makes you feel any better, it's been hella muggy here in NYC. My roommate is too cheap to let us turn up the window AC so I'm sweating like a dog. Wish you were here -- 
+it would be way more bearable with you. \nxoxoxoxo, \ncass
 <<jump Email>>
 ===

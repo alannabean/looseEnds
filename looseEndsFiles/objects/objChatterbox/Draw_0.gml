@@ -1,13 +1,11 @@
 
-draw_set_font(fntMain);
-draw_set_valign(fa_left);
 
 if IsChatterbox(chatterbox) and text != undefined
 
 {
 	
-	draw_sprite(sprComputerText, 0, textboxEmailX, textboxEmailY);
-	draw_text_ext(104, 36, text, 13, 128);
+	draw_sprite_ext(chatterboxSprite, chatterboxSubImg, chatterboxTextboxX, chatterboxTextboxY, chatterboxXScale, chatterboxYScale, chatterboxRot, chatterboxColor, chatterboxAlpha);
+	draw_text_ext(chatterboxTextX, chatterboxTextY, text, chatterboxTextSep, chatterboxTextW);
 	
 	
 	if ChatterboxGetOptionCount(chatterbox)
@@ -16,11 +14,11 @@ if IsChatterbox(chatterbox) and text != undefined
 		{
 			if ChatterboxGetOptionConditionBool(chatterbox, i)
 			{
-				_yy = (room_height/9.75) * (i + 2);
-				_xx = (104);
+				_yy = (optionY) * (i + optionSep);
+				_xx = (optionX);
 				
 				var _icon = "";
-				if (option_index == i) _icon = "> ";
+				if (option_index == i) _icon = optionIcon;
 				var _option = ChatterboxGetOption(chatterbox, i);
 				draw_text(_xx, _yy, _icon + _option);
 			}
