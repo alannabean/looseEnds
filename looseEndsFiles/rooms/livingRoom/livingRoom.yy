@@ -18,8 +18,8 @@
     {"name":"inst_2187A1C6","path":"rooms/livingRoom/livingRoom.yy",},
     {"name":"inst_19ABAF4E","path":"rooms/livingRoom/livingRoom.yy",},
     {"name":"inst_12FF0F65","path":"rooms/livingRoom/livingRoom.yy",},
-    {"name":"inst_22C7DFA1","path":"rooms/livingRoom/livingRoom.yy",},
     {"name":"inst_2665796E","path":"rooms/livingRoom/livingRoom.yy",},
+    {"name":"inst_22C7DFA1","path":"rooms/livingRoom/livingRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
