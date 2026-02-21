@@ -4,7 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-myText[0] = "My trusty knitting basket.";
-
+yarnNode = "knittingBasket";
 
 

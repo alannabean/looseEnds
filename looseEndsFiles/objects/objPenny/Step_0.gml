@@ -58,32 +58,24 @@ if xspd == 0 && yspd == 0
 
 
 //pause character movement when textbox is scrolling
-if instance_exists(objTextbox){
+if instance_exists(objChatterbox){
 	movSpd = 0;
 }else{
 	movSpd = .5}
 	
 	
-//change character sprite on couch
+//change character sprite depending on activity
 
 if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprSitKnit;
-if (!instance_exists(objCraftManager)){
-	instance_create_layer(x, y, "textLayer", objCraftManager);
-}
-
 }
 
 if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprSitKnit;
-if (!instance_exists(objCraftManager)){
-	instance_create_layer(x, y, "textLayer", objCraftManager);
 }
 
-
-}
 
 if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true))
 {

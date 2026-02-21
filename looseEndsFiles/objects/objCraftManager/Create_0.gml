@@ -20,15 +20,18 @@ myTextbox = noone;
 
 textRead = false;
 
-myText[0] = "I've been knitting since before I";
-myText[1] = "could read. My mother's mother";
-myText[2] = "taught me, on the couch one day";
-myText[3] = "during a rainy beach vacation.";
-myText[4] = "I was frustrated at first -- ";
-myText[5] = "I kept dropping stitches and";
-myText[6] = "forgetting to count -- but soon";
-myText[7] = "I got into the rhythm.";
-myText[8] = "I liked how it busied my hands";
-myText[9] = "and quieted my brain.";
+myText[0] = "I've been knitting ";
+myText[1] = "since before I could";
+myText[2] = "read. My mother's";
+myText[3] = "mother taught me";
+myText[4] = "during a rainy beach";
+myText[5] = "vacation. I was";
+myText[6] = "frustrated at first -";
+myText[7] = "I dropped stitches";
+myText[8] = "and forgot to count -";
+myText[9] = "but soon I got into";
+myText[10] = "the rhythm. I liked";
+myText[11] = "how it busied my hands"; 
+myText[12] = "and quieted my brain.";
 
 

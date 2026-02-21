@@ -1,27 +1,32 @@
 ChatterboxJump(chatterbox, "Title");
 chatterbox_update();
 
-chatterboxSprite = sprTextbox;
-
 draw_set_font(fntMain);
 draw_set_valign(fa_left);
 
-chatterboxTextboxX = 108;
-chatterboxTextboxY = 116;
+config = {
+	cFont: fntMain,
+	cHalign: fa_left,
+	cValign: fa_top,
+	cSprite: sprTextbox,
+	cSubImg: 0,
+	cTextboxX: 108,
+	cTextboxY: 116,
+	cTextX: 114,
+	cTextY: 32,
+	cTextSep: 13,
+	cTextW: 128,
+	cXScale: .5,
+	cYScale: 1,
+	cRot: 0, 
+	cColor: c_white,
+	cAlpha: 1,
+	cTypewriter: false,
+	cSpeed: 2,
+	cOptionX: 140,
+	cOptionY: room_height/12,
+	cOptionSep: 8,
+	cOptionIcon: "> "
+}
 
-chatterboxTextX = 114;
-chatterboxTextY = 32;
-chatterboxTextSep = 13;
-chatterboxTextW = 128;
 
-chatterboxXScale = .5;
-chatterboxYScale = 1;
-chatterboxRot = 0; 
-chatterboxColor = c_white; 
-chatterboxAlpha = 1;
-
-optionX = 140;
-optionY = room_height/12;
-optionSep = 8;
-
-optionIcon = "> ";

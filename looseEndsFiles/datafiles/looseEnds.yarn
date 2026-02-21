@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -2297,-629
+__PrivCrochet_position: -2429,-1178
 __PrivCrochet_tags: 
 title: Start
 ---
@@ -19,7 +19,7 @@ title: Start
     <<jump Back>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1830,-1104
+__PrivCrochet_position: -1828,-906
 __PrivCrochet_tags: 
 title: Trash
 ---
@@ -29,7 +29,7 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1545,-1120
+__PrivCrochet_position: -1488,-943
 __PrivCrochet_tags: 
 title: Email
 ---
@@ -51,7 +51,7 @@ title: Email
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1273,-1123
+__PrivCrochet_position: -1253,-1331
 __PrivCrochet_tags: 
 title: Docs
 ---
@@ -62,7 +62,7 @@ title: Docs
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1010,-1126
+__PrivCrochet_position: -996,-1000
 __PrivCrochet_tags: 
 title: Calendar
 ---
@@ -72,7 +72,7 @@ title: Calendar
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -751,-1123
+__PrivCrochet_position: -834,-1233
 __PrivCrochet_tags: 
 title: Help
 ---
@@ -161,7 +161,7 @@ for real, though, i know it's tough right now, but i don't worry about you for a
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -756,-748
+__PrivCrochet_position: -3133,-414
 __PrivCrochet_tags: 
 title: poem0
 ---
@@ -179,7 +179,7 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1321,-796
+__PrivCrochet_position: -1667,-309
 __PrivCrochet_tags: 
 title: Title
 ---
@@ -190,14 +190,14 @@ title: Title
     <<jump AboutGame>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -832,-384
+__PrivCrochet_position: -1425,-310
 __PrivCrochet_tags: 
 title: StartGame
 ---
 <<changeRoom("livingRoom")>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1267,-306
+__PrivCrochet_position: -1665,-539
 __PrivCrochet_tags: 
 title: AboutGame
 ---
@@ -215,4 +215,73 @@ To: Penny \nFrom: Cass \nSubject: re: if this rain doesn't stop soon i swear to 
 if it makes you feel any better, it's been hella muggy here in NYC. My roommate is too cheap to let us turn up the window AC so I'm sweating like a dog. Wish you were here -- 
 it would be way more bearable with you. \nxoxoxoxo, \ncass
 <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2683,-924
+__PrivCrochet_tags: 
+title: Fridge
+---
+There's a note on the fridge. Read it?
+
+-> Yes
+    <<jump FridgeNote>>
+
+-> No
+    <<stop>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2455,-919
+__PrivCrochet_tags: 
+title: FridgeNote
+---
+Hi honey,
+Thanks so much for taking care of 
+Gingerbread while I'm away! Don't let her
+trick you into giving her two breakfasts.
+Call me at Grandma's if you need anything
+-- I should be back on the 30th.
+Love, Mom
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2904,-923
+__PrivCrochet_tags: 
+title: knittingBasket
+---
+My trusty knitting basket.
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -3132,-673
+__PrivCrochet_tags: 
+title: momsRoom
+---
+There's no reason to go into Mom's room.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3137,-924
+__PrivCrochet_tags: 
+title: outside
+---
+It's too rainy to go out right now...
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3127,-1180
+__PrivCrochet_tags: 
+title: bookshelf
+---
+Most of these books are from when I was
+in middle school.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2895,-1174
+__PrivCrochet_tags: 
+title: bed
+---
+Time to go to sleep...
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2667,-1178
+__PrivCrochet_tags: 
+title: computer
+---
+Logging on . . . . . . . . . . . . . . . .
 ===

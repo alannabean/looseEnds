@@ -1,8 +1,8 @@
 
 event_inherited();
 
-myText[0] = "A handful of dry food can't"
-myText[1] = "hurt..."
+myText[0] = "A handful of dry food"
+myText[1] = "can't hurt..."
 
 dishFull = false;
 

@@ -1,18 +1,14 @@
-chatterbox = ChatterboxCreate();
+ChatterboxJump(chatterbox, "Start");
+chatterbox_update();
 
-
-
-option_index = 0;
-typewriterCount = 0;
-typewriterDone = false;
-
-
+draw_set_font(fntMain);
+draw_set_valign(fa_left);
 
 config = {
 	cFont: fntMain,
 	cHalign: fa_left,
 	cValign: fa_top,
-	cSprite: sprTextbox,
+	cSprite: sprComputerText,
 	cSubImg: 0,
 	cTextboxX: 96,
 	cTextboxY: 32,
@@ -25,7 +21,7 @@ config = {
 	cRot: 0, 
 	cColor: c_white,
 	cAlpha: 1,
-	cTypewriter: true,
+	cTypewriter: false,
 	cSpeed: 2,
 	cOptionX: 104,
 	cOptionY: room_height/9.75,
@@ -33,13 +29,4 @@ config = {
 	cOptionIcon: "> "
 	
 }
-
-
-
-
-
-
-
-
-
 

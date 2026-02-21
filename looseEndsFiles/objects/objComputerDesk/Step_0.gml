@@ -1,23 +1,14 @@
-//if the player collides with the object and space bar is pressed, create a textbox
 
-if place_meeting(x, y, objPenny){
-	if (keyboard_check_pressed(vk_space)){
-	if (myTextbox == noone){
-	myTextbox = instance_create_layer(x, y, "textLayer", objTextbox);
-	myTextbox.text = myText;
-	myTextbox.creator = self;
-	
-	
-	alarm[0] = random_range(60,120);
+ if place_meeting(x, y, objPenny){
 
-		}
+		if !instance_exists(objChatterbox) && keyboard_check_pressed(vk_space){
+		var _chat = instance_create_layer(x, y, "textLayer", objChatterbox);
+		with (_chat)
+		{
+			ChatterboxJump(chatterbox, other.yarnNode);
+			chatterbox_update();
+			config = other.chatterbox_config;
+		}alarm[0] = random_range(60,120);
 	}
-//when the player is no longer in collision, destroy textbox
-} else {
-	if (myTextbox != noone){
-	objPenny.targetRoom = computerRoom;
-	instance_destroy(myTextbox);
-	myTextbox = noone;
-	 }
-}
- 
+ }
+	

@@ -1,1 +1,0 @@
-myText[0] = "It's too rainy to go out.";
