@@ -9,10 +9,9 @@ if (x < objPenny.x - 32) && (image_xscale <= 1) && (sprite_index == sprGingerbre
 }
 
 if (objDish.dishFull == true){
-	myText[0] = "prrrrrrrrrrrrr";
-	
-}
+	yarnNode = "catHappy";
+	}
 
 if (sprite_index == sprGingerbreadSleeping){
-	myText[0] = "zzzzzzzzzzzzzz";
+	yarnNode = "catSleeping";
 }

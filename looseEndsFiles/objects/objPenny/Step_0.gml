@@ -66,15 +66,28 @@ if instance_exists(objChatterbox){
 	
 //change character sprite depending on activity
 
-if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0)
+if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
+{
+sprite_index = sprSit;
+}
+
+if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
+{
+sprite_index = sprSit;
+}
+
+if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = true)
 {
 sprite_index = sprSitKnit;
 }
 
-if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0)
+
+if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = true)
 {
 sprite_index = sprSitKnit;
 }
+ 
+
 
 
 if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true))

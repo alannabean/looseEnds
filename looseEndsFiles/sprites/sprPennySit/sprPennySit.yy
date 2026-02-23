@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sprPennyKnittingSit",
+  "%Name":"sprPennySit",
   "bboxMode":0,
   "bbox_bottom":29,
   "bbox_left":10,
@@ -22,7 +22,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"87e261ea-cd4c-42f0-a281-df25daeff814","blendMode":0,"displayName":"default","isLocked":false,"name":"87e261ea-cd4c-42f0-a281-df25daeff814","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sprPennyKnittingSit",
+  "name":"sprPennySit",
   "nineSlice":null,
   "origin":7,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sprPennyKnittingSit",
+    "%Name":"sprPennySit",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,9 +58,9 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sprPennyKnittingSit",
+    "name":"sprPennySit",
     "playback":1,
-    "playbackSpeed":15.0,
+    "playbackSpeed":0.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -70,10 +70,10 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1b61eb3c-996b-4f20-b084-84896a86c92b","path":"sprites/sprPennyKnittingSit/sprPennyKnittingSit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1b61eb3c-996b-4f20-b084-84896a86c92b","path":"sprites/sprPennySit/sprPennySit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"09f7dc2e-2283-49a7-b020-e4857175cf41","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4aca6116-9c19-416b-a568-74ea7c5b36f6","path":"sprites/sprPennyKnittingSit/sprPennyKnittingSit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4aca6116-9c19-416b-a568-74ea7c5b36f6","path":"sprites/sprPennySit/sprPennySit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7bdc4116-553d-484d-920b-bb264f5957af","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

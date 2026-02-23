@@ -1,10 +1,10 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -2429,-1178
+__PrivCrochet_position: -2435,-1186
 __PrivCrochet_tags: 
 title: Start
 ---
-<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>>\n
+<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>>  <<declare $extraEmail = 0>><<set $extraEmail = getExtraEmail()>>\n
 ->      ---EMAIL---     
     <<jump Email>>
 ->      ---DOCS---
@@ -19,7 +19,7 @@ title: Start
     <<jump Back>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1828,-906
+__PrivCrochet_position: -2434,-918
 __PrivCrochet_tags: 
 title: Trash
 ---
@@ -29,12 +29,20 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1488,-943
+__PrivCrochet_position: -1894,-913
 __PrivCrochet_tags: 
 title: Email
 ---
-<<set $emailNumber = $todayDate>>
-
+<<set $emailNumber = $todayDate + $extraEmail>>
+<<if visited("WIP1")>>
+    <<set $emailNumber -= 1>>
+<<endif>>
+<<if visited("WIP0")>>
+    <<set $emailNumber -= 1>>
+<<endif>>
+<<if visited("Cass2")>>
+    <<set $emailNumber -= 1>>
+<<endif>>
 <<if visited("Cass1")>>
     <<set $emailNumber -= 1>>
 <<endif>>
@@ -99,8 +107,8 @@ title: Back
 -> Back
     <<jump Start>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -1752,-1500
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -1802,-1513
 __PrivCrochet_tags: 
 title: Cass0
 ---
@@ -112,26 +120,28 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1523,-1503
+__PrivCrochet_position: -1262,-1589
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
--> june 5, 2009 <<if $todayDate < 5 == false>>
+-> WIP: june 4, 2009 <<if $todayDate < 4 == false>>
+    <<jump WIP1>>
+-> Cass: june 4, 2009 <<if $todayDate < 4 == false>>
     <<jump Cass2>>
--> june 4, 2009 <<if $todayDate < 4 == false>>
-    <<jump looseEndsEmail>>
--> june 3, 2009 <<if $todayDate < 3 == false>>
-    <<jump Cass1>>
--> june 2, 2009 <<if $todayDate < 2 == false>>
+-> WIP: june 3, 2009 <<if $todayDate < 3 == false>>
+    <<jump WIP0>>
+-> Max: june 3, 2009 <<if $todayDate < 3 == false>>
     <<jump Max0>>
--> june 1, 2009 <<if $todayDate < 1 == false>>
+-> Cass: june 2, 2009 <<if $todayDate < 2 == false>>
+    <<jump Cass1>>
+-> Cass: june 1, 2009 <<if $todayDate < 1 == false>><<if $todayDate > 3 == false>>
     <<jump Cass0>>
 -> back
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1791,-1747
+__PrivCrochet_position: -1799,-1730
 __PrivCrochet_tags: 
 title: Max0
 ---
@@ -149,12 +159,12 @@ title: Resume
     <<jump Docs>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2037,-1505
+__PrivCrochet_position: -2035,-1516
 __PrivCrochet_tags: 
 title: Cass1
 ---
 To: Penny \nFrom: Cass \nSubject: re: literally the only thing i know how to do is knit
-that's not true! if i recall from college, you're also very adept at downing a $9 bottle of wine and beating everyone's high score in Mario Kart. don't be so hard on yourself! 
+that's not true! if i recall from college, you're also very adept at downing a $2 bottle of wine and beating everyone's high score in Mario Kart. don't be so hard on yourself! 
 
 for real, though, i know it's tough right now, but i don't worry about you for a second. you'll find something great soon. \nxoxoxoxo, \ncass
 
@@ -169,9 +179,9 @@ most things i've loved have ended
 but i loved them anyway
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1622,-1985
+__PrivCrochet_position: -1797,-1952
 __PrivCrochet_tags: 
-title: looseEndsEmail
+title: WIP0
 ---
 To: Penny \nFrom: Info@WIP.org \nSubject: Your application
 Dear Penelope, \nThank you for your application to volunteer for WIP. We'd be thrilled to have another knitter on board, and will be sending along instructions shortly. 
@@ -179,7 +189,7 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1667,-309
+__PrivCrochet_position: -1322,108
 __PrivCrochet_tags: 
 title: Title
 ---
@@ -190,14 +200,14 @@ title: Title
     <<jump AboutGame>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1425,-310
+__PrivCrochet_position: -1080,107
 __PrivCrochet_tags: 
 title: StartGame
 ---
 <<changeRoom("livingRoom")>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1665,-539
+__PrivCrochet_position: -1320,-122
 __PrivCrochet_tags: 
 title: AboutGame
 ---
@@ -206,8 +216,8 @@ title: AboutGame
 -> back
     <<jump Title>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -2374,-1477
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -2269,-1512
 __PrivCrochet_tags: 
 title: Cass2
 ---
@@ -217,7 +227,7 @@ it would be way more bearable with you. \nxoxoxoxo, \ncass
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2683,-924
+__PrivCrochet_position: -2866,-1181
 __PrivCrochet_tags: 
 title: Fridge
 ---
@@ -230,7 +240,7 @@ There's a note on the fridge. Read it?
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2455,-919
+__PrivCrochet_position: -2877,-938
 __PrivCrochet_tags: 
 title: FridgeNote
 ---
@@ -243,11 +253,16 @@ Call me at Grandma's if you need anything
 Love, Mom
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2904,-923
+__PrivCrochet_position: -2273,-359
 __PrivCrochet_tags: 
-title: knittingBasket
+title: knittingCouch
 ---
-My trusty knitting basket.
+Pick up a project?
+
+-> Yes
+    <<jump projectPage>>
+-> No
+    <<stop>>
 ===
 __PrivCrochet_colorID: 8
 __PrivCrochet_position: -3132,-673
@@ -272,16 +287,109 @@ Most of these books are from when I was
 in middle school.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2895,-1174
+__PrivCrochet_position: -3124,-1425
 __PrivCrochet_tags: 
 title: bed
 ---
 Time to go to sleep...
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -2667,-1178
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -2879,-1421
 __PrivCrochet_tags: 
 title: computer
 ---
 Logging on . . . . . . . . . . . . . . . .
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2921,-177
+__PrivCrochet_tags: 
+title: cat
+---
+mrow
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3141,-171
+__PrivCrochet_tags: 
+title: catHappy
+---
+prrrrrrrrrrrrrrrrrrrrrr
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3139,48
+__PrivCrochet_tags: 
+title: catSleeping
+---
+zzzzzzzzzzzzzzzzzzzzzzzzz
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2705,-178
+__PrivCrochet_tags: 
+title: catDish
+---
+Feed the cat?
+
+-> Yes
+    A handful of dry food couldn't hurt... <<fillDish()>>
+-> No
+    She's had enough for now.
+===
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -2002,-374
+__PrivCrochet_tags: 
+title: projectPage
+---
+<<declare $hat0 = false>>
+Choose a project to work on:
+-> Scarf
+    <<jump Scarf>>
+-> Hat <<if !$hat0 == false>>
+    <<jump Hat>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2275,-132
+__PrivCrochet_tags: 
+title: Scarf
+---
+<<movePenny(80,123)>><<pennyKnitting(3)>>
+I've been knitting since before I could
+read. My mother's mother taught me during
+a rainy day at the beach. I was frustrated
+at first -- I kept dropping stitches and 
+forgetting to count -- but soon I got into
+the rhythm. I liked how it busied my hands
+and quieted my brain.
+<<endPennyKnitting()>>
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -2880,-672
+__PrivCrochet_tags: 
+title: knittingBasket
+---
+My trusty knitting basket.
+===
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: -2021,-1950
+__PrivCrochet_tags: 
+title: WIP1
+---
+To: Penny \nFrom: Info@WIP.org \nSubject: First assignment
+Dear Penelope, \nThank you again for volunteering with WIP. As you know, we're an organization that matches crafters with the loved ones of people who have died or 
+otherwise left projects incomplete. Your work is extraordinarily meaningful to these grieving families and friends. \nYour first project is to complete a baby hat for the
+granddaughter of Rhonda Milstein, an avid knitter who passed away last year at the age of 84. Kara Milstein was cleaning out her grandmother's house when she found this
+project, which she'd like to give to her own newborn daughter. Should you accept, we'll send along a package with the unfinished hat that should arrive today.
+Yours in fiber, \nWIP
+\n
+-> Accept? 
+    <<set $hat0 = true>><<jump Email>>
+-> Decline?
+    <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2006,-74
+__PrivCrochet_tags: 
+title: Hat
+---
+<<movePenny(80,123)>><<pennyKnitting(2)>>This hat is made of really nice yarn --
+Rhonda Milstein had good taste.
+<<endPennyKnitting()>>
 ===
