@@ -2,6 +2,7 @@
 
 var _count = ChatterboxGetOptionCount(chatterbox);
 
+
 if keyboard_check_pressed(vk_space) && !typewriterDone && config.cTypewriter == true{
 	
 	typewriterCount = string_length(text);

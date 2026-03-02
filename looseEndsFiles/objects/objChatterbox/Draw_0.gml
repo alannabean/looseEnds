@@ -11,8 +11,8 @@ if IsChatterbox(chatterbox) and text != undefined
 	var _visibleText = config.cTypewriter ? string_copy(text, 1, typewriterCount) : text;
 	draw_text_ext(config.cTextX, config.cTextY, _visibleText, config.cTextSep,  config.cTextW);
 	
-	if ChatterboxIsWaiting(chatterbox) and !instance_exists(objArrow) and config.cArrowExists == true{
-			instance_create_depth(config.cTextboxX + config.cArrowX, config.cTextboxY + config.cArrowY, -16000, objArrow);
+	if ChatterboxGetContentCount(chatterbox) and !instance_exists(objArrow) and config.cArrowExists == true{
+			instance_create_depth(config.cTextboxX + config.cArrowX, config.cTextboxY + config.cArrowY, -15999, objArrow);
 	}
 	
 	

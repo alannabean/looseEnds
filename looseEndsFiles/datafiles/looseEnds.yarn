@@ -292,7 +292,10 @@ title: bed
 ---
 Go to sleep?
 -> Yes
-    <<pennySleeping()>>Tomorrow is another \nday...<<endPennySleeping()>>
+    <<pennySleeping()>>Tomorrow is another \nday...
+    ...
+    ...
+    <<endPennySleeping()>>
 -> No
     <<stop>>
 ===

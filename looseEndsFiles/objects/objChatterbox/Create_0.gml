@@ -8,6 +8,7 @@ typewriterDone = false;
 
 
 
+
 config = {
 	cFont: fntMain,
 	cHalign: fa_left,
