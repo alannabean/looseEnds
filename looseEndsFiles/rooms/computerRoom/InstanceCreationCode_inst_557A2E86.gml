@@ -26,7 +26,10 @@ config = {
 	cOptionX: 104,
 	cOptionY: room_height/9.75,
 	cOptionSep: 2,
-	cOptionIcon: "> "
+	cOptionIcon: "> ",
+	cArrowX: 0,
+	cArrowY: 0,
+	cArrowExists: false
 	
 }
 

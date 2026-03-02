@@ -29,11 +29,14 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1894,-913
+__PrivCrochet_position: -1897,-917
 __PrivCrochet_tags: 
 title: Email
 ---
 <<set $emailNumber = $todayDate + $extraEmail>>
+<<if visited("WIP2")>>
+    <<set $emailNumber -= 1>>
+<<endif>>
 <<if visited("WIP1")>>
     <<set $emailNumber -= 1>>
 <<endif>>
@@ -88,10 +91,14 @@ If you ever get stuck, press Return.
 <<random option>>
 -> 
     \n \n \n \n \n \n(Write it all down, even if it's embarrassing.) 
-->
-    \n \n \n \n \n(Unfortunately you should probably drink some water.) 
 -> 
     \n \n \n \n \n \n \n(It doesn't hurt to ask.)
+-> 
+    \n \n \n \n \n \n(Everything ends.) 
+->
+    \n \n \n \n \n \n(You have to look directly at it.)
+-> 
+    \n \n \n \n \n \n(The best tool is the one you'll use.) 
 <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
@@ -108,7 +115,7 @@ title: Back
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -1802,-1513
+__PrivCrochet_position: -1747,-1348
 __PrivCrochet_tags: 
 title: Cass0
 ---
@@ -120,7 +127,7 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1262,-1589
+__PrivCrochet_position: -1266,-1592
 __PrivCrochet_tags: 
 title: emailNew
 ---
@@ -171,15 +178,7 @@ for real, though, i know it's tough right now, but i don't worry about you for a
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3133,-414
-__PrivCrochet_tags: 
-title: poem0
----
-most things i've loved have ended
-but i loved them anyway
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -1797,-1952
+__PrivCrochet_position: -1807,-2318
 __PrivCrochet_tags: 
 title: WIP0
 ---
@@ -189,11 +188,11 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1322,108
+__PrivCrochet_position: -1328,97
 __PrivCrochet_tags: 
 title: Title
 ---
-\n \n \n*  LOOSE ENDS  *
+\n \n \n  a game about \n knitting & grief \n- - - - - - - - -
 -> Start
     <<jump StartGame>>
 -> About
@@ -207,7 +206,7 @@ title: StartGame
 <<changeRoom("livingRoom")>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1320,-122
+__PrivCrochet_position: -1322,-124
 __PrivCrochet_tags: 
 title: AboutGame
 ---
@@ -231,7 +230,7 @@ __PrivCrochet_position: -2866,-1181
 __PrivCrochet_tags: 
 title: Fridge
 ---
-There's a note on the fridge. Read it?
+There's a note on \nthe fridge. Read it?
 
 -> Yes
     <<jump FridgeNote>>
@@ -240,20 +239,20 @@ There's a note on the fridge. Read it?
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2877,-938
+__PrivCrochet_position: -2878,-939
 __PrivCrochet_tags: 
 title: FridgeNote
 ---
 Hi honey,
-Thanks so much for taking care of 
+Thanks so much for \ntaking care of 
 Gingerbread while I'm away! Don't let her
-trick you into giving her two breakfasts.
-Call me at Grandma's if you need anything
--- I should be back on the 30th.
+trick you into giving \nher two breakfasts.
+Call me at Grandma's if you need anything --
+I should be back on the 30th.
 Love, Mom
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2273,-359
+__PrivCrochet_position: -2871,-414
 __PrivCrochet_tags: 
 title: knittingCouch
 ---
@@ -272,7 +271,7 @@ title: momsRoom
 There's no reason to go into Mom's room.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3137,-924
+__PrivCrochet_position: -3136,-922
 __PrivCrochet_tags: 
 title: outside
 ---
@@ -283,15 +282,19 @@ __PrivCrochet_position: -3127,-1180
 __PrivCrochet_tags: 
 title: bookshelf
 ---
-Most of these books are from when I was
-in middle school.
+Most of these books are from when I was in 
+middle school.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3124,-1425
+__PrivCrochet_position: -3129,-1431
 __PrivCrochet_tags: 
 title: bed
 ---
-Time to go to sleep...
+Go to sleep?
+-> Yes
+    <<pennySleeping()>>Tomorrow is another \nday...<<endPennySleeping()>>
+-> No
+    <<stop>>
 ===
 __PrivCrochet_colorID: 1
 __PrivCrochet_position: -2879,-1421
@@ -301,82 +304,97 @@ title: computer
 Logging on . . . . . . . . . . . . . . . .
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2921,-177
+__PrivCrochet_position: -2897,-20
 __PrivCrochet_tags: 
 title: cat
 ---
 mrow
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3141,-171
+__PrivCrochet_position: -3117,-14
 __PrivCrochet_tags: 
 title: catHappy
 ---
 prrrrrrrrrrrrrrrrrrrrrr
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3139,48
+__PrivCrochet_position: -3115,205
 __PrivCrochet_tags: 
 title: catSleeping
 ---
 zzzzzzzzzzzzzzzzzzzzzzzzz
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2705,-178
+__PrivCrochet_position: -2681,-21
 __PrivCrochet_tags: 
 title: catDish
 ---
 Feed the cat?
 
 -> Yes
-    A handful of dry food couldn't hurt... <<fillDish()>>
+    A handful of dry food \ncouldn't hurt... <<fillDish()>>
 -> No
-    She's had enough for now.
+    She's had enough for \nnow.
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2002,-374
+__PrivCrochet_position: -2014,-386
 __PrivCrochet_tags: 
 title: projectPage
 ---
-<<declare $hat0 = false>>
-Choose a project to work on:
--> Scarf
+<<declare $hat0 = false>><<declare $sweater0 = false>><<declare $socks0 = false>>
+Choose a project to \nwork on:
+-> Scarf <<if visited("Scarf") == false>>
     <<jump Scarf>>
+-> Scarf <<if visited("Scarf") == true>>
+    <<jump Scarf1>>
 -> Hat <<if !$hat0 == false>>
     <<jump Hat>>
+-> Sweater <<if !$sweater0 == false>>
+    <<jump Sweater>>
+-> Socks <<if !$socks0 == false>>
+    <<jump Socks>>
 ===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -2275,-132
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -2336,-113
 __PrivCrochet_tags: 
 title: Scarf
 ---
-<<movePenny(80,123)>><<pennyKnitting(3)>>
-I've been knitting since before I could
-read. My mother's mother taught me during
-a rainy day at the beach. I was frustrated
-at first -- I kept dropping stitches and 
-forgetting to count -- but soon I got into
-the rhythm. I liked how it busied my hands
-and quieted my brain.
+<<movePenny(80,123)>><<pennyKnittingScarf()>>
+I've been knitting \nsince before I could
+read. My mother's \nmother taught me during
+a rainy day at the \nbeach. I was frustrated
+at first -- I kept \ndropping stitches and 
+forgetting to count -- but soon I got into the 
+rhythm. I liked how it busied my hands and 
+quieted my brain.
+...
+...
+...
+...
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -2880,-672
+__PrivCrochet_position: -2882,-674
 __PrivCrochet_tags: 
 title: knittingBasket
 ---
-My trusty knitting basket.
+My trusty knitting \nbasket.
+Pick up a project?
+-> Yes
+    <<jump projectPage>>
+-> No
+    <<stop>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2021,-1950
+__PrivCrochet_position: -2080,-2265
 __PrivCrochet_tags: 
 title: WIP1
 ---
 To: Penny \nFrom: Info@WIP.org \nSubject: First assignment
 Dear Penelope, \nThank you again for volunteering with WIP. As you know, we're an organization that matches crafters with the loved ones of people who have died or 
-otherwise left projects incomplete. Your work is extraordinarily meaningful to these grieving families and friends. \nYour first project is to complete a baby hat for the
-granddaughter of Rhonda Milstein, an avid knitter who passed away last year at the age of 84. Kara Milstein was cleaning out her grandmother's house when she found this
-project, which she'd like to give to her own newborn daughter. Should you accept, we'll send along a package with the unfinished hat that should arrive today.
+otherwise left projects incomplete. Your work is extraordinarily meaningful to these grieving families and friends. \nYour first project is to complete a baby hat for
+the granddaughter of Rhonda Milstein, an avid knitter who passed away last year at the age of 84. Kara Milstein was cleaning out her grandmother's house when she found
+this project, which she'd like to give to her own newborn daughter. Should you accept, we'll send along a package with the unfinished hat that should arrive today.
 Yours in fiber, \nWIP
 \n
 -> Accept? 
@@ -385,11 +403,68 @@ Yours in fiber, \nWIP
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2006,-74
+__PrivCrochet_position: -1990,-84
 __PrivCrochet_tags: 
 title: Hat
 ---
-<<movePenny(80,123)>><<pennyKnitting(2)>>This hat is made of really nice yarn --
-Rhonda Milstein had good taste.
+<<movePenny(80,123)>><<pennyKnittingHat()>>It's a little weird \nworking on a project
+someone else started.
+This hat is made of really nice yarn --
+Rhonda Milstein had \ngood taste.
+She was so neat in her stitches.
+Mine look so sloppy by comparison.
+But I like doing this. 
+It feels good.
+...
+...
+...
+...
+There. I'll mark the spot where I
+started knitting and send it off.
+<<endPennyKnitting()>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1672,-303
+__PrivCrochet_tags: 
+title: Sweater
+---
+test test
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1667,-550
+__PrivCrochet_tags: 
+title: Socks
+---
+test
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2418,-2248
+__PrivCrochet_tags: 
+title: WIP2
+---
+To: Penny \nFrom: Info@WIP.org \nSubject: Next assignment
+Dear Penelope, \nThank you for taking such care with your first project. Your second is a choice between two significantly different works in progress: the sleeves of
+a cable-knit sweater or the second in a pair of color-blocked socks. Both more of a challenge, to be sure, but a meaningful one. We'll send along details with the selected project.  
+Yours in fiber, \nWIP
+\n
+-> Sweater? 
+    <<set $sweater0 = true>><<jump Email>>
+-> Socks? 
+    <<set $socks0 = true>><<jump Email>>
+-> Decline?
+    <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2344,167
+__PrivCrochet_tags: 
+title: Scarf1
+---
+<<movePenny(80,123)>><<pennyKnittingScarf()>>
+...
+...
+...
+Making scarves can \nfeel endless.
+...
+...
 <<endPennyKnitting()>>
 ===

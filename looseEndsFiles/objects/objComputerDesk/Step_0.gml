@@ -9,6 +9,9 @@
 			chatterbox_update();
 			config = other.chatterbox_config;
 		}alarm[0] = random_range(60,120);
-	}
+		
+		if !audio_is_playing(sndComputer){
+			audio_play_sound(sndComputer, 1, false)}
+	} 
  }
 	

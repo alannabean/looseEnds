@@ -13,9 +13,9 @@ knitY = objPenny.y - 11;
 
 if (knitProgress > knitInterval){
 	objPenny.knitLevel += 1;
-	knitProgress = 0;
-	
-
+	objPenny.image_speed = 0;
+	alarm[0] = 1;
+	knitProgress = knitInterval;
 	}
 
 if (knitProgress <= knitInterval) && objPenny.sprite_index == sprPennyKnittingYarn{
@@ -28,7 +28,4 @@ if (knitProgress <= knitInterval) && objPenny.sprite_index == sprPennyKnittingYa
 	}else {
 	visible = false;
 	 }
-	
-
-
 	

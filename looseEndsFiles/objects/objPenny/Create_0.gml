@@ -1,9 +1,10 @@
 
-movSpd = .5;
+movSpd = .75;
 
 knitLevel = 1;
 
 pennyKnitting = false;
+pennySleeping = false;
 
 sprWalk = sprPennyWalking;
 sprIdle = sprPennyIdle;

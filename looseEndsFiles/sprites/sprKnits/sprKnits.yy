@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"sprKnits",
   "bboxMode":0,
-  "bbox_bottom":29,
+  "bbox_bottom":63,
   "bbox_left":0,
   "bbox_right":18,
   "bbox_top":0,
@@ -19,7 +19,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":30,
+  "height":64,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"9de73ae8-3f85-445f-9acd-20bc080e332f","blendMode":0,"displayName":"default","isLocked":false,"name":"9de73ae8-3f85-445f-9acd-20bc080e332f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":9,
-    "yorigin":30,
+    "yorigin":64,
   },
   "swatchColours":[
     4278190335,4285324004,4282945944,4282147149,4283183960,4281219974,4283326396,4285824182,4282945998,4281868311,

@@ -15,6 +15,7 @@ if keyboard_check_pressed(vk_space) && !typewriterDone && config.cTypewriter == 
 	typewriterCount = 0;
 	typewriterDone = false;
 
+
 }
 
 else if _count
@@ -54,7 +55,7 @@ if (!typewriterDone) && (config.cTypewriter == true){
 };
 
 if ChatterboxIsStopped(chatterbox)
-{
+{	instance_destroy(objArrow);
 	show_debug_message("obj destroyed at time: " + string(current_time));
 	alarm[0] = 1;
 }

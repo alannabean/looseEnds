@@ -9,8 +9,8 @@
   "name":"objParentObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"interactions",
-    "path":"folders/gameplay/interactions.yy",
+    "name":"items",
+    "path":"folders/items.yy",
   },
   "parentObjectId":null,
   "persistent":false,

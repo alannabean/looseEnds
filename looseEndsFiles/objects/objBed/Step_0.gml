@@ -8,8 +8,7 @@ if place_meeting(x, y, objPenny){
 			ChatterboxJump(chatterbox, other.yarnNode);
 			chatterbox_update();
 			config = other.chatterbox_config;
-		}instance_create_layer(0, 0, "textLayer", objFilter);
-		global.todayDate++;
+		}
 		newDayDebounceFlag = true;
 	}
 	

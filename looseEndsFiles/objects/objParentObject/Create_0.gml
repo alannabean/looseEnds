@@ -32,7 +32,10 @@ chatterbox_config = {
 	cOptionX: xPos + (textboxWidth - (xMargin*2)),
 	cOptionY: 13,
 	cOptionSep: 11.5,
-	cOptionIcon: "> "
+	cOptionIcon: "> ",
+	cArrowX: 183,
+	cArrowY: 28,
+	cArrowExists: true
 
 }
 

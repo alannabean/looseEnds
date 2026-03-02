@@ -1,4 +1,5 @@
 depth = -bbox_bottom;
+
 //keyboard positions for player character
 rightKey = keyboard_check(vk_right);
 leftKey = keyboard_check(vk_left);
@@ -61,7 +62,7 @@ if xspd == 0 && yspd == 0
 if instance_exists(objChatterbox){
 	movSpd = 0;
 }else{
-	movSpd = .5}
+	movSpd = .75}
 	
 	
 //change character sprite depending on activity
@@ -90,7 +91,7 @@ sprite_index = sprSitKnit;
 
 
 
-if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true))
+if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true) && pennySleeping = true)
 {
 sprite_index = sprSleep;
 image_xscale = 1;
@@ -98,7 +99,7 @@ image_xscale = 1;
 }
 
 
-if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true))
+if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true) && pennySleeping = true)
 {
 sprite_index = sprSleep;
 image_xscale = 1;
@@ -112,6 +113,7 @@ if instance_exists(objComputerManager){
 	sprite_index = noone;
 	movSpd = 0;	
 }
+
 
 
 
