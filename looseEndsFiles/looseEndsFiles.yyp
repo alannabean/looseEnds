@@ -90,6 +90,8 @@
     {"id":{"name":"bedRoom","path":"rooms/bedRoom/bedRoom.yy",},},
     {"id":{"name":"computerRoom","path":"rooms/computerRoom/computerRoom.yy",},},
     {"id":{"name":"livingRoom","path":"rooms/livingRoom/livingRoom.yy",},},
+    {"id":{"name":"momRoom","path":"rooms/momRoom/momRoom.yy",},},
+    {"id":{"name":"outsideRoom","path":"rooms/outsideRoom/outsideRoom.yy",},},
     {"id":{"name":"startRoom","path":"rooms/startRoom/startRoom.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"__ChatterboxArrayCopyPart","path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},},
@@ -270,6 +272,8 @@
     {"roomId":{"name":"livingRoom","path":"rooms/livingRoom/livingRoom.yy",},},
     {"roomId":{"name":"computerRoom","path":"rooms/computerRoom/computerRoom.yy",},},
     {"roomId":{"name":"bedRoom","path":"rooms/bedRoom/bedRoom.yy",},},
+    {"roomId":{"name":"outsideRoom","path":"rooms/outsideRoom/outsideRoom.yy",},},
+    {"roomId":{"name":"momRoom","path":"rooms/momRoom/momRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

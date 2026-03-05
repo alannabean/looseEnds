@@ -1,10 +1,10 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -2435,-1186
+__PrivCrochet_position: -2441,-1196
 __PrivCrochet_tags: 
 title: Start
 ---
-<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>>  <<declare $extraEmail = 0>><<set $extraEmail = getExtraEmail()>>\n
+<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>><<declare $readCass0 = false>><<declare $readCass1 = false>><<declare $readCass2 = false>><<declare $readMax0 = false>><<declare $readWIP0 = false>><<declare $readWIP1 = false>><<declare $readWIP2 = false>>\n
 ->      ---EMAIL---     
     <<jump Email>>
 ->      ---DOCS---
@@ -29,33 +29,25 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1897,-917
+__PrivCrochet_position: -1903,-928
 __PrivCrochet_tags: 
 title: Email
 ---
-<<set $emailNumber = $todayDate + $extraEmail>>
-<<if visited("WIP2")>>
-    <<set $emailNumber -= 1>>
-<<endif>>
-<<if visited("WIP1")>>
-    <<set $emailNumber -= 1>>
-<<endif>>
-<<if visited("WIP0")>>
-    <<set $emailNumber -= 1>>
-<<endif>>
-<<if visited("Cass2")>>
-    <<set $emailNumber -= 1>>
-<<endif>>
-<<if visited("Cass1")>>
-    <<set $emailNumber -= 1>>
-<<endif>>
-<<if visited("Cass0")>>
-    <<set $emailNumber -= 1>>
-<<endif>>
-<<if visited("Max0")>>
-    <<set $emailNumber -= 1>>
-<<endif>>
-\n 
+<<set $emailExists = 0>>
+<<set $emailRead = 0>>
+<<if $todayDate >= 5 && $todayDate < 8>><<set $emailExists += 1>><<endif>>
+<<if $todayDate >= 4 && $todayDate < 7>><<set $emailExists += 2>><<endif>>
+<<if $todayDate >= 3 && $todayDate < 6>><<set $emailExists += 2>><<endif>>
+<<if $todayDate >= 2 && $todayDate < 5>><<set $emailExists += 1>><<endif>>
+<<if $todayDate >= 1 && $todayDate < 4>><<set $emailExists += 1>><<endif>>
+<<if $readCass0 && $todayDate >= 1 && $todayDate < 4>><<set $emailRead += 1>><<endif>>
+<<if $readCass1 && $todayDate >= 2 && $todayDate < 5>><<set $emailRead += 1>><<endif>>
+<<if $readCass2 && $todayDate >= 4 && $todayDate < 7>><<set $emailRead += 1>><<endif>>
+<<if $readWIP0 && $todayDate >= 3 && $todayDate < 6>><<set $emailRead += 1>><<endif>>
+<<if $readWIP1 && $todayDate >= 4 && $todayDate < 7>><<set $emailRead += 1>><<endif>>
+<<if $readWIP2 && $todayDate >= 5 && $todayDate < 8>><<set $emailRead += 1>><<endif>>
+<<if $readMax0 && $todayDate >= 3 && $todayDate < 6>><<set $emailRead += 1>><<endif>>
+<<set $emailNumber = $emailExists - $emailRead>>\n
     -> New ({$emailNumber})
         <<jump emailNew>>
     -> Back
@@ -87,7 +79,6 @@ __PrivCrochet_position: -834,-1233
 __PrivCrochet_tags: 
 title: Help
 ---
-If you ever get stuck, press Return. 
 <<random option>>
 -> 
     \n \n \n \n \n \n(Write it all down, even if it's embarrassing.) 
@@ -119,7 +110,7 @@ __PrivCrochet_position: -1747,-1348
 __PrivCrochet_tags: 
 title: Cass0
 ---
-To: Penny \nFrom: Cass \nSubject: i'm pretending to work right now by sending you this email
+<<set $readCass0 = true>>To: Penny \nFrom: Cass \nSubject: i'm pretending to work right now by sending you this email
 my boss is being an actual psychopath this week so it's in my best interest to look busy, even though there's nothing for me to do until the client signs off on our proposal?? 
 
 corporate america never ceases to amaze. consider yourself lucky that right now you don't have to participate in this farce. \nxoxoxoxo, \ncass
@@ -127,22 +118,24 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1266,-1592
+__PrivCrochet_position: -1274,-1599
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
--> WIP: june 4, 2009 <<if $todayDate < 4 == false>>
+-> WIP: june 5, 2009 <<if $todayDate >= 5 && $todayDate < 8>>
+    <<jump WIP2>>
+-> WIP: june 4, 2009 <<if $todayDate >= 4 && $todayDate < 7>>
     <<jump WIP1>>
--> Cass: june 4, 2009 <<if $todayDate < 4 == false>>
+-> Cass: june 4, 2009 <<if $todayDate >= 4 && $todayDate < 7>>
     <<jump Cass2>>
--> WIP: june 3, 2009 <<if $todayDate < 3 == false>>
+-> WIP: june 3, 2009 <<if $todayDate >= 3 && $todayDate < 6>>
     <<jump WIP0>>
--> Max: june 3, 2009 <<if $todayDate < 3 == false>>
+-> Max: june 3, 2009 <<if $todayDate >= 3 && $todayDate < 6>>
     <<jump Max0>>
--> Cass: june 2, 2009 <<if $todayDate < 2 == false>>
+-> Cass: june 2, 2009 <<if $todayDate >= 2 && $todayDate < 5>>
     <<jump Cass1>>
--> Cass: june 1, 2009 <<if $todayDate < 1 == false>><<if $todayDate > 3 == false>>
+-> Cass: june 1, 2009 <<if $todayDate >= 1 && $todayDate < 4>>
     <<jump Cass0>>
 -> back
     <<jump Email>>
@@ -152,7 +145,7 @@ __PrivCrochet_position: -1799,-1730
 __PrivCrochet_tags: 
 title: Max0
 ---
-To: Penny \nFrom: Max \nSubject: re: thinking of you today
+<<set $readMax0 = true>>To: Penny \nFrom: Max \nSubject: re: thinking of you today
 Hey, \nSorry it's taken me so long to reply. It's been busy here, and the time difference makes me lose track. Appreciate your message; same to you. -M
 <<jump Email>>
 ===
@@ -166,11 +159,11 @@ title: Resume
     <<jump Docs>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2035,-1516
+__PrivCrochet_position: -2036,-1518
 __PrivCrochet_tags: 
 title: Cass1
 ---
-To: Penny \nFrom: Cass \nSubject: re: literally the only thing i know how to do is knit
+<<set $readCass1 = true>>To: Penny \nFrom: Cass \nSubject: re: literally the only thing i know how to do is knit
 that's not true! if i recall from college, you're also very adept at downing a $2 bottle of wine and beating everyone's high score in Mario Kart. don't be so hard on yourself! 
 
 for real, though, i know it's tough right now, but i don't worry about you for a second. you'll find something great soon. \nxoxoxoxo, \ncass
@@ -182,7 +175,7 @@ __PrivCrochet_position: -1807,-2318
 __PrivCrochet_tags: 
 title: WIP0
 ---
-To: Penny \nFrom: Info@WIP.org \nSubject: Your application
+<<set $readWIP0 = true>>To: Penny \nFrom: Info@WIP.org \nSubject: Your application
 Dear Penelope, \nThank you for your application to volunteer for WIP. We'd be thrilled to have another knitter on board, and will be sending along instructions shortly. 
 Yours in fiber, \nWIP
 <<jump Email>>
@@ -216,11 +209,11 @@ title: AboutGame
     <<jump Title>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -2269,-1512
+__PrivCrochet_position: -2272,-1519
 __PrivCrochet_tags: 
 title: Cass2
 ---
-To: Penny \nFrom: Cass \nSubject: re: if this rain doesn't stop soon i swear to god
+<<set $readCass2 = true>>To: Penny \nFrom: Cass \nSubject: re: if this rain doesn't stop soon i swear to god
 if it makes you feel any better, it's been hella muggy here in NYC. My roommate is too cheap to let us turn up the window AC so I'm sweating like a dog. Wish you were here -- 
 it would be way more bearable with you. \nxoxoxoxo, \ncass
 <<jump Email>>
@@ -389,11 +382,11 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2080,-2265
+__PrivCrochet_position: -2082,-2267
 __PrivCrochet_tags: 
 title: WIP1
 ---
-To: Penny \nFrom: Info@WIP.org \nSubject: First assignment
+<<set $readWIP1 = true>>To: Penny \nFrom: Info@WIP.org \nSubject: First assignment
 Dear Penelope, \nThank you again for volunteering with WIP. As you know, we're an organization that matches crafters with the loved ones of people who have died or 
 otherwise left projects incomplete. Your work is extraordinarily meaningful to these grieving families and friends. \nYour first project is to complete a baby hat for
 the granddaughter of Rhonda Milstein, an avid knitter who passed away last year at the age of 84. Kara Milstein was cleaning out her grandmother's house when she found
@@ -441,13 +434,13 @@ title: Socks
 test
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2418,-2248
+__PrivCrochet_position: -2419,-2249
 __PrivCrochet_tags: 
-title: WIP2
+title: WIP3
 ---
 To: Penny \nFrom: Info@WIP.org \nSubject: Next assignment
-Dear Penelope, \nThank you for taking such care with your first project. Your second is a choice between two significantly different works in progress: the sleeves of
-a cable-knit sweater or the second in a pair of color-blocked socks. Both more of a challenge, to be sure, but a meaningful one. We'll send along details with the selected project.  
+Dear Penelope, \nThank you for taking such care with your first project. Your second is a choice between two significantly different works in progress:
+\nthe sleeves of a cable-knit sweater or the second in a pair of color-blocked socks. Both more of a challenge, to be sure, but a meaningful one. \nWe'll send along details with the selected project.  
 Yours in fiber, \nWIP
 \n
 -> Sweater? 
@@ -470,4 +463,14 @@ Making scarves can \nfeel endless.
 ...
 ...
 <<endPennyKnitting()>>
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -2695,-2219
+__PrivCrochet_tags: 
+title: WIP2
+---
+<<set $readWIP2 = true>>To: Penny \nFrom: Info@WIP.org \nSubject: Many thanks
+Dear Penelope, \nThank you for your generous completion of Rhonda Milstein's hat. 
+Yours in fiber, \nWIP
+<<jump Email>>
 ===

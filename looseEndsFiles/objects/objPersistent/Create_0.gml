@@ -19,10 +19,6 @@ ChatterboxAddFunction("getTodayDate", function(){
 	return global.todayDate;
 	});
 	
-ChatterboxAddFunction("getExtraEmail", function(){
-	return global.extraEmail;
-	});
-	
 	
 ChatterboxAddFunction("fillDish", function(){
 	objDish.image_index = 1;

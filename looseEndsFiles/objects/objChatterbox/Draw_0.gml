@@ -33,3 +33,12 @@ if IsChatterbox(chatterbox) and text != undefined
 		} 
 	}
 }
+
+
+/*----debug-----
+try {
+    draw_text(10, 10, "exists: " + string(ChatterboxVariableGet("emailExists")));
+    draw_text(10, 20, "read: " + string(ChatterboxVariableGet("emailRead")));
+} catch (e) {
+    draw_text(10, 10, "variables not yet set");
+}
