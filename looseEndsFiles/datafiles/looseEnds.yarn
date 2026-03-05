@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -2441,-1196
+__PrivCrochet_position: -2444,-1199
 __PrivCrochet_tags: 
 title: Start
 ---
@@ -15,8 +15,10 @@ title: Start
     <<jump Trash>>
 ->      ---HELP---      
     <<jump Help>>
-->      ---BACK---
-    <<jump Back>>
+->      ---QUIT---
+    Goodbye.
+    <<changeRoom("bedRoom")>>
+    <<stop>>
 ===
 __PrivCrochet_colorID: 1
 __PrivCrochet_position: -2434,-918
@@ -29,7 +31,7 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1903,-928
+__PrivCrochet_position: -1905,-930
 __PrivCrochet_tags: 
 title: Email
 ---
@@ -61,6 +63,8 @@ title: Docs
 \n
     -> resume_final_FINAL_v5
         <<jump Resume>>
+    -> note to self<<if $todayDate >= 3>>
+        <<jump Notes0>>
     -> Back
         <<jump Start>>
 ===
@@ -91,19 +95,6 @@ title: Help
 -> 
     \n \n \n \n \n \n(The best tool is the one you'll use.) 
 <<jump Start>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -476,-1114
-__PrivCrochet_tags: 
-title: Back
----
-\n
--> Quit?
-    Goodbye.
-    <<changeRoom("bedRoom")>>
-    <<stop>>
--> Back
-    <<jump Start>>
 ===
 __PrivCrochet_colorID: 8
 __PrivCrochet_position: -1747,-1348
@@ -156,7 +147,7 @@ title: Resume
 ---
 \njob job job job job \nblah blah blah blah \nvery responsible \netc
 
-    <<jump Docs>>
+<<jump Docs>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -2036,-1518
@@ -257,14 +248,14 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3132,-673
+__PrivCrochet_position: -3136,-679
 __PrivCrochet_tags: 
 title: momsRoom
 ---
 There's no reason to go into Mom's room.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3136,-922
+__PrivCrochet_position: -3136,-925
 __PrivCrochet_tags: 
 title: outside
 ---
@@ -333,7 +324,7 @@ Feed the cat?
     She's had enough for \nnow.
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2014,-386
+__PrivCrochet_position: -2015,-388
 __PrivCrochet_tags: 
 title: projectPage
 ---
@@ -465,12 +456,30 @@ Making scarves can \nfeel endless.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -2695,-2219
+__PrivCrochet_position: -2697,-2221
 __PrivCrochet_tags: 
 title: WIP2
 ---
 <<set $readWIP2 = true>>To: Penny \nFrom: Info@WIP.org \nSubject: Many thanks
-Dear Penelope, \nThank you for your generous completion of Rhonda Milstein's hat. 
+Dear Penelope, \nThank you for your generous completion of Rhonda Milstein's hat. We'll be sending along a new assignment shortly.
 Yours in fiber, \nWIP
 <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2737,-1947
+__PrivCrochet_tags: 
+title: Mom0
+---
+To: Penny \nFrom: pennysmom89@hotmail.com \nSubject: Miss you!
+Hi sweetie, \nGrandma and I both miss you! If you get a sec, could you go into my room and tell me the brand of the woolen socks in the top drawer? I'd like to buy some for Grandma -- she's going to be in the hospital a little longer than expected and could use something cozy.
+Did I mention I miss you? \nMom
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -539,-1415
+__PrivCrochet_tags: 
+title: Notes0
+---
+\nwhat's the point of loving anyone if they're just going to be gone one day?
+<<jump Docs>>
 ===
