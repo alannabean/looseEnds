@@ -1,5 +1,11 @@
 global.todayDate = 1;
-global.extraEmail = 0;
+global.weatherRainy = true;
+global.weatherSunny = false;
+
+randomize();
+
+rainyDay = random_range(5,10);
+sunnyDay = rainyDay + random_range(1,4);
 
 audio_play_sound(sndBackground, 1, true);
 
@@ -26,32 +32,19 @@ ChatterboxAddFunction("fillDish", function(){
 });
 
 
-ChatterboxAddFunction("pennyKnittingScarf", function(){
+ChatterboxAddFunction("pennyKnitting", function(_sprKnit){
 	
 	objPenny.pennyKnitting = true;
 	if !instance_exists(objCraftManager){
 		instance_create_layer(x, y, "textLayer", objCraftManager)
-		objCraftManager.spriteKnit = 3;}
-	if instance_exists(objCraftManager) && (objCraftManager.spriteKnit != 3){
+		objCraftManager.spriteKnit = _sprKnit;}
+	if instance_exists(objCraftManager) && (objCraftManager.spriteKnit != _sprKnit){
 		instance_destroy(objCraftManager)
 		instance_create_layer(x, y, "textLayer", objCraftManager)
-		objCraftManager.spriteKnit = 3;}
+		objCraftManager.spriteKnit = _sprKnit;}
 	
 });
 
-
-ChatterboxAddFunction("pennyKnittingHat", function(){
-	
-	objPenny.pennyKnitting = true;
-	if !instance_exists(objCraftManager){
-		instance_create_layer(x, y, "textLayer", objCraftManager)
-		objCraftManager.spriteKnit = 2;}
-	if instance_exists(objCraftManager) && (objCraftManager.spriteKnit != 2){
-		instance_destroy(objCraftManager)
-		instance_create_layer(x, y, "textLayer", objCraftManager)
-		objCraftManager.spriteKnit = 2;}
-	
-});
 
 ChatterboxAddFunction("endPennyKnitting", function(){
 	

@@ -1,3 +1,3 @@
 objPenny.targetRoom = bedRoom;
-objPenny.x = 240;
-objPenny.y = 132;
+objPenny.targetX = 86;
+objPenny.targetY = 132;

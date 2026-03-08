@@ -5,7 +5,7 @@ draw_set_font(fntTitle);
 draw_text((room_width/4) - 16, (room_height/4) - 8, "l o o s e  e n d s");
 }
 
-if room == livingRoom or room == momRoom{
+if room == livingRoom or room == momRoom or room == bedRoom{
 	
 	draw_set_font(fntZelda);
 	draw_set_color(#C7CFCC);

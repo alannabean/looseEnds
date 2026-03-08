@@ -39,11 +39,15 @@ yspd = 0;
 if place_meeting(x + xspd, y, objDoor)
 {
 room_goto(targetRoom);
+objPenny.x = targetX;
+objPenny.y = targetY;
 
 }
 if place_meeting (x, y + yspd, objDoor)
 {
 room_goto(targetRoom);
+objPenny.x = targetX;
+objPenny.y = targetY;
 }
 
 if keyboard_check_pressed(vk_return){
@@ -77,6 +81,22 @@ if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnit
 sprite_index = sprSit;
 }
 
+if (place_meeting(x + xspd, y, objChair) && xspd == 0 && yspd == 0)
+{
+sprite_index = sprSit;
+}
+
+if (place_meeting (x, y + yspd, objChair) && xspd == 0 && yspd == 0)
+{
+sprite_index = sprSit;
+}
+
+if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
+{
+sprite_index = sprSit;
+}
+
+
 if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = true)
 {
 sprite_index = sprSitKnit;
@@ -88,14 +108,32 @@ if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnit
 sprite_index = sprSitKnit;
 }
  
+if (place_meeting(x + xspd, y, objMirror) && xspd == 0 && yspd == 0)
+{
+sprite_index = sprBack;
+}
 
+if (place_meeting (x, y + yspd, objMirror) && xspd == 0 && yspd == 0)
+{
+sprite_index = sprBack;
+}
+
+/*if (place_meeting(x + xspd, y, objComputerDesk) && xspd == 0 && yspd == 0)
+{
+sprite_index = sprBack;
+}
+
+if (place_meeting (x, y + yspd, objComputerDesk) && xspd == 0 && yspd == 0)
+{
+sprite_index = sprBack;
+}
+*/
 
 
 if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true) && pennySleeping = true)
 {
 sprite_index = sprSleep;
 image_xscale = 1;
-
 }
 
 
@@ -103,9 +141,8 @@ if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (objBed.new
 {
 sprite_index = sprSleep;
 image_xscale = 1;
-
-
 }
+
 
 
 //suspend avatar while on the computer
