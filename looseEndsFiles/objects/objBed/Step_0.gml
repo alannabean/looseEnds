@@ -1,7 +1,7 @@
 
 if place_meeting(x, y, objPenny){
 
-		if !instance_exists(objChatterbox) && keyboard_check_pressed(vk_space) && newDayDebounceFlag == false{
+		if !instance_exists(objChatterbox) && keyboard_check_pressed(vk_space) && global.newDayFlag == false{
 		var _chat = instance_create_layer(x, y, "textLayer", objChatterbox);
 		with (_chat)
 		{
@@ -9,10 +9,11 @@ if place_meeting(x, y, objPenny){
 			chatterbox_update();
 			config = other.chatterbox_config;
 		}
-		newDayDebounceFlag = true;
+		global.newDayFlag = true;
+		
 	}
 	
 }else {
 	
-	 newDayDebounceFlag = false;
+	 global.newDayFlag = false;
 }

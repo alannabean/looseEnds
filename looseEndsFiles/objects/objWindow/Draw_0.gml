@@ -1,14 +1,22 @@
 if global.weatherRainy == true{
 
-	sprite_index = sprWindowRain;
-	show_debug_message("it's raining...");
-	
+sprite_index = sprWindowRain;
+
 }
 
-else if global.weatherSunny == true{
-	
+if global.weatherSunny == true{
+
 	sprite_index = sprWindowSun;
-	show_debug_message("it's sunny!");
+	
+}
+if global.weatherRainyNight == true{
+	
+	sprite_index = sprWindowRainyNight;
+	
+}
+if global.weatherClearNight == true{
+	
+	sprite_index = sprWindowClearNight;
 	
 }
 

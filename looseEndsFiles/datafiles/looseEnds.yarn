@@ -250,7 +250,7 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3671,-1060
+__PrivCrochet_position: -3672,-1061
 __PrivCrochet_tags: 
 title: momsRoom
 ---
@@ -276,9 +276,14 @@ title: bookshelf
 ---
 Most of these books are from when I was in 
 middle school.
+Read one?
+-> Yes
+    <<jump bookMenu>>
+-> No
+    <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4158,-1062
+__PrivCrochet_position: -4166,-1070
 __PrivCrochet_tags: 
 title: bed
 ---
@@ -289,7 +294,7 @@ Go to sleep?
     ...
     ...
     ...
-    <<endPennySleeping()>>
+    <<jump dreamMenu>>
 -> No
     <<stop>>
 ===
@@ -585,4 +590,76 @@ title: OvenMenu
     Make risotto?
         -> Yes
         -> No
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3948,-310
+__PrivCrochet_tags: 
+title: finishedProject
+---
+You finished a project! Time to bind off.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4426,-1068
+__PrivCrochet_tags: 
+title: dreamMenu
+---
+<<random option>>
+-> 
+    I dreamed I failed a test.
+-> 
+    I dreamed I lost a tooth.
+-> 
+    I dreamed I kissed a stranger.
+-> 
+    I dreamed I was a mother.
+-> 
+    I dreamed I lost a test.
+-> 
+    I dreamed I kissed a tooth.
+-> 
+    I dreamed I was a stranger.
+-> 
+    I dreamed I failed a mother.
+-> 
+    I dreamed I was a test.
+-> 
+    I dreamed I failed a stranger.
+-> 
+    I dreamed I lost a mother.
+-> 
+    I dreamed I was a tooth.
+
+<<endPennySleeping()>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4447,-788
+__PrivCrochet_tags: 
+title: bookMenu
+---
+<<random option>>
+-> 
+    I dreamed I failed a test.
+-> 
+    I dreamed I lost a tooth.
+-> 
+    I dreamed I kissed a stranger.
+-> 
+    I dreamed I was a mother.
+-> 
+    I dreamed I lost a test.
+-> 
+    I dreamed I kissed a tooth.
+-> 
+    I dreamed I was a stranger.
+-> 
+    I dreamed I failed a mother.
+-> 
+    I dreamed I was a test.
+-> 
+    I dreamed I failed a stranger.
+-> 
+    I dreamed I lost a mother.
+-> 
+    I dreamed I was a tooth.
+<<stop>>
 ===

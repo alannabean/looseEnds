@@ -130,19 +130,21 @@ sprite_index = sprBack;
 */
 
 
-if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true) && pennySleeping = true)
+if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true)
 {
 sprite_index = sprSleep;
 image_xscale = 1;
+global.timeSpeed = 20;
 }
 
 
-if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (objBed.newDayDebounceFlag == true) && pennySleeping = true)
+
+if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true)
 {
 sprite_index = sprSleep;
 image_xscale = 1;
+global.timeSpeed = 20;
 }
-
 
 
 //suspend avatar while on the computer
