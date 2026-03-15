@@ -81,6 +81,8 @@ if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnit
 sprite_index = sprSit;
 }
 
+
+
 if (place_meeting(x + xspd, y, objChair) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprSit;
@@ -145,6 +147,14 @@ sprite_index = sprSleep;
 image_xscale = 1;
 global.timeSpeed = 20;
 }
+
+if pennyCooking = true
+{
+sprite_index = sprCook;}
+
+if pennyCooking = false
+{
+sprite_index = sprIdle;}
 
 
 //suspend avatar while on the computer

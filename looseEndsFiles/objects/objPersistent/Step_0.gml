@@ -12,6 +12,9 @@ hours = ((hours24 + 11) mod 12) + 1;
 if (hours24 < 12) {global.dayTime = true}
 else{global.dayTime = false}
 
+if hours24 == 24 && global.newDayFlag == false{
+	global.todayDate++
+	global.newDayFlag = true}
 
 if room == livingRoom && !audio_is_playing(sndRain) && global.weatherRainy == true{
 	audio_play_sound(sndRain, 0, true);	

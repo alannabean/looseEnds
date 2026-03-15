@@ -250,7 +250,7 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3672,-1061
+__PrivCrochet_position: -3675,-1063
 __PrivCrochet_tags: 
 title: momsRoom
 ---
@@ -339,7 +339,7 @@ Feed the cat?
     She's had enough for \nnow.
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2777,-883
+__PrivCrochet_position: -2781,-885
 __PrivCrochet_tags: 
 title: projectPage
 ---
@@ -545,7 +545,7 @@ title: mirror
 Still me...
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3411,-1327
+__PrivCrochet_position: -3457,-1377
 __PrivCrochet_tags: 
 title: OvenMenu
 ---
@@ -553,42 +553,14 @@ title: OvenMenu
 -> 
     Make oatmeal?
         -> Yes
+           <<pennyCooking()>>...
+           <<endPennyCooking()>>
         -> No
 -> 
     Make congee?
         -> Yes
-        -> No
--> 
-    Make mush?
-        -> Yes
-        -> No
--> 
-    Make porridge?
-        -> Yes
-        -> No
--> 
-    Make lentil soup?
-        -> Yes
-        -> No
--> 
-    Make lobster bisque?
-        -> Yes
-        -> No
--> 
-    Make corn chowder?
-        -> Yes
-        -> No
--> 
-    Make turkey chili?
-        -> Yes
-        -> No
--> 
-    Make pozole?
-        -> Yes
-        -> No
--> 
-    Make risotto?
-        -> Yes
+            <<pennyCooking()>>...
+            <<endPennyCooking()>>
         -> No
 ===
 __PrivCrochet_colorID: 0
@@ -599,7 +571,7 @@ title: finishedProject
 You finished a project! Time to bind off.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4426,-1068
+__PrivCrochet_position: -4427,-1072
 __PrivCrochet_tags: 
 title: dreamMenu
 ---
@@ -632,34 +604,53 @@ title: dreamMenu
 <<endPennySleeping()>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4447,-788
+__PrivCrochet_position: -4539,-802
 __PrivCrochet_tags: 
 title: bookMenu
 ---
 <<random option>>
 -> 
-    I dreamed I failed a test.
+    <<jump Alice0>>
 -> 
-    I dreamed I lost a tooth.
+    <<jump Pooh0>>
 -> 
-    I dreamed I kissed a stranger.
--> 
-    I dreamed I was a mother.
--> 
-    I dreamed I lost a test.
--> 
-    I dreamed I kissed a tooth.
--> 
-    I dreamed I was a stranger.
--> 
-    I dreamed I failed a mother.
--> 
-    I dreamed I was a test.
--> 
-    I dreamed I failed a stranger.
--> 
-    I dreamed I lost a mother.
--> 
-    I dreamed I was a tooth.
+    <<jump Secret0>>
 <<stop>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4873,-901
+__PrivCrochet_tags: 
+title: Alice0
+---
+"The time has come," the Walrus said,
+"To talk of many things;
+Of shoes and ships and sealing-wax 
+Of cabbages and kings
+And why the sea is boiling hot
+And whether pigs have wings."
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4869,-1126
+__PrivCrochet_tags: 
+title: Pooh0
+---
+"When you wake up in the morning, Pooh," 
+said Piglet at last, "what's the first 
+thing you say to yourself?"
+"What's for breakfast?" said Pooh. 
+"What do you say, Piglet?"
+"I say, I wonder what's going to happen
+exciting to-day?" said Piglet.
+Pooh nodded thoughtfully.
+"It's the same thing," he said.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4871,-1367
+__PrivCrochet_tags: 
+title: Secret0
+---
+One of the strange things about living in 
+the world is that it is only now and then 
+one is quite sure one is going to live 
+forever and ever and ever.
 ===

@@ -84,3 +84,24 @@ ChatterboxAddFunction("endPennySleeping", function(){
 	global.time =  dayLength/3;
 	global.timeSpeed = 10;
 });
+
+ChatterboxAddFunction("pennyCooking", function(){
+	
+	objPenny.pennyCooking = true;
+	objPenny.x = 234;
+	objPenny.y = 116;
+	objPenny.image_xscale = 1;
+	show_debug_message("i'm cooking");
+	
+});
+
+ChatterboxAddFunction("endPennyCooking", function(){
+	
+	objPenny.pennyCooking = false;
+	show_debug_message("done cooking");
+	objPenny.x = 240;
+	objPenny.y = 122;
+	objPenny.image_xscale = 1;
+	global.time +=  dayLength/24;
+	global.timeSpeed = 10;
+});

@@ -5,7 +5,9 @@
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
-    "children":[],
+    "children":[
+      {"children":[],"name":"NewConfig1",},
+    ],
     "name":"Default",
   },
   "defaultScriptType":1,
@@ -251,6 +253,9 @@
     {"id":{"name":"sprHat","path":"sprites/sprHat/sprHat.yy",},},
     {"id":{"name":"sprIcons","path":"sprites/sprIcons/sprIcons.yy",},},
     {"id":{"name":"sprKnits","path":"sprites/sprKnits/sprKnits.yy",},},
+    {"id":{"name":"sprKnitsLong","path":"sprites/sprKnitsLong/sprKnitsLong.yy",},},
+    {"id":{"name":"sprKnitsMed","path":"sprites/sprKnitsMed/sprKnitsMed.yy",},},
+    {"id":{"name":"sprKnitsShort","path":"sprites/sprKnitsShort/sprKnitsShort.yy",},},
     {"id":{"name":"sprLamp","path":"sprites/sprLamp/sprLamp.yy",},},
     {"id":{"name":"sprLight","path":"sprites/sprLight/sprLight.yy",},},
     {"id":{"name":"sprLightSwitch","path":"sprites/sprLightSwitch/sprLightSwitch.yy",},},
@@ -261,6 +266,7 @@
     {"id":{"name":"sprPass","path":"sprites/sprPass/sprPass.yy",},},
     {"id":{"name":"sprPatternsBlue","path":"sprites/sprPatternsBlue/sprPatternsBlue.yy",},},
     {"id":{"name":"sprPennyBack","path":"sprites/sprPennyBack/sprPennyBack.yy",},},
+    {"id":{"name":"sprPennyCooking","path":"sprites/sprPennyCooking/sprPennyCooking.yy",},},
     {"id":{"name":"sprPennyIdle","path":"sprites/sprPennyIdle/sprPennyIdle.yy",},},
     {"id":{"name":"sprPennyKnittingStand","path":"sprites/sprPennyKnittingStand/sprPennyKnittingStand.yy",},},
     {"id":{"name":"sprPennyKnittingYarn","path":"sprites/sprPennyKnittingYarn/sprPennyKnittingYarn.yy",},},
