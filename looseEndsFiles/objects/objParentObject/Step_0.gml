@@ -21,4 +21,8 @@ if place_meeting(x, y, objPenny){
 	}
 }
 
-
+/*if keyboard_check(vk_control){
+	image_blend = #F7D560;
+}else{
+	image_blend = c_white;
+}

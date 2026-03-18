@@ -21,4 +21,4 @@ if global.weatherClearNight == true{
 }
 
 draw_self();
-depth = -15999;
+

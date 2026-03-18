@@ -11,10 +11,7 @@
     "name":"collisions",
     "path":"folders/gameplay/interactions/collisions.yy",
   },
-  "parentObjectId":{
-    "name":"objParentObject",
-    "path":"objects/objParentObject/objParentObject.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

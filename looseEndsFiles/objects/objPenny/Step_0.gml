@@ -26,29 +26,28 @@ if yspd <0 {sprite_index = sprWalk; image_xscale = 1};
 
 //collision detection 
 
-if place_meeting(x + xspd, y, objWall)
+if place_meeting(x + xspd, y, objWall) or place_meeting(x + xspd, y, objCat)
 {
 xspd = 0;
 }
-if place_meeting (x, y + yspd, objWall)
+if place_meeting (x, y + yspd, objWall) or place_meeting(x, y + yspd, objCat)
 {
 yspd = 0;
 }
 
 
-if place_meeting(x + xspd, y, objDoor)
+if place_meeting(x + xspd, y, objDoor) or place_meeting (x, y + yspd, objDoor)
 {
-room_goto(targetRoom);
-objPenny.x = targetX;
-objPenny.y = targetY;
+    var _door = instance_place(x + xspd, y, objDoor);
+	if instance_exists(_door)
+    {
+    room_goto(_door.targetRoom);
+    x = _door.targetX;
+    y = _door.targetY;
+	}
 
 }
-if place_meeting (x, y + yspd, objDoor)
-{
-room_goto(targetRoom);
-objPenny.x = targetX;
-objPenny.y = targetY;
-}
+
 
 if keyboard_check_pressed(vk_return){
 	room_goto(room_last);
@@ -71,54 +70,36 @@ if instance_exists(objChatterbox){
 	
 //change character sprite depending on activity
 
-if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
+if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false) 
+or (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
 {
 sprite_index = sprSit;
 }
 
-if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
-{
-sprite_index = sprSit;
-}
 
 
-
-if (place_meeting(x + xspd, y, objChair) && xspd == 0 && yspd == 0)
-{
-sprite_index = sprSit;
-}
-
-if (place_meeting (x, y + yspd, objChair) && xspd == 0 && yspd == 0)
-{
-sprite_index = sprSit;
-}
-
-if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
+if (place_meeting(x + xspd, y, objChair) && xspd == 0 && yspd == 0) 
+or (place_meeting (x, y + yspd, objChair) && xspd == 0 && yspd == 0)
+or (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = false)
 {
 sprite_index = sprSit;
 }
 
 
 if (place_meeting(x + xspd, y, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = true)
+or (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = true)
 {
 sprite_index = sprSitKnit;
 }
 
-
-if (place_meeting (x, y + yspd, objCouch) && xspd == 0 && yspd == 0 && pennyKnitting = true)
-{
-sprite_index = sprSitKnit;
-}
  
 if (place_meeting(x + xspd, y, objMirror) && xspd == 0 && yspd == 0)
+or (place_meeting (x, y + yspd, objMirror) && xspd == 0 && yspd == 0)
 {
 sprite_index = sprBack;
 }
 
-if (place_meeting (x, y + yspd, objMirror) && xspd == 0 && yspd == 0)
-{
-sprite_index = sprBack;
-}
+
 
 /*if (place_meeting(x + xspd, y, objComputerDesk) && xspd == 0 && yspd == 0)
 {
@@ -132,19 +113,15 @@ sprite_index = sprBack;
 */
 
 
-if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true)
+
+if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true) 
+or (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true)
 {
 sprite_index = sprSleep;
+depth = objBed.depth + 1;
 image_xscale = 1;
-global.timeSpeed = 20;
-}
-
-
-
-if (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true)
-{
-sprite_index = sprSleep;
-image_xscale = 1;
+x = objBed.x;
+y = objBed.y+1;
 global.timeSpeed = 20;
 }
 
@@ -152,9 +129,13 @@ if pennyCooking = true
 {
 sprite_index = sprCook;}
 
-if pennyCooking = false
+if pennyBathing = true
 {
-sprite_index = sprIdle;}
+sprite_index = sprBath;
+depth = objBathtub.depth + 1;
+}
+
+
 
 
 //suspend avatar while on the computer

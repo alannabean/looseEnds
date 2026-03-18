@@ -73,6 +73,10 @@ ChatterboxAddFunction("pennySleeping", function(){
 	
 	objPenny.pennySleeping = true;
 	instance_create_layer(0, 0, "textLayer", objFilter);
+	if objDish.dishFull == true{
+		objDish.dishFull = false;
+	}
+	
 	global.todayDate++
 	
 });
@@ -91,6 +95,7 @@ ChatterboxAddFunction("pennyCooking", function(){
 	objPenny.x = 234;
 	objPenny.y = 116;
 	objPenny.image_xscale = 1;
+	global.timeSpeed = 5;
 	show_debug_message("i'm cooking");
 	
 });
@@ -102,6 +107,24 @@ ChatterboxAddFunction("endPennyCooking", function(){
 	objPenny.x = 240;
 	objPenny.y = 122;
 	objPenny.image_xscale = 1;
-	global.time +=  dayLength/24;
 	global.timeSpeed = 10;
+});
+
+ChatterboxAddFunction("pennyBathing", function(){
+	
+	objPenny.pennyBathing = true;
+	objPenny.x = objBathtub.x+2;
+	objPenny.y = objBathtub.y+6;
+	objBathtub.sprite_index = sprBathtubFill;
+	global.timeSpeed = 5;
+	show_debug_message("i'm in the bath");
+	
+});
+
+ChatterboxAddFunction("endPennyBathing", function(){
+	
+	objPenny.pennyBathing = false;
+	objBathtub.sprite_index = sprBathtub;
+	global.timeSpeed = 10;
+	show_debug_message("done with the bath");
 });

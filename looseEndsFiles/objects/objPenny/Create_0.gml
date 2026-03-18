@@ -6,6 +6,7 @@ knitLevel = 1;
 pennyKnitting = false;
 pennySleeping = false;
 pennyCooking = false;
+pennyBathing = false;
 
 sprWalk = sprPennyWalking;
 sprIdle = sprPennyIdle;
@@ -14,3 +15,4 @@ sprSit = sprPennySit;
 sprSitKnit = sprPennyKnittingYarn;
 sprSleep = sprPennySleeping;
 sprCook = sprPennyCooking;
+sprBath = sprPennyBathing;

@@ -31,6 +31,8 @@ title: Trash
         <<jump Notes0>>
     -> noteToMax.doc<<if $todayDate >= 13>>
         <<jump NoteToMax0>>
+    -> ruminations.doc<<if $todayDate >= 17>>
+        <<jump Notes1>>
     -> Back
     <<jump Start>>
 ===
@@ -164,7 +166,7 @@ for real, though, i know it's tough right now, but i don't worry about you for a
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1799,-2317
+__PrivCrochet_position: -1616,-2580
 __PrivCrochet_tags: 
 title: WIP0
 ---
@@ -327,7 +329,7 @@ title: catSleeping
 zzzzzzzzzzzzzzzzzzzzzzzzz
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3206,-390
+__PrivCrochet_position: -3211,-393
 __PrivCrochet_tags: 
 title: catDish
 ---
@@ -388,7 +390,7 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2027,-2324
+__PrivCrochet_position: -1844,-2585
 __PrivCrochet_tags: 
 title: WIP1
 ---
@@ -444,7 +446,7 @@ There's a letter included:
 "
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2467,-2321
+__PrivCrochet_position: -2285,-2585
 __PrivCrochet_tags: 
 title: WIP3
 ---
@@ -475,7 +477,7 @@ Making scarves can \nfeel endless.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -2250,-2318
+__PrivCrochet_position: -2068,-2579
 __PrivCrochet_tags: 
 title: WIP2
 ---
@@ -485,7 +487,7 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2736,-2111
+__PrivCrochet_position: -2590,-2078
 __PrivCrochet_tags: 
 title: Mom0
 ---
@@ -504,7 +506,7 @@ title: Notes0
 <<jump Trash>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2956,-2111
+__PrivCrochet_position: -2810,-2078
 __PrivCrochet_tags: 
 title: Mom4
 ---
@@ -545,7 +547,7 @@ title: mirror
 Still me...
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3457,-1377
+__PrivCrochet_position: -3404,-1332
 __PrivCrochet_tags: 
 title: OvenMenu
 ---
@@ -553,13 +555,21 @@ title: OvenMenu
 -> 
     Make oatmeal?
         -> Yes
-           <<pennyCooking()>>...
+           <<pennyCooking()>>
+            ...
+            ...
+            ...
+            Yum!
            <<endPennyCooking()>>
         -> No
 -> 
     Make congee?
         -> Yes
-            <<pennyCooking()>>...
+            <<pennyCooking()>>
+            ...
+            ...
+            ...
+            Yum!
             <<endPennyCooking()>>
         -> No
 ===
@@ -618,7 +628,7 @@ title: bookMenu
 <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4873,-901
+__PrivCrochet_position: -4879,-904
 __PrivCrochet_tags: 
 title: Alice0
 ---
@@ -630,11 +640,11 @@ And why the sea is boiling hot
 And whether pigs have wings."
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4869,-1126
+__PrivCrochet_position: -4871,-1132
 __PrivCrochet_tags: 
 title: Pooh0
 ---
-"When you wake up in the morning, Pooh," 
+"When you wake up in the morning, Pooh,"
 said Piglet at last, "what's the first 
 thing you say to yourself?"
 "What's for breakfast?" said Pooh. 
@@ -645,7 +655,7 @@ Pooh nodded thoughtfully.
 "It's the same thing," he said.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4871,-1367
+__PrivCrochet_position: -4872,-1369
 __PrivCrochet_tags: 
 title: Secret0
 ---
@@ -653,4 +663,67 @@ One of the strange things about living in
 the world is that it is only now and then 
 one is quite sure one is going to live 
 forever and ever and ever.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3651,-1554
+__PrivCrochet_tags: 
+title: toilet
+---
+*gurgle*
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3900,-1564
+__PrivCrochet_tags: 
+title: bathtub
+---
+Take a bath?
+-> Yes
+    <<pennyBathing()>>
+    ...
+    ...
+    ...
+    ...
+    ...
+    Ahhhhhh.
+    <<endPennyBathing()>>
+-> No
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3412,-1563
+__PrivCrochet_tags: 
+title: toiletPaper
+---
+Unroll?
+-> Yes
+-> No
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -822,-663
+__PrivCrochet_tags: 
+title: Notes1
+---
+over and over and over and over and 
+over and over and over and over and
+over and over and over and over and
+over and over and over and over and
+over and over and over and over and
+over and over and over and over and
+over and over and over and over and
+...
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2494,-2595
+__PrivCrochet_tags: 
+title: WIP4
+---
+To: Penny \nFrom: Info@WIP.org \nSubject: Next assignment
+Dear Penelope, \nWe write to you today with a somewhat unusual request. We'd like you to take your role as a "finisher" for WIP quite literally - simply bind off
+this blanket begun by Fiona Rhodes, who passed away last year at the age of 28. Her family found the nearly-completed piece and requests that her work not be added to,
+only preserved.
+Yours in fiber, \nWIP
+\n
+-> Accept? 
+    <<jump Email>>
+-> Decline?
+    <<jump Email>>
 ===

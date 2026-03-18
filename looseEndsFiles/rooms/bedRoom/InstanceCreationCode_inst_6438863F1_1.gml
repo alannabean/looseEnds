@@ -1,4 +1,3 @@
-objPenny.targetRoom = livingRoom;
-
-objPenny.targetX = 240;
-objPenny.targetY = 132;
+targetRoom = livingRoom; 
+targetX = 240;
+targetY = 132;
