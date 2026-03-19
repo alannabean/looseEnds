@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrChatterbox",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrChatterbox",
+  "parent":{
+    "name":"meta",
+    "path":"folders/gameplay/meta.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

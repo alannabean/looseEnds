@@ -1,5 +1,5 @@
 
-global.time = (global.time + (1*global.timeSpeed)) mod dayLength;
+global.time = (global.time + (1*global.timeSpeed)) mod global.dayLength;
 
 var total_seconds = global.time;
 var total_minutes = total_seconds div 60;

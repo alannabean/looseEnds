@@ -37,7 +37,7 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1908,-934
+__PrivCrochet_position: -1911,-938
 __PrivCrochet_tags: 
 title: Email
 ---
@@ -101,7 +101,7 @@ title: Help
 <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1707,-1835
+__PrivCrochet_position: -1711,-1841
 __PrivCrochet_tags: 
 title: Cass0
 ---
@@ -113,7 +113,7 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -930,-1842
+__PrivCrochet_position: -932,-1844
 __PrivCrochet_tags: 
 title: emailNew
 ---
@@ -128,15 +128,15 @@ title: emailNew
     <<jump WIP0>>
 -> Max: june 3, 2009 <<if $todayDate >= 3 && $todayDate < 6>>
     <<jump Max0>>
--> Cass: june 2, 2009 <<if $todayDate >= 2 && $todayDate < 5>>
-    <<jump Cass1>>
--> Cass: june 1, 2009 <<if $todayDate >= 1 && $todayDate < 4>>
-    <<jump Cass0>>
+-> Job: june 2, 2009 <<if $todayDate >= 2 && $todayDate < 5>>
+    <<jump Job1>>
+-> Job: june 1, 2009 <<if $todayDate >= 1 && $todayDate < 4>>
+    <<jump Job0>>
 -> back
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1376,-2315
+__PrivCrochet_position: -1153,-2393
 __PrivCrochet_tags: 
 title: Max0
 ---
@@ -154,7 +154,7 @@ title: Resume
 <<jump Docs>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1937,-1838
+__PrivCrochet_position: -1948,-1839
 __PrivCrochet_tags: 
 title: Cass1
 ---
@@ -176,7 +176,7 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1720,-245
+__PrivCrochet_position: -1722,-248
 __PrivCrochet_tags: 
 title: Title
 ---
@@ -187,11 +187,11 @@ title: Title
     <<jump AboutGame>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1472,-235
+__PrivCrochet_position: -1476,-238
 __PrivCrochet_tags: 
 title: StartGame
 ---
-<<changeRoom("livingRoom")>>
+<<set $randomJob0 = getRandomJob(0)>><<set $randomCompany0 = getRandomCompany(0)>><<set $randomRecruiter0 to getRandomRecruiter(0)>><<set $randomJob1 = getRandomJob(1)>><<set $randomCompany1 = getRandomCompany(1)>><<set $randomRecruiter1 to getRandomRecruiter(1)>><<set $randomJob2 = getRandomJob(2)>><<set $randomCompany2 = getRandomCompany(2)>><<set $randomRecruiter2 to getRandomRecruiter(2)>><<set $randomJob3 = getRandomJob(3)>><<set $randomCompany3 = getRandomCompany(3)>><<set $randomRecruiter3 to getRandomRecruiter(3)>><<set $randomJob4 = getRandomJob(4)>><<set $randomCompany4 = getRandomCompany(4)>><<set $randomRecruiter4 to getRandomRecruiter(4)>><<changeRoom("livingRoom")>>
 ===
 __PrivCrochet_colorID: 1
 __PrivCrochet_position: -1714,-466
@@ -204,7 +204,7 @@ title: AboutGame
     <<jump Title>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: -2165,-1829
+__PrivCrochet_position: -2187,-1838
 __PrivCrochet_tags: 
 title: Cass2
 ---
@@ -252,7 +252,7 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3675,-1063
+__PrivCrochet_position: -3676,-1064
 __PrivCrochet_tags: 
 title: momsRoom
 ---
@@ -300,8 +300,8 @@ Go to sleep?
 -> No
     <<stop>>
 ===
-__PrivCrochet_colorID: 1
-__PrivCrochet_position: -3907,-1051
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3902,-1061
 __PrivCrochet_tags: 
 title: computer
 ---
@@ -390,7 +390,7 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1844,-2585
+__PrivCrochet_position: -1842,-2578
 __PrivCrochet_tags: 
 title: WIP1
 ---
@@ -477,7 +477,7 @@ Making scarves can \nfeel endless.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -2068,-2579
+__PrivCrochet_position: -2069,-2580
 __PrivCrochet_tags: 
 title: WIP2
 ---
@@ -487,11 +487,11 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2590,-2078
+__PrivCrochet_position: -2592,-2079
 __PrivCrochet_tags: 
 title: Mom0
 ---
-<<set $readMom0 = true>>To: Penny \nFrom: pennysmom89@hotmail.com \nSubject: Miss you!
+<<set $readMom0 = true>>To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: Miss you!
 Hi sweetie, \nGrandma and I both miss you! If you get a sec, could you go into my room and tell me the brand of the woolen socks in the top drawer? 
 I'd like to buy some for Grandma -- she's going to be in the hospital a little longer than expected and could use something cozy.
 Did I mention I miss you? \nMom
@@ -506,11 +506,11 @@ title: Notes0
 <<jump Trash>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2810,-2078
+__PrivCrochet_position: -2819,-2082
 __PrivCrochet_tags: 
-title: Mom4
+title: Mom1
 ---
-To: Penny \nFrom: pennysmom89@hotmail.com \nSubject: Proud of you
+To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: Re: another rejection
 Hi sweetie, \nI just wanted to remind you that you're great, and that you're trying, and that you're dealing with a lot more than I had to at your age.
 The world can feel really daunting sometimes, but it'll be there when you're ready for it. 
 Love you,\nMom
@@ -585,33 +585,34 @@ __PrivCrochet_position: -4427,-1072
 __PrivCrochet_tags: 
 title: dreamMenu
 ---
-<<random option>>
+<<set $mood = getRandomMood()>><<random option>>
 -> 
-    I dreamed I failed a test.
+    I dreamed I failed a \ntest.
 -> 
-    I dreamed I lost a tooth.
+    I dreamed I lost a \ntooth.
 -> 
-    I dreamed I kissed a stranger.
+    I dreamed I kissed a \nstranger.
 -> 
-    I dreamed I was a mother.
+    I dreamed I was a \nmother.
 -> 
-    I dreamed I lost a test.
+    I dreamed I lost a \ntest.
 -> 
-    I dreamed I kissed a tooth.
+    I dreamed I kissed a \ntooth.
 -> 
-    I dreamed I was a stranger.
+    I dreamed I was a \nstranger.
 -> 
-    I dreamed I failed a mother.
+    I dreamed I failed a \nmother.
 -> 
-    I dreamed I was a test.
+    I dreamed I was a \ntest.
 -> 
-    I dreamed I failed a stranger.
+    I dreamed I failed a \nstranger.
 -> 
-    I dreamed I lost a mother.
+    I dreamed I lost a \nmother.
 -> 
-    I dreamed I was a tooth.
+    I dreamed I was a \ntooth.
 
 <<endPennySleeping()>>
+I woke up feeling \n{$mood}.
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -4539,-802
@@ -712,7 +713,7 @@ over and over and over and over and
 ...
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2494,-2595
+__PrivCrochet_position: -2500,-2585
 __PrivCrochet_tags: 
 title: WIP4
 ---
@@ -726,4 +727,109 @@ Yours in fiber, \nWIP
     <<jump Email>>
 -> Decline?
     <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2413,-1838
+__PrivCrochet_tags: 
+title: Cass3
+---
+To: Penny \nFrom: Cass \nSubject: remember me, your best friend?
+hi! haven't heard from you in a few days, so just wanted to make sure you're okay.
+\nxoxoxoxo, \ncass
+<<jump Email>>
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -3284,-2081
+__PrivCrochet_tags: 
+title: Mom3
+---
+To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: there and back again
+Hi sweetie, \nI can't wait to see you tomorrow! It feels like it's been forever.
+I'm feeling a lot of sadness leaving Grandma. She's doing so much better, but I still feel like I should be able to do more to help her.
+How about we visit her together next time? I know she'd love to see you. And she mentioned something about a blanket she never finished 
+crocheting before her arthritis got too bad...could be up your alley! 
+I love you, love you, love you,
+\nMom
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3045,-2084
+__PrivCrochet_tags: 
+title: Mom2
+---
+To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: Grandma
+Hi sweetie, \nGrandma's going to need to stay in the hospital a little longer than expected. The surgery was a success,
+but her oxygen levels aren't looking so good, and they want her to stabilize before release.
+I know it probably sounds rich coming from me, your ancient mother, but getting old sucks.
+Love you to the moon,
+\nMom
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -921,-2394
+__PrivCrochet_tags: 
+title: Max1
+---
+To: Penny \nFrom: Max \nSubject: re: re: thinking of you today
+Hey, \nI found some poems he wrote on an old zip drive the other day. They kind of suck but I like this one:
+"most things i've loved have ended
+\nbut i loved them anyway"
+He really had a thing for iambs, huh...
+\n-M
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -678,-2174
+__PrivCrochet_tags: 
+title: Job0
+---
+To: Penny \nFrom: {$randomCompany0} HR\nSubject: Your job application
+Dear Penelope, \nThank you for your interest in the junior {$randomJob0} role. Unfortunately we will not be moving forward with your application,
+as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany0} in the future. 
+Best,\n{$randomRecruiter0}, Recruiter, {$randomCompany0}
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -423,-2162
+__PrivCrochet_tags: 
+title: Job1
+---
+To: Penny \nFrom: {$randomCompany1} HR\nSubject: Your job application
+Dear Penelope, \nThank you for your interest in the junior {$randomJob1} role. Unfortunately we will not be moving forward with your application,
+as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany1} in the future. 
+Best,\n{$randomRecruiter1}, Recruiter, {$randomCompany1}
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -178,-2165
+__PrivCrochet_tags: 
+title: Job2
+---
+To: Penny \nFrom: {$randomCompany2} HR\nSubject: Your job application
+Dear Penelope, \nThank you for your interest in the junior {$randomJob2} role. Unfortunately we will not be moving forward with your application,
+as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany2} in the future. 
+Best,\n{$randomRecruiter2}, Recruiter, {$randomCompany2}
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 55,-2173
+__PrivCrochet_tags: 
+title: Job3
+---
+To: Penny \nFrom: {$randomCompany3} HR\nSubject: Your job application
+Dear Penelope, \nThank you for your interest in the junior {$randomJob3} role. Unfortunately we will not be moving forward with your application,
+as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany3} in the future. 
+Best,\n{$randomRecruiter3}, Recruiter, {$randomCompany3}
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 290,-2172
+__PrivCrochet_tags: 
+title: Job4
+---
+To: Penny \nFrom: {$randomCompany4} HR\nSubject: Your job application
+Dear Penelope, \nThank you for your interest in the junior {$randomJob4} role. Unfortunately we will not be moving forward with your application,
+as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany4} in the future. 
+Best,\n{$randomRecruiter4}, Recruiter, {$randomCompany4}
+<<jump Email>>
 ===
