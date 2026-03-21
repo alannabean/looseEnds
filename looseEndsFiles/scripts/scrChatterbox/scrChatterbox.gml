@@ -1,3 +1,5 @@
+//game functions
+
 ChatterboxLoadFromFile("looseEnds.yarn");
 
 ChatterboxAddFunction("changeRoom", function(_roomName){
@@ -13,28 +15,53 @@ ChatterboxAddFunction("getTodayDate", function(){
 	return global.todayDate;
 	});
 	
+ChatterboxAddFunction("endGame", function(){
+	game_end();
+	});
+
+//text randomizer functions
+
+ChatterboxAddFunction("getCatName", function(){
+	_catName = catName[random(array_length(catName))];
+	return _catName;
+	});
+	
+
+ChatterboxAddFunction("getRandomFood", function(){
+	_food = food[random(array_length(food))];
+	return _food;
+	});
 	
 ChatterboxAddFunction("getRandomJob", function(_email){
-	_job = job[random(array_length(job)) + _email];
-	return _job;
+	_job = job[random(array_length(job)-_email)];
+		return _job;
 	});
 	
 ChatterboxAddFunction("getRandomCompany", function(_email){
-	_company = company[random(array_length(company)) - _email];
-	return _company;
+	_company = company[random(array_length(company)-_email)];
+		return _company;
 	});
 	
 ChatterboxAddFunction("getRandomRecruiter", function(_email){
-	_recruiterFirstName = firstName[random(array_length(firstName)) - _email];
-	_recruiterLastName = lastName[random(array_length(lastName)) - _email];
+	_recruiterFirstName = firstName[random(array_length(firstName)-_email)];
+	_recruiterLastName = lastName[random(array_length(lastName)-_email) ];
 	_recruiter = _recruiterFirstName + " " + _recruiterLastName;
 	return _recruiter;
 	});
+	
+ChatterboxAddFunction("getRandomDream", function(){
+	_dreamVerb= dreamVerb[random(array_length(dreamVerb))]
+	_dreamNoun= dreamNoun[random(array_length(dreamNoun))]
+	_dream = _dreamVerb + " a " + "\n" + _dreamNoun + "..."
+	return _dream;
+});
 	
 ChatterboxAddFunction("getRandomMood", function(){
 	_mood = mood[random(array_length(mood))]
 	return _mood;
 });
+
+//action functions
 	
 ChatterboxAddFunction("fillDish", function(){
 	objDish.image_index = 1;
@@ -46,11 +73,11 @@ ChatterboxAddFunction("pennyKnitting", function(_sprKnit){
 	
 	objPenny.pennyKnitting = true;
 	if !instance_exists(objCraftManager){
-		instance_create_layer(x, y, "textLayer", objCraftManager)
+		instance_create_layer(0, 0, "textLayer", objCraftManager)
 		objCraftManager.spriteKnit = _sprKnit;}
 	if instance_exists(objCraftManager) && (objCraftManager.spriteKnit != _sprKnit){
 		instance_destroy(objCraftManager)
-		instance_create_layer(x, y, "textLayer", objCraftManager)
+		instance_create_layer(0, 0, "textLayer", objCraftManager)
 		objCraftManager.spriteKnit = _sprKnit;}
 	
 });
@@ -60,7 +87,7 @@ ChatterboxAddFunction("endPennyKnitting", function(){
 	
 	objPenny.pennyKnitting = false;
 
-}); //could take this out of chatterbox and call in GML — might give more flexibility
+}); //could take this out of chatterbox and call in GML — might give more flexibility, since objCraftManager is already separate
 
 ChatterboxAddFunction("pennySleeping", function(){
 	
@@ -74,12 +101,11 @@ ChatterboxAddFunction("pennySleeping", function(){
 	
 });
 
-
 ChatterboxAddFunction("endPennySleeping", function(){
 	
 	objPenny.pennySleeping = false;
 	global.time =  global.dayLength/3;
-	global.timeSpeed = 10;
+	global.timeSpeed = global.constantTimeSpeed;
 });
 
 ChatterboxAddFunction("pennyCooking", function(){
@@ -88,7 +114,7 @@ ChatterboxAddFunction("pennyCooking", function(){
 	objPenny.x = 234;
 	objPenny.y = 116;
 	objPenny.image_xscale = 1;
-	global.timeSpeed = 5;
+	global.timeSpeed = global.constantTimeSpeed*5;
 	show_debug_message("i'm cooking");
 	
 });
@@ -96,11 +122,11 @@ ChatterboxAddFunction("pennyCooking", function(){
 ChatterboxAddFunction("endPennyCooking", function(){
 	
 	objPenny.pennyCooking = false;
-	show_debug_message("done cooking");
 	objPenny.x = 240;
 	objPenny.y = 122;
 	objPenny.image_xscale = 1;
-	global.timeSpeed = 10;
+	global.timeSpeed = global.constantTimeSpeed;
+	show_debug_message("done cooking");
 });
 
 ChatterboxAddFunction("pennyBathing", function(){
@@ -109,7 +135,7 @@ ChatterboxAddFunction("pennyBathing", function(){
 	objPenny.x = objBathtub.x+2;
 	objPenny.y = objBathtub.y+6;
 	objBathtub.sprite_index = sprBathtubFill;
-	global.timeSpeed = 5;
+	global.timeSpeed = global.constantTimeSpeed*5;
 	show_debug_message("i'm in the bath");
 	
 });
@@ -118,6 +144,6 @@ ChatterboxAddFunction("endPennyBathing", function(){
 	
 	objPenny.pennyBathing = false;
 	objBathtub.sprite_index = sprBathtub;
-	global.timeSpeed = 10;
+	global.timeSpeed = global.constantTimeSpeed;
 	show_debug_message("done with the bath");
 });

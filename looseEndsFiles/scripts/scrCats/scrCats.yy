@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrCats",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrCats",
+  "parent":{
+    "name":"data",
+    "path":"folders/data.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

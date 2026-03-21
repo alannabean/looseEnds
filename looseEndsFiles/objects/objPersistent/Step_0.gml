@@ -1,3 +1,4 @@
+//time math and functions
 
 global.time = (global.time + (1*global.timeSpeed)) mod global.dayLength;
 
@@ -104,4 +105,33 @@ if global.todayDate >= (sunnyDay) && hours24  >  sunsetHour{
 	
 }
 
-if global.todayDate == 31 {game_end()};
+if global.todayDate == 30 && hours24 == sunsetHour{room_goto(creditsRoom)};
+
+//back button -- move inside objPenny? 
+
+if keyboard_check_pressed(vk_control) && instance_exists(objChatterbox) && objPenny.pennySleeping == false{
+	
+	instance_destroy(objChatterbox)
+	
+	if instance_exists(objArrow){
+		instance_destroy(objArrow)}
+		
+	if objPenny.pennyCooking == true{
+		objPenny.pennyCooking = false
+		objPenny.x = 240;
+		objPenny.y = 122;
+		objPenny.image_xscale = 1;}
+		
+	if objPenny.pennyKnitting == true{
+		objPenny.pennyKnitting = false}
+		
+	if objPenny.pennyBathing == true{
+		objPenny.pennyBathing = false}
+
+		
+	if instance_exists(objComputerManager){
+		instance_destroy(objComputerManager);
+		room_goto(bedRoom);
+	}
+	
+}

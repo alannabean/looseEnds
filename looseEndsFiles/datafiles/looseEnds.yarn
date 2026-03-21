@@ -187,11 +187,11 @@ title: Title
     <<jump AboutGame>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1476,-238
+__PrivCrochet_position: -1480,-241
 __PrivCrochet_tags: 
 title: StartGame
 ---
-<<set $randomJob0 = getRandomJob(0)>><<set $randomCompany0 = getRandomCompany(0)>><<set $randomRecruiter0 to getRandomRecruiter(0)>><<set $randomJob1 = getRandomJob(1)>><<set $randomCompany1 = getRandomCompany(1)>><<set $randomRecruiter1 to getRandomRecruiter(1)>><<set $randomJob2 = getRandomJob(2)>><<set $randomCompany2 = getRandomCompany(2)>><<set $randomRecruiter2 to getRandomRecruiter(2)>><<set $randomJob3 = getRandomJob(3)>><<set $randomCompany3 = getRandomCompany(3)>><<set $randomRecruiter3 to getRandomRecruiter(3)>><<set $randomJob4 = getRandomJob(4)>><<set $randomCompany4 = getRandomCompany(4)>><<set $randomRecruiter4 to getRandomRecruiter(4)>><<changeRoom("livingRoom")>>
+<<set $catName = getCatName()>><<set $randomJob0 = getRandomJob(0)>><<set $randomCompany0 = getRandomCompany(0)>><<set $randomRecruiter0 to getRandomRecruiter(0)>><<set $randomJob1 = getRandomJob(1)>><<set $randomCompany1 = getRandomCompany(1)>><<set $randomRecruiter1 to getRandomRecruiter(1)>><<set $randomJob2 = getRandomJob(2)>><<set $randomCompany2 = getRandomCompany(2)>><<set $randomRecruiter2 to getRandomRecruiter(2)>><<set $randomJob3 = getRandomJob(3)>><<set $randomCompany3 = getRandomCompany(3)>><<set $randomRecruiter3 to getRandomRecruiter(3)>><<set $randomJob4 = getRandomJob(4)>><<set $randomCompany4 = getRandomCompany(4)>><<set $randomRecruiter4 to getRandomRecruiter(4)>><<changeRoom("livingRoom")>>
 ===
 __PrivCrochet_colorID: 1
 __PrivCrochet_position: -1714,-466
@@ -227,13 +227,13 @@ There's a note on \nthe fridge. Read it?
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3906,-569
+__PrivCrochet_position: -3907,-570
 __PrivCrochet_tags: 
 title: FridgeNote
 ---
 Hi honey,
 Thanks so much for \ntaking care of 
-Gingerbread while I'm away! Don't let her
+{$catName} while I'm away! Don't let her
 trick you into giving \nher two breakfasts.
 Call me at Grandma's if you need anything --
 I should be back on the 30th.
@@ -276,8 +276,7 @@ __PrivCrochet_position: -4155,-810
 __PrivCrochet_tags: 
 title: bookshelf
 ---
-Most of these books are from when I was in 
-middle school.
+Most of these books are from when I was a kid.
 Read one?
 -> Yes
     <<jump bookMenu>>
@@ -308,11 +307,15 @@ title: computer
 Logging on . . . . . . . . . . . . . . . .
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3422,-389
+__PrivCrochet_position: -3428,-396
 __PrivCrochet_tags: 
 title: cat
 ---
-mrow
+Hi {$catName}.
+.  .  .  .  .  .  mrow.
+I mean............... hi Princess {$catName}.
+prrrrrr
+(Mom spoils her so \nbadly.)
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -3642,-383
@@ -547,13 +550,11 @@ title: mirror
 Still me...
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3404,-1332
+__PrivCrochet_position: -3406,-1334
 __PrivCrochet_tags: 
 title: OvenMenu
 ---
-<<random option>>
--> 
-    Make oatmeal?
+<<set $randomFood = getRandomFood()>>Make {$randomFood}?
         -> Yes
            <<pennyCooking()>>
             ...
@@ -561,16 +562,6 @@ title: OvenMenu
             ...
             Yum!
            <<endPennyCooking()>>
-        -> No
--> 
-    Make congee?
-        -> Yes
-            <<pennyCooking()>>
-            ...
-            ...
-            ...
-            Yum!
-            <<endPennyCooking()>>
         -> No
 ===
 __PrivCrochet_colorID: 0
@@ -581,36 +572,11 @@ title: finishedProject
 You finished a project! Time to bind off.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4427,-1072
+__PrivCrochet_position: -4429,-1073
 __PrivCrochet_tags: 
 title: dreamMenu
 ---
-<<set $mood = getRandomMood()>><<random option>>
--> 
-    I dreamed I failed a \ntest.
--> 
-    I dreamed I lost a \ntooth.
--> 
-    I dreamed I kissed a \nstranger.
--> 
-    I dreamed I was a \nmother.
--> 
-    I dreamed I lost a \ntest.
--> 
-    I dreamed I kissed a \ntooth.
--> 
-    I dreamed I was a \nstranger.
--> 
-    I dreamed I failed a \nmother.
--> 
-    I dreamed I was a \ntest.
--> 
-    I dreamed I failed a \nstranger.
--> 
-    I dreamed I lost a \nmother.
--> 
-    I dreamed I was a \ntooth.
-
+<<set $mood = getRandomMood()>><<set $dream = getRandomDream()>>I dreamed I {$dream}
 <<endPennySleeping()>>
 I woke up feeling \n{$mood}.
 ===
@@ -629,10 +595,12 @@ title: bookMenu
 <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4879,-904
+__PrivCrochet_position: -4880,-905
 __PrivCrochet_tags: 
 title: Alice0
 ---
+ALICE'S ADVENTURES IN WONDERLAND
+by Lewis Carroll
 "The time has come," the Walrus said,
 "To talk of many things;
 Of shoes and ships and sealing-wax 
@@ -641,10 +609,12 @@ And why the sea is boiling hot
 And whether pigs have wings."
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4871,-1132
+__PrivCrochet_position: -4872,-1134
 __PrivCrochet_tags: 
 title: Pooh0
 ---
+WINNIE-THE-POOH 
+by A. A. Milne
 "When you wake up in the morning, Pooh,"
 said Piglet at last, "what's the first 
 thing you say to yourself?"
@@ -656,10 +626,12 @@ Pooh nodded thoughtfully.
 "It's the same thing," he said.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4872,-1369
+__PrivCrochet_position: -4874,-1371
 __PrivCrochet_tags: 
 title: Secret0
 ---
+THE SECRET GARDEN 
+by Francis Hodgson Burnett 
 One of the strange things about living in 
 the world is that it is only now and then 
 one is quite sure one is going to live 
@@ -832,4 +804,18 @@ Dear Penelope, \nThank you for your interest in the junior {$randomJob4} role. U
 as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany4} in the future. 
 Best,\n{$randomRecruiter4}, Recruiter, {$randomCompany4}
 <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1130,-252
+__PrivCrochet_tags: 
+title: Credits
+---
+Written, directed, and developed by Alanna Okun
+Music by Matthew Okun
+Special thanks to Darius Kazemi and Project Gutenberg for use of open source text;
+To Allison Parrish, Luisa Pereira, and Simone Salvo for guidance and instruction;
+To all my playtesters, classmates, and professors at NYU ITP;
+To my family and friends for their unending support;
+And to Brendan Klinkenberg, for everything, always.
+<<changeRoom("startRoom")>>
 ===

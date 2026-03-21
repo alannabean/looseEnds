@@ -1,3 +1,5 @@
+
+//start room only
 if room == startRoom{
 	
 draw_set_font(fntTitle);
@@ -5,7 +7,13 @@ draw_set_font(fntTitle);
 draw_text((room_width/4) - 16, (room_height/4) - 8, "l o o s e  e n d s");
 }
 
-if room == livingRoom or room == momRoom or room == bedRoom or room == bathRoom{
+//actual rooms
+
+
+if room == livingRoom 
+or room == momRoom 
+or room == bedRoom 
+or room == bathRoom{
 	
 	draw_set_font(fntZelda);
 	draw_set_color(#C7CFCC);
@@ -36,6 +44,6 @@ if room == livingRoom or room == momRoom or room == bedRoom or room == bathRoom{
 	}
 	
 
-	draw_text(16, 32, string(global.timeSpeed))
+	//draw_text(16, 32, string(global.timeSpeed)) //debugging only
 }
 

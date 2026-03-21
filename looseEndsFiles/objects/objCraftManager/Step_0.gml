@@ -22,11 +22,11 @@ if (knitProgress <= knitInterval) && objPenny.sprite_index == sprPennyKnittingYa
 		
 	visible = true;
 	
-	global.timeSpeed = 1;
+	global.timeSpeed = global.constantTimeSpeed*5;
 	knitProgress++;
 	
 	}else {
 	visible = false;
-	global.timeSpeed = 10;
+	global.timeSpeed = global.constantTimeSpeed;
 	 }
 	

@@ -1,22 +1,20 @@
 global.todayDate = 1;
-global.weatherRainy = false;
+global.weatherRainy = true;
 global.weatherSunny = false;
-global.weatherRainyNight = true; 
+global.weatherRainyNight = false; 
 global.weatherClearNight = false;
-
-global.time = 0;
 global.dayTime = true;
-global.timeSpeed = 10;
+global.constantTimeSpeed = 1;
+global.timeSpeed = global.constantTimeSpeed;
 global.newDayFlag = false;
-
-
 global.dayLength = 86400;
-sunriseHour = 7;
-sunsetHour = 19;
-
+global.time = global.dayLength/2;
 
 randomize();
 
+
+sunriseHour = 7;
+sunsetHour = 19;
 
 timeTextX = 208;
 timeTextY = 16;

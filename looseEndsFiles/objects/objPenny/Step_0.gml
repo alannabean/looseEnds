@@ -49,10 +49,6 @@ if place_meeting(x + xspd, y, objDoor) or place_meeting (x, y + yspd, objDoor)
 }
 
 
-if keyboard_check_pressed(vk_return){
-	room_goto(room_last);
-}
-
 x += xspd;
 y += yspd;
 
@@ -122,7 +118,7 @@ depth = objBed.depth + 1;
 image_xscale = 1;
 x = objBed.x;
 y = objBed.y+1;
-global.timeSpeed = 20;
+global.timeSpeed = global.constantTimeSpeed*25;
 }
 
 if pennyCooking = true
@@ -134,8 +130,6 @@ if pennyBathing = true
 sprite_index = sprBath;
 depth = objBathtub.depth + 1;
 }
-
-
 
 
 //suspend avatar while on the computer
