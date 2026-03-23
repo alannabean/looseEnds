@@ -300,11 +300,11 @@ Go to sleep?
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3902,-1061
+__PrivCrochet_position: -3903,-1062
 __PrivCrochet_tags: 
 title: computer
 ---
-Logging on . . . . . . . . . . . . . . . .
+Logging on . . . . . . . . . . . . . . . . . .
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -3428,-396
@@ -362,11 +362,11 @@ Choose a project to \nwork on:
     <<jump Socks0>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3005,-630
+__PrivCrochet_position: -3006,-632
 __PrivCrochet_tags: 
 title: Scarf0
 ---
-<<movePenny(80,123)>><<pennyKnitting(11)>>
+<<movePenny(80,123)>><<pennyKnitting(2)>>
 I've been knitting \nsince before I could
 read. My mother's \nmother taught me during
 a rainy day at the \nbeach. I was frustrated
@@ -466,11 +466,11 @@ Yours in fiber, \nWIP
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2865,-342
+__PrivCrochet_position: -2866,-346
 __PrivCrochet_tags: 
 title: Scarf1
 ---
-<<movePenny(80,123)>><<pennyKnitting(11)>>
+<<movePenny(80,123)>><<pennyKnitting(2)>>
 ...
 ...
 ...

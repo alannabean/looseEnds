@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":221.72734,
+  "duration":90.352974,
   "exportDir":"",
   "name":"sndBackground",
   "parent":{

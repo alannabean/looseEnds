@@ -226,7 +226,7 @@
     {"id":{"name":"ChatterboxVariablesResetAll","path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},},
     {"id":{"name":"ChatterboxWait","path":"scripts/ChatterboxWait/ChatterboxWait.yy",},},
     {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},},
-    {"id":{"name":"scrCats","path":"scripts/scrCats/scrCats.yy",},},
+    {"id":{"name":"scrCatNames","path":"scripts/scrCatNames/scrCatNames.yy",},},
     {"id":{"name":"scrChatterbox","path":"scripts/scrChatterbox/scrChatterbox.yy",},},
     {"id":{"name":"scrColors","path":"scripts/scrColors/scrColors.yy",},},
     {"id":{"name":"scrCompanies","path":"scripts/scrCompanies/scrCompanies.yy",},},

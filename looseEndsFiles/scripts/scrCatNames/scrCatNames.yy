@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scrCats",
+  "%Name":"scrCatNames",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scrCats",
+  "name":"scrCatNames",
   "parent":{
     "name":"data",
     "path":"folders/data.yy",

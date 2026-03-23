@@ -76,9 +76,10 @@ ChatterboxAddFunction("pennyKnitting", function(_sprKnit){
 		instance_create_layer(0, 0, "textLayer", objCraftManager)
 		objCraftManager.spriteKnit = _sprKnit;}
 	if instance_exists(objCraftManager) && (objCraftManager.spriteKnit != _sprKnit){
-		instance_destroy(objCraftManager)
-		instance_create_layer(0, 0, "textLayer", objCraftManager)
-		objCraftManager.spriteKnit = _sprKnit;}
+		instance_deactivate_object(objCraftManager);
+		instance_create_layer(0, 0, "textLayer", objCraftManager);
+		objCraftManager.spriteKnit = _sprKnit;
+		}
 	
 });
 
