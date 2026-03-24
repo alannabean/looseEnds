@@ -21,7 +21,7 @@ title: Start
     <<stop>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1456,-794
+__PrivCrochet_position: -1457,-795
 __PrivCrochet_tags: 
 title: Trash
 ---
@@ -37,7 +37,7 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1911,-938
+__PrivCrochet_position: -1912,-941
 __PrivCrochet_tags: 
 title: Email
 ---
@@ -83,7 +83,7 @@ title: Calendar
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -804,-1237
+__PrivCrochet_position: -805,-1239
 __PrivCrochet_tags: 
 title: Help
 ---
@@ -227,7 +227,7 @@ There's a note on \nthe fridge. Read it?
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3907,-570
+__PrivCrochet_position: -3908,-571
 __PrivCrochet_tags: 
 title: FridgeNote
 ---
@@ -240,7 +240,7 @@ I should be back on the 30th.
 Love, Mom
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3396,-783
+__PrivCrochet_position: -3403,-810
 __PrivCrochet_tags: 
 title: knittingCouch
 ---
@@ -252,7 +252,7 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3676,-1064
+__PrivCrochet_position: -3653,-1066
 __PrivCrochet_tags: 
 title: momsRoom
 ---
@@ -272,7 +272,7 @@ title: outside
 It's too rainy to go out right now...
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4155,-810
+__PrivCrochet_position: -4168,-811
 __PrivCrochet_tags: 
 title: bookshelf
 ---
@@ -381,7 +381,7 @@ quieted my brain.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3407,-1043
+__PrivCrochet_position: -3399,-1064
 __PrivCrochet_tags: 
 title: knittingBasket
 ---
@@ -528,7 +528,7 @@ Hey, \nI miss you. I wish you'd come home. \n- P
 <<jump Trash>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3654,-794
+__PrivCrochet_position: -3655,-810
 __PrivCrochet_tags: 
 title: momsBed
 ---
@@ -550,7 +550,7 @@ title: mirror
 Still me...
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3406,-1334
+__PrivCrochet_position: -3408,-1336
 __PrivCrochet_tags: 
 title: OvenMenu
 ---
@@ -560,7 +560,7 @@ title: OvenMenu
             ...
             ...
             ...
-            Yum!
+            It tastes ok.
            <<endPennyCooking()>>
         -> No
 ===
@@ -572,7 +572,7 @@ title: finishedProject
 You finished a project! Time to bind off.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4429,-1073
+__PrivCrochet_position: -4430,-1075
 __PrivCrochet_tags: 
 title: dreamMenu
 ---
@@ -581,7 +581,7 @@ title: dreamMenu
 I woke up feeling \n{$mood}.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4539,-802
+__PrivCrochet_position: -4431,-814
 __PrivCrochet_tags: 
 title: bookMenu
 ---
@@ -592,10 +592,14 @@ title: bookMenu
     <<jump Pooh0>>
 -> 
     <<jump Secret0>>
+-> 
+    <<jump Peter0>>
+-> 
+    <<jump Anne0>>
 <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4880,-905
+__PrivCrochet_position: -4882,-907
 __PrivCrochet_tags: 
 title: Alice0
 ---
@@ -609,7 +613,7 @@ And why the sea is boiling hot
 And whether pigs have wings."
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4872,-1134
+__PrivCrochet_position: -4874,-1135
 __PrivCrochet_tags: 
 title: Pooh0
 ---
@@ -638,10 +642,11 @@ one is quite sure one is going to live
 forever and ever and ever.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3651,-1554
+__PrivCrochet_position: -3652,-1556
 __PrivCrochet_tags: 
 title: toilet
 ---
+<<set $todayDate = getTodayDate()>>
 *gurgle*
 ===
 __PrivCrochet_colorID: 0
@@ -701,9 +706,9 @@ Yours in fiber, \nWIP
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2413,-1838
+__PrivCrochet_position: -3042,-1843
 __PrivCrochet_tags: 
-title: Cass3
+title: Cass6
 ---
 To: Penny \nFrom: Cass \nSubject: remember me, your best friend?
 hi! haven't heard from you in a few days, so just wanted to make sure you're okay.
@@ -738,11 +743,11 @@ Love you to the moon,
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -921,-2394
+__PrivCrochet_position: -257,-2408
 __PrivCrochet_tags: 
-title: Max1
+title: Max3
 ---
-To: Penny \nFrom: Max \nSubject: re: re: thinking of you today
+To: Penny \nFrom: Max \nSubject: re: re: re: re: thinking of you today
 Hey, \nI found some poems he wrote on an old zip drive the other day. They kind of suck but I like this one:
 "most things i've loved have ended
 \nbut i loved them anyway"
@@ -818,4 +823,54 @@ To all my playtesters, classmates, and professors at NYU ITP;
 To my family and friends for their unending support;
 And to Brendan Klinkenberg, for everything, always.
 <<changeRoom("startRoom")>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2592,-1838
+__PrivCrochet_tags: 
+title: Cass4
+---
+To: Penny \nFrom: Cass \nSubject: re: what's it like being so wise?
+trust me, my uncanny ability to see the future is more of a curse than a blessing. 
+\nxoxoxoxo, \ncass
+<<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4891,-688
+__PrivCrochet_tags: 
+title: Peter0
+---
+PETER PAN
+by J. M. Barrie
+Next moment he was standing erect on the
+rock again, with that smile on his face
+and a drum beating within him. 
+It was saying, "To die will be an awfully
+big adventure."
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4880,-437
+__PrivCrochet_tags: 
+title: Anne0
+---
+ANNE OF GREEN GABLES
+by L. M. Montgomery
+"Marilla, isn't it nice to think that tomorrow 
+is a new day with no mistakes in it yet?"
+"I'll warrant you'll make plenty in it,"
+said Marilla.
+""Yes, and well I know it," admitted Anne
+mournfully. "But have you ever noticed one
+encouraging thing about me, Marilla? 
+I never make the same mistake twice."
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -896,-2401
+__PrivCrochet_tags: 
+title: Max1
+---
+To: Penny \nFrom: Max \nSubject: re: re: thinking of you today
+Hey, \nHonestly I don't really feel like talking about it.
+\nSorry.
+\n-M
+<<jump Email>>
 ===

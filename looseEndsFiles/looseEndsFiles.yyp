@@ -232,6 +232,7 @@
     {"id":{"name":"scrCompanies","path":"scripts/scrCompanies/scrCompanies.yy",},},
     {"id":{"name":"scrDreams","path":"scripts/scrDreams/scrDreams.yy",},},
     {"id":{"name":"scrHelperFunctions","path":"scripts/scrHelperFunctions/scrHelperFunctions.yy",},},
+    {"id":{"name":"Script128","path":"scripts/Script128/Script128.yy",},},
     {"id":{"name":"scrJobs","path":"scripts/scrJobs/scrJobs.yy",},},
     {"id":{"name":"scrMoods","path":"scripts/scrMoods/scrMoods.yy",},},
     {"id":{"name":"scrRecruiters","path":"scripts/scrRecruiters/scrRecruiters.yy",},},

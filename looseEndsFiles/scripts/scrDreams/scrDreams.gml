@@ -8,7 +8,9 @@ dreamVerb = ["kissed",
 "was",
 "birthed",
 "hit",
-"held"
+"held",
+"met",
+"saw"
 ]
 
 
@@ -18,5 +20,10 @@ dreamNoun = ["mother",
 "test",
 "monster",
 "teacher",
-"baby"
+"baby",
+"girl",
+"boy",
+"man",
+"woman",
+"child"
 ]
