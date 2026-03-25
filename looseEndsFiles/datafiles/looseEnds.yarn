@@ -21,18 +21,14 @@ title: Start
     <<stop>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1457,-795
+__PrivCrochet_position: -1434,-745
 __PrivCrochet_tags: 
 title: Trash
 ---
 \n
     -> (0)<<if $todayDate <= 2>>
-    -> maudlin.doc<<if $todayDate >= 3>>
-        <<jump Notes0>>
-    -> noteToMax.doc<<if $todayDate >= 13>>
-        <<jump NoteToMax0>>
-    -> ruminations.doc<<if $todayDate >= 17>>
-        <<jump Notes1>>
+    -> playlist.m3u<<if $todayDate >= 3>>
+        <<jump Playlist0>>
     -> Back
     <<jump Start>>
 ===
@@ -73,7 +69,7 @@ title: Docs
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -909,-976
+__PrivCrochet_position: -868,-968
 __PrivCrochet_tags: 
 title: Calendar
 ---
@@ -187,7 +183,7 @@ title: Title
     <<jump AboutGame>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1480,-241
+__PrivCrochet_position: -1480,-242
 __PrivCrochet_tags: 
 title: StartGame
 ---
@@ -501,14 +497,6 @@ Did I mention I miss you? \nMom
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1172,-768
-__PrivCrochet_tags: 
-title: Notes0
----
-\n \n \nwhat's the point of loving anyone if they're just going to be gone one day?
-<<jump Trash>>
-===
-__PrivCrochet_colorID: 0
 __PrivCrochet_position: -2819,-2082
 __PrivCrochet_tags: 
 title: Mom1
@@ -518,14 +506,6 @@ Hi sweetie, \nI just wanted to remind you that you're great, and that you're try
 The world can feel really daunting sometimes, but it'll be there when you're ready for it. 
 Love you,\nMom
 <<jump Email>>
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -1172,-497
-__PrivCrochet_tags: 
-title: NoteToMax0
----
-Hey, \nI miss you. I wish you'd come home. \n- P
-<<jump Trash>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -3655,-810
@@ -550,7 +530,7 @@ title: mirror
 Still me...
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3408,-1336
+__PrivCrochet_position: -3409,-1338
 __PrivCrochet_tags: 
 title: OvenMenu
 ---
@@ -560,7 +540,7 @@ title: OvenMenu
             ...
             ...
             ...
-            It tastes ok.
+            Mmm.
            <<endPennyCooking()>>
         -> No
 ===
@@ -603,14 +583,14 @@ __PrivCrochet_position: -4882,-907
 __PrivCrochet_tags: 
 title: Alice0
 ---
-ALICE'S ADVENTURES IN WONDERLAND
+ALICE'S ADVENTURES IN \nWONDERLAND
 by Lewis Carroll
-"The time has come," the Walrus said,
-"To talk of many things;
-Of shoes and ships and sealing-wax 
-Of cabbages and kings
-And why the sea is boiling hot
-And whether pigs have wings."
+"The time has come," \nthe Walrus said,
+"To talk of many \nthings;
+Of shoes and ships and sealing-wax;
+Of cabbages and kings;
+And why the sea is \nboiling hot;
+And whether pigs have \nwings."
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -4874,-1135
@@ -619,27 +599,27 @@ title: Pooh0
 ---
 WINNIE-THE-POOH 
 by A. A. Milne
-"When you wake up in the morning, Pooh,"
-said Piglet at last, "what's the first 
-thing you say to yourself?"
+"When you wake up in \nthe morning, Pooh,"
+said Piglet at last, \n"what's the first 
+thing you say to \nyourself?"
 "What's for breakfast?" said Pooh. 
-"What do you say, Piglet?"
+"What do you say, \nPiglet?"
 "I say, I wonder what's going to happen
 exciting to-day?" said Piglet.
-Pooh nodded thoughtfully.
+Pooh nodded \nthoughtfully.
 "It's the same thing," he said.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4874,-1371
+__PrivCrochet_position: -4874,-1373
 __PrivCrochet_tags: 
 title: Secret0
 ---
 THE SECRET GARDEN 
-by Francis Hodgson Burnett 
-One of the strange things about living in 
-the world is that it is only now and then 
-one is quite sure one is going to live 
-forever and ever and ever.
+by Francis Hodgson \nBurnett 
+One of the strange \nthings about living in 
+the world is that it is only now and then one
+is quite sure one is \ngoing to live forever
+and ever and ever.
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -3652,-1556
@@ -676,20 +656,6 @@ Unroll?
 -> No
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -822,-663
-__PrivCrochet_tags: 
-title: Notes1
----
-over and over and over and over and 
-over and over and over and over and
-over and over and over and over and
-over and over and over and over and
-over and over and over and over and
-over and over and over and over and
-over and over and over and over and
-...
-===
-__PrivCrochet_colorID: 0
 __PrivCrochet_position: -2500,-2585
 __PrivCrochet_tags: 
 title: WIP4
@@ -706,7 +672,7 @@ Yours in fiber, \nWIP
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3042,-1843
+__PrivCrochet_position: -3044,-1842
 __PrivCrochet_tags: 
 title: Cass6
 ---
@@ -835,33 +801,33 @@ trust me, my uncanny ability to see the future is more of a curse than a blessin
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4891,-688
+__PrivCrochet_position: -4892,-689
 __PrivCrochet_tags: 
 title: Peter0
 ---
 PETER PAN
 by J. M. Barrie
-Next moment he was standing erect on the
-rock again, with that smile on his face
-and a drum beating within him. 
+Next moment he was \nstanding on the rock
+again, with that smile on his face and a drum
+beating within him. 
 It was saying, "To die will be an awfully
 big adventure."
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4880,-437
+__PrivCrochet_position: -4882,-439
 __PrivCrochet_tags: 
 title: Anne0
 ---
 ANNE OF GREEN GABLES
 by L. M. Montgomery
 "Marilla, isn't it nice to think that tomorrow 
-is a new day with no mistakes in it yet?"
-"I'll warrant you'll make plenty in it,"
+is a new day with no \nmistakes in it yet?"
+"I'll warrant you'll \nmake plenty in it,"
 said Marilla.
-""Yes, and well I know it," admitted Anne
-mournfully. "But have you ever noticed one
+"Yes, and well I know \nit," admitted Anne
+mournfully. "But have \nyou ever noticed one
 encouraging thing about me, Marilla? 
-I never make the same mistake twice."
+I never make the same \nmistake twice."
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -896,-2401
@@ -873,4 +839,12 @@ Hey, \nHonestly I don't really feel like talking about it.
 \nSorry.
 \n-M
 <<jump Email>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -1087,-733
+__PrivCrochet_tags: 
+title: Playlist0
+---
+with_or_without_you.mp3\nrocket_man.mp3 \nhelplessly_hoping.mp3 \nthe_parting_glass.mp3
+<<jump Trash>>
 ===

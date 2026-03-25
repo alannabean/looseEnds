@@ -72,6 +72,7 @@ ChatterboxAddFunction("fillDish", function(){
 ChatterboxAddFunction("pennyKnitting", function(_sprKnit){
 	
 	objPenny.pennyKnitting = true;
+	global.timeSpeed = global.constantTimeSpeed*5;
 	if !instance_exists(objCraftManager){
 		instance_create_layer(0, 0, "textLayer", objCraftManager)
 		objCraftManager.spriteKnit = _sprKnit;}
@@ -87,6 +88,7 @@ ChatterboxAddFunction("pennyKnitting", function(_sprKnit){
 ChatterboxAddFunction("endPennyKnitting", function(){
 	
 	objPenny.pennyKnitting = false;
+	global.timeSpeed = global.constantTimeSpeed;
 
 }); //could take this out of chatterbox and call in GML — might give more flexibility, since objCraftManager is already separate
 
