@@ -109,7 +109,7 @@ if global.todayDate == 30 && hours24 == sunsetHour{room_goto(creditsRoom)};
 
 //back button -- move inside objPenny? 
 
-if keyboard_check_pressed(vk_control) && instance_exists(objChatterbox) && objPenny.pennySleeping == false{
+if keyboard_check_pressed(vk_tab) && instance_exists(objChatterbox) && objPenny.pennySleeping == false{
 	
 	instance_destroy(objChatterbox)
 	

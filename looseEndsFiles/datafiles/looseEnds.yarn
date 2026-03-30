@@ -223,14 +223,14 @@ There's a note on \nthe fridge. Read it?
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3908,-571
+__PrivCrochet_position: -3911,-573
 __PrivCrochet_tags: 
 title: FridgeNote
 ---
 Hi honey,
 Thanks so much for \ntaking care of 
-{$catName} while I'm away! Don't let her
-trick you into giving \nher two breakfasts.
+{$catName} while I'm away! Don't let her trick
+you into giving her \ntwo breakfasts.
 Call me at Grandma's if you need anything --
 I should be back on the 30th.
 Love, Mom
@@ -431,18 +431,36 @@ __PrivCrochet_position: -2229,-636
 __PrivCrochet_tags: 
 title: Sweater0
 ---
-There's a letter included:
-"Dear Finisher, \n(I guess that's me?)
-"
+<<movePenny(80,123)>><<pennyKnitting(10)>>This sweater was nearly done already.
+All that I need to do is finish
+the sleeve cuffs and bind off.
+(I relate to her saving this 
+part for last — I think
+sleeves are boring too.
+Too bad I don't like vests.)
+...
+...
+...
+...
+<<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2254,-896
+__PrivCrochet_position: -2255,-898
 __PrivCrochet_tags: 
 title: Socks0
 ---
-There's a letter included:
-"Dear Finisher, \n(I guess that's me?)
-"
+<<movePenny(80,123)>><<pennyKnitting(4)>>There's one sock done and one to go.
+I remember reading about "Second Sock Syndrome",
+the paralysis that kicks in when
+you've finished one sock in a pair
+and can't bring yourself to knit
+the other. 
+It's kind of like the "Boyfriend
+Sweater Curse," where if you make
+a guy a sweater he'll dump you 
+before it's done. Always struck
+me as pretty misogynistic...
+<<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -2285,-2585

@@ -24,4 +24,3 @@ sunnyDay = rainyDay + random_range(1,4);
 
 audio_play_sound(sndBackground, 1, true);
 
-

@@ -8,7 +8,6 @@ catName = [
 "Petunia",
 "Ghost",
 "Butter",
-"Clementine",
 "Daisy",
 "Pepper",
 "Smokey",
@@ -20,7 +19,8 @@ catNickNameFirst = [
 "Lady",
 "Princess",
 "Baby",
-"Little"
+"Little",
+"Agent"
 ]
 
 catNickNameSecond = [

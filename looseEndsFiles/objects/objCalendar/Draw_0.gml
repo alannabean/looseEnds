@@ -21,7 +21,7 @@ for (rows = 0; rows < 5; rows++){
 			}
 			else{
 				draw_set_color(c_white);}
-				
+																																							
 			draw_text(dateX + digitOffset, dateY, string(dateNumber));
 			dateNumber++;
 			

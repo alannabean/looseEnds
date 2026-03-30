@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script128",
+  "%Name":"scrHelp",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script128",
+  "name":"scrHelp",
   "parent":{
     "name":"data",
     "path":"folders/data.yy",

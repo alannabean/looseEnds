@@ -1,4 +1,4 @@
-knitInterval = 2400;
+							knitInterval = 2400;
 knitProgress = 0;
 projectFinished = false; //do I actually need this? maybe as an array to store all of the projects
 
