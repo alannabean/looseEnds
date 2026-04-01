@@ -25,14 +25,14 @@ if global.todayDate == 1 && hours24 == sunsetHour{
 	global.weatherRainy = false;
 	global.weatherSunny = false;
 	global.weatherRainyNight = true;
-	global.weatherClearNight = false;;
+	global.weatherClearNight = false;
 }
 
 if global.todayDate == 1 && hours24 == sunriseHour{
 	global.weatherRainy = true;
 	global.weatherSunny = false;
 	global.weatherRainyNight = false;
-	global.weatherClearNight = false;;
+	global.weatherClearNight = false;
 }
 
 

@@ -1,10 +1,10 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -1438,-1034
+__PrivCrochet_position: -1440,-1036
 __PrivCrochet_tags: 
 title: Start
 ---
-<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>><<declare $readCass0 = false>><<declare $readCass1 = false>><<declare $readCass2 = false>><<declare $readMax0 = false>><<declare $readWIP0 = false>><<declare $readWIP1 = false>><<declare $readMom0 = false>>\n
+<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>><<declare $readCass0 = false>><<declare $readCass1 = false>><<declare $readCass2 = false>><<declare $readMax0 = false>><<declare $readWIP0 = false>><<declare $readWIP1 = false>><<declare $readMom0 = false>><<declare $readJob0 = false>><<declare $readJob1 = false>>\n
 ->      ---EMAIL---     
     <<jump Email>>
 ->      ---DOCS---
@@ -33,24 +33,33 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1912,-941
+__PrivCrochet_position: -1914,-943
 __PrivCrochet_tags: 
 title: Email
 ---
 <<set $emailExists = 0>>
 <<set $emailRead = 0>>
-<<if $todayDate >= 5 && $todayDate < 8>><<set $emailExists += 1>><<endif>>
+
+<<if $todayDate >= 5 && $todayDate < 8>><<set $emailExists += 2>><<endif>>
 <<if $todayDate >= 4 && $todayDate < 7>><<set $emailExists += 2>><<endif>>
-<<if $todayDate >= 3 && $todayDate < 6>><<set $emailExists += 2>><<endif>>
-<<if $todayDate >= 2 && $todayDate < 5>><<set $emailExists += 1>><<endif>>
-<<if $todayDate >= 1 && $todayDate < 4>><<set $emailExists += 1>><<endif>>
-<<if $readCass0 && $todayDate >= 1 && $todayDate < 4>><<set $emailRead += 1>><<endif>>
-<<if $readCass1 && $todayDate >= 2 && $todayDate < 5>><<set $emailRead += 1>><<endif>>
-<<if $readCass2 && $todayDate >= 4 && $todayDate < 7>><<set $emailRead += 1>><<endif>>
-<<if $readWIP0 && $todayDate >= 3 && $todayDate < 6>><<set $emailRead += 1>><<endif>>
-<<if $readWIP1 && $todayDate >= 4 && $todayDate < 7>><<set $emailRead += 1>><<endif>>
+<<if $todayDate >= 3 && $todayDate < 6>><<set $emailExists += 1>><<endif>>
+<<if $todayDate >= 2 && $todayDate < 5>><<set $emailExists += 2>><<endif>>
+<<if $todayDate >= 1 && $todayDate < 4>><<set $emailExists += 2>><<endif>>
+
 <<if $readMom0 && $todayDate >= 5 && $todayDate < 8>><<set $emailRead += 1>><<endif>>
-<<if $readMax0 && $todayDate >= 3 && $todayDate < 6>><<set $emailRead += 1>><<endif>>
+<<if $readCass2 && $todayDate >= 5 && $todayDate < 8>><<set $emailRead += 1>><<endif>>
+
+<<if $readMax0 && $todayDate >= 4 && $todayDate < 7>><<set $emailRead += 1>><<endif>>
+<<if $readWIP1 && $todayDate >= 4 && $todayDate < 7>><<set $emailRead += 1>><<endif>>
+
+<<if $readWIP0 && $todayDate >= 3 && $todayDate < 6>><<set $emailRead += 1>><<endif>>
+
+<<if $readJob1 && $todayDate >= 2 && $todayDate < 5>><<set $emailRead += 1>><<endif>>
+<<if $readCass1 && $todayDate >= 2 && $todayDate < 5>><<set $emailRead += 1>><<endif>>
+
+<<if $readCass0 && $todayDate >= 1 && $todayDate < 4>><<set $emailRead += 1>><<endif>>
+<<if $readJob0 && $todayDate >= 1 && $todayDate < 4>><<set $emailRead += 1>><<endif>>
+
 <<set $emailNumber = $emailExists - $emailRead>>\n
     -> New ({$emailNumber})
         <<jump emailNew>>
@@ -69,7 +78,7 @@ title: Docs
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -868,-968
+__PrivCrochet_position: -844,-961
 __PrivCrochet_tags: 
 title: Calendar
 ---
@@ -109,23 +118,27 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -932,-1844
+__PrivCrochet_position: -935,-1848
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
+-> Cass: june 5, 2009 <<if $todayDate >= 5 && $todayDate < 8>>
+    <<jump Cass2>>
 -> Mom: june 5, 2009 <<if $todayDate >= 5 && $todayDate < 8>>
     <<jump Mom0>>
 -> WIP: june 4, 2009 <<if $todayDate >= 4 && $todayDate < 7>>
     <<jump WIP1>>
--> Cass: june 4, 2009 <<if $todayDate >= 4 && $todayDate < 7>>
-    <<jump Cass2>>
--> WIP: june 3, 2009 <<if $todayDate >= 3 && $todayDate < 6>>
-    <<jump WIP0>>
--> Max: june 3, 2009 <<if $todayDate >= 3 && $todayDate < 6>>
+-> Max: june 4, 2009 <<if $todayDate >= 4 && $todayDate < 7>>
     <<jump Max0>>
+-> WIP: june 3, 2009 <<if $todayDate >= 3 && $todayDate <6>>
+    <<jump WIP0>>
 -> Job: june 2, 2009 <<if $todayDate >= 2 && $todayDate < 5>>
     <<jump Job1>>
+-> Cass: june 2, 2009 <<if $todayDate >= 2 && $todayDate < 5>>
+    <<jump Cass1>>
+-> Cass: june 1, 2009 <<if $todayDate >= 1 && $todayDate < 4>>
+    <<jump Cass0>>
 -> Job: june 1, 2009 <<if $todayDate >= 1 && $todayDate < 4>>
     <<jump Job0>>
 -> back
@@ -740,11 +753,11 @@ He really had a thing for iambs, huh...
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -678,-2174
+__PrivCrochet_position: -680,-2175
 __PrivCrochet_tags: 
 title: Job0
 ---
-To: Penny \nFrom: {$randomCompany0} HR\nSubject: Your job application
+<<set $readJob0 = true>>To: Penny \nFrom: {$randomCompany0} HR\nSubject: Your job application
 Dear Penelope, \nThank you for your interest in the junior {$randomJob0} role. Unfortunately we will not be moving forward with your application,
 as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany0} in the future. 
 Best,\n{$randomRecruiter0}, Recruiter, {$randomCompany0}
@@ -755,7 +768,7 @@ __PrivCrochet_position: -423,-2162
 __PrivCrochet_tags: 
 title: Job1
 ---
-To: Penny \nFrom: {$randomCompany1} HR\nSubject: Your job application
+<<set $readJob1 = true>>To: Penny \nFrom: {$randomCompany1} HR\nSubject: Your job application
 Dear Penelope, \nThank you for your interest in the junior {$randomJob1} role. Unfortunately we will not be moving forward with your application,
 as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany1} in the future. 
 Best,\n{$randomRecruiter1}, Recruiter, {$randomCompany1}

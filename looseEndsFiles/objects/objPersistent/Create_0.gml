@@ -19,8 +19,8 @@ sunsetHour = 19;
 timeTextX = 208;
 timeTextY = 16;
 
-rainyDay = random_range(5,10);
-sunnyDay = rainyDay + random_range(1,4);
+rainyDay = random_range(16,21);
+sunnyDay = rainyDay + random_range(1,3);
 
 audio_play_sound(sndBackground, 1, true);
 

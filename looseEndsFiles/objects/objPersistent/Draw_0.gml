@@ -17,7 +17,7 @@ or room == bathRoom{
 	
 	draw_set_font(fntZelda);
 	draw_set_color(#C7CFCC);
-	draw_text(16, 16, "June " + string(global.todayDate) + ", 2009")
+	draw_text(40, 16, "June " + string(global.todayDate) + ", 2009")
 	draw_set_color(c_white);
 	
 	
