@@ -253,6 +253,7 @@
     {"id":{"name":"sprBlanket","path":"sprites/sprBlanket/sprBlanket.yy",},},
     {"id":{"name":"sprCalendar","path":"sprites/sprCalendar/sprCalendar.yy",},},
     {"id":{"name":"sprChair","path":"sprites/sprChair/sprChair.yy",},},
+    {"id":{"name":"sprCircle","path":"sprites/sprCircle/sprCircle.yy",},},
     {"id":{"name":"sprClock","path":"sprites/sprClock/sprClock.yy",},},
     {"id":{"name":"sprComputer","path":"sprites/sprComputer/sprComputer.yy",},},
     {"id":{"name":"sprComputerText","path":"sprites/sprComputerText/sprComputerText.yy",},},

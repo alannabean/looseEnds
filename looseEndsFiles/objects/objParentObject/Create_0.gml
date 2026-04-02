@@ -33,7 +33,7 @@ chatterbox_config = {
 	cOptionY: 13,
 	cOptionSep: 11.5,
 	cOptionIcon: "> ",
-	cArrowX: 183,
+	cArrowX: 184,
 	cArrowY: 28,
 	cArrowExists: true
 

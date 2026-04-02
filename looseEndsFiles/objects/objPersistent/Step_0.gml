@@ -108,7 +108,7 @@ if global.todayDate >= (sunnyDay) && hours24  >  sunsetHour{
 	
 }
 
-if global.todayDate == 30 && hours24 == sunsetHour{room_goto(creditsRoom)};
+if global.todayDate >= 7 && room != creditsRoom {room_goto(creditsRoom)};
 
 //back button -- move inside objPenny? 
 
@@ -138,3 +138,8 @@ if keyboard_check_pressed(vk_tab) && instance_exists(objChatterbox) && objPenny.
 	}
 	
 }
+
+
+
+
+

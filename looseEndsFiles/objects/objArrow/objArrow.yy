@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprArrow",
-    "path":"sprites/sprArrow/sprArrow.yy",
+    "name":"sprCircle",
+    "path":"sprites/sprCircle/sprCircle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

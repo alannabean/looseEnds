@@ -1,9 +1,7 @@
 catName = [
-"Molasses",
 "Fluffy",
 "Spooky",
 "Matilda",
-"Cleopatra",
 "Ginger",
 "Petunia",
 "Ghost",

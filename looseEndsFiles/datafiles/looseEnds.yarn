@@ -1,6 +1,6 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 2
-__PrivCrochet_position: -1440,-1036
+__PrivCrochet_position: -1441,-1037
 __PrivCrochet_tags: 
 title: Start
 ---
@@ -118,7 +118,7 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -935,-1848
+__PrivCrochet_position: -936,-1849
 __PrivCrochet_tags: 
 title: emailNew
 ---
@@ -145,7 +145,7 @@ title: emailNew
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1153,-2393
+__PrivCrochet_position: -1157,-2392
 __PrivCrochet_tags: 
 title: Max0
 ---
@@ -185,7 +185,7 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1722,-248
+__PrivCrochet_position: -1794,-171
 __PrivCrochet_tags: 
 title: Title
 ---
@@ -223,7 +223,7 @@ it would be way more bearable with you. \nxoxoxoxo, \ncass
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3894,-811
+__PrivCrochet_position: -3895,-812
 __PrivCrochet_tags: 
 title: Fridge
 ---
@@ -265,20 +265,19 @@ __PrivCrochet_position: -3653,-1066
 __PrivCrochet_tags: 
 title: momsRoom
 ---
-<<set $todayDate = getTodayDate()>>
 Go into Mom's room?
-    -> Yes<<if $todayDate >= 5>>
+    -> Yes<<if $readMom0 == true>>
         <<changeRoom("momRoom")>>
     -> No
-        Better not snoop \nwithout permission.
+        <<if $readMom0 == false>>Better not snoop \nwithout permission.
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4164,-555
+__PrivCrochet_position: -4164,-556
 __PrivCrochet_tags: 
 title: outside
 ---
-It's too rainy to go out right now...
+It's too rainy to go \nout right now...
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -4168,-811
@@ -375,7 +374,7 @@ __PrivCrochet_position: -3006,-632
 __PrivCrochet_tags: 
 title: Scarf0
 ---
-<<movePenny(80,123)>><<pennyKnitting(2)>>
+<<movePenny(80,123)>><<pennyKnitting(11)>>
 I've been knitting \nsince before I could
 read. My mother's \nmother taught me during
 a rainy day at the \nbeach. I was frustrated
@@ -419,13 +418,13 @@ Yours in fiber, \nWIP
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2559,-497
+__PrivCrochet_position: -2561,-500
 __PrivCrochet_tags: 
 title: Hat0
 ---
 <<movePenny(80,123)>><<pennyKnitting(7)>>It's a little weird \nworking on a project
 someone else started.
-This hat is made of really nice yarn --
+This hat is made of \nreally nice yarn --
 Rhonda Milstein had \ngood taste.
 She was so neat in her stitches.
 Mine look so sloppy by comparison.
@@ -434,13 +433,12 @@ It feels good.
 ...
 ...
 ...
-...
-There. I'll mark the spot where I
-started knitting and send it off.
+There. I'll mark the \nspot where I started 
+knitting and send it \noff.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2229,-636
+__PrivCrochet_position: -2265,-668
 __PrivCrochet_tags: 
 title: Sweater0
 ---
@@ -497,7 +495,7 @@ __PrivCrochet_position: -2866,-346
 __PrivCrochet_tags: 
 title: Scarf1
 ---
-<<movePenny(80,123)>><<pennyKnitting(2)>>
+<<movePenny(80,123)>><<pennyKnitting(11)>>
 ...
 ...
 ...
@@ -547,11 +545,16 @@ If I'm going to sleep, I should do it in my
 own bed.
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3903,-1331
+__PrivCrochet_position: -3906,-1334
 __PrivCrochet_tags: 
 title: dresser
 ---
-It's Mom's dresser.
+It's Mom's dresser. 
+Open the top drawer?
+-> Yes<<if $readMom0 == true>>
+    <<jump grandmaSocks>>
+-> No
+    <<if $readMom0 == false>>Better not snoop \nwithout permission.
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -3657,-1328
@@ -740,7 +743,7 @@ Love you to the moon,
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -257,-2408
+__PrivCrochet_position: -259,-2408
 __PrivCrochet_tags: 
 title: Max3
 ---
@@ -753,7 +756,7 @@ He really had a thing for iambs, huh...
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -680,-2175
+__PrivCrochet_position: -682,-2150
 __PrivCrochet_tags: 
 title: Job0
 ---
@@ -764,7 +767,7 @@ Best,\n{$randomRecruiter0}, Recruiter, {$randomCompany0}
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -423,-2162
+__PrivCrochet_position: -425,-2152
 __PrivCrochet_tags: 
 title: Job1
 ---
@@ -775,7 +778,7 @@ Best,\n{$randomRecruiter1}, Recruiter, {$randomCompany1}
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -178,-2165
+__PrivCrochet_position: -177,-2148
 __PrivCrochet_tags: 
 title: Job2
 ---
@@ -786,7 +789,7 @@ Best,\n{$randomRecruiter2}, Recruiter, {$randomCompany2}
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 55,-2173
+__PrivCrochet_position: 65,-2140
 __PrivCrochet_tags: 
 title: Job3
 ---
@@ -797,7 +800,7 @@ Best,\n{$randomRecruiter3}, Recruiter, {$randomCompany3}
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: 290,-2172
+__PrivCrochet_position: 301,-2136
 __PrivCrochet_tags: 
 title: Job4
 ---
@@ -808,10 +811,11 @@ Best,\n{$randomRecruiter4}, Recruiter, {$randomCompany4}
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1130,-252
+__PrivCrochet_position: -1131,-253
 __PrivCrochet_tags: 
 title: Credits
 ---
+To be continued...
 Written, directed, and developed by Alanna Okun
 Music by Matthew Okun
 Special thanks to Darius Kazemi and Project Gutenberg for use of open source text;
@@ -819,7 +823,7 @@ To Allison Parrish, Luisa Pereira, and Simone Salvo for guidance and instruction
 To all my playtesters, classmates, and professors at NYU ITP;
 To my family and friends for their unending support;
 And to Brendan Klinkenberg, for everything, always.
-<<changeRoom("startRoom")>>
+<<endGame()>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -2592,-1838
@@ -861,7 +865,7 @@ encouraging thing about me, Marilla?
 I never make the same \nmistake twice."
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -896,-2401
+__PrivCrochet_position: -886,-2394
 __PrivCrochet_tags: 
 title: Max1
 ---
@@ -885,4 +889,20 @@ __PrivCrochet_tags:
 title: mirrorMom
 ---
 I look more and more \nlike Mom each year.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4161,-1577
+__PrivCrochet_tags: 
+title: grandmaSocks
+---
+<<set $mood = getRandomMood()>>These thick wool socks must be what she's
+looking for. They're by a brand called
+{$mood}wool.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -846,-468
+__PrivCrochet_tags: 
+title: Game
+---
+SCORE:
 ===

@@ -32,5 +32,5 @@ config = {
 	cArrowExists: false
 }
 
-instance_destroy(objPenny);
+objPenny.visible = false;
 

@@ -4,7 +4,7 @@ knitX = objPenny.x - 7;
 knitY = objPenny.y - 11;
 
 }else{
-knitX = objPenny.x - 10;
+knitX = objPenny.x - 12;
 knitY = objPenny.y - 11;
 }
 
