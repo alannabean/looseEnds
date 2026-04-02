@@ -9,6 +9,8 @@ if place_meeting(x, y, objPenny){
 			chatterbox_update();
 			config = other.chatterbox_config;
 		}
+		
+		
 		global.newDayFlag = true;
 		
 	}

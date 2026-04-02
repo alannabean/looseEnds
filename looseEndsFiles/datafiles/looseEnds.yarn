@@ -521,18 +521,18 @@ __PrivCrochet_position: -2592,-2079
 __PrivCrochet_tags: 
 title: Mom0
 ---
-<<set $readMom0 = true>>To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: Miss you!
+<<set $readMom0 = true>>To: Penny \nFrom: pennysmom87@aol.com \nSubject: Miss you!
 Hi sweetie, \nGrandma and I both miss you! If you get a sec, could you go into my room and tell me the brand of the woolen socks in the top drawer? 
 I'd like to buy some for Grandma -- she's going to be in the hospital a little longer than expected and could use something cozy.
 Did I mention I miss you? \nMom
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2819,-2082
+__PrivCrochet_position: -2821,-2083
 __PrivCrochet_tags: 
 title: Mom1
 ---
-To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: Re: another rejection
+To: Penny \nFrom: pennysmom87@aol.com \nSubject: Re: another rejection
 Hi sweetie, \nI just wanted to remind you that you're great, and that you're trying, and that you're dealing with a lot more than I had to at your age.
 The world can feel really daunting sometimes, but it'll be there when you're ready for it. 
 Love you,\nMom
@@ -556,7 +556,7 @@ It's Mom's dresser.
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -3657,-1328
 __PrivCrochet_tags: 
-title: mirror
+title: mirrorBath
 ---
 Still me...
 ===
@@ -717,7 +717,7 @@ __PrivCrochet_position: -3284,-2081
 __PrivCrochet_tags: 
 title: Mom3
 ---
-To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: there and back again
+To: Penny \nFrom: pennysmom87@aol.com \nSubject: there and back again
 Hi sweetie, \nI can't wait to see you tomorrow! It feels like it's been forever.
 I'm feeling a lot of sadness leaving Grandma. She's doing so much better, but I still feel like I should be able to do more to help her.
 How about we visit her together next time? I know she'd love to see you. And she mentioned something about a blanket she never finished 
@@ -727,11 +727,11 @@ I love you, love you, love you,
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3045,-2084
+__PrivCrochet_position: -3048,-2085
 __PrivCrochet_tags: 
 title: Mom2
 ---
-To: Penny \nFrom: pennysmom87@hotmail.com \nSubject: Grandma
+To: Penny \nFrom: pennysmom87@aol.com \nSubject: Grandma
 Hi sweetie, \nGrandma's going to need to stay in the hospital a little longer than expected. The surgery was a success,
 but her oxygen levels aren't looking so good, and they want her to stabilize before release.
 I know it probably sounds rich coming from me, your ancient mother, but getting old sucks.
@@ -878,4 +878,11 @@ title: Playlist0
 ---
 with_or_without_you.mp3\nrocket_man.mp3 \nhelplessly_hoping.mp3 \nthe_parting_glass.mp3
 <<jump Trash>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4152,-1334
+__PrivCrochet_tags: 
+title: mirrorMom
+---
+I look more and more \nlike Mom each year.
 ===

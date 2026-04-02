@@ -14,30 +14,33 @@ hours = ((hours24 + 11) mod 12) + 1;
 if (hours24 < 12) {global.dayTime = true}
 else{global.dayTime = false}
 
-if global.time == 86390{
+if global.time >= 86390 && global.time < 86400{
 	global.todayDate++}
 
 if room == livingRoom && !audio_is_playing(sndRain) && global.weatherRainy == true{
 	audio_play_sound(sndRain, 0, true);	
 }
 
-if global.todayDate == 1 && hours24 == sunsetHour{
+if global.todayDate >= 1 && global.todayDate < 7{
+	
+	if hours24 >= sunsetHour or hours24 < sunriseHour{
 	global.weatherRainy = false;
 	global.weatherSunny = false;
 	global.weatherRainyNight = true;
 	global.weatherClearNight = false;
-}
-
-if global.todayDate == 1 && hours24 == sunriseHour{
+	}
+	
+	else if hours24 > sunriseHour or hours24 <= sunsetHour{
 	global.weatherRainy = true;
 	global.weatherSunny = false;
 	global.weatherRainyNight = false;
 	global.weatherClearNight = false;
+		
+	}
 }
 
 
-
-if global.todayDate >= 2 && global.todayDate < (rainyDay) &&  hours24 >= sunriseHour{
+if global.todayDate >= 7 && global.todayDate < (rainyDay) &&  hours24 >= sunriseHour{
 	
 	global.weatherRainy = false;
 	global.weatherSunny = true;
@@ -48,7 +51,7 @@ if global.todayDate >= 2 && global.todayDate < (rainyDay) &&  hours24 >= sunrise
 	
 }
 
-if global.todayDate >= 2 && global.todayDate < (rainyDay) && hours24  >  sunsetHour{
+if global.todayDate >= 7 && global.todayDate < (rainyDay) && hours24  >  sunsetHour{
 	
 	global.weatherRainy = false;
 	global.weatherSunny = false;

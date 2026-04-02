@@ -100,8 +100,11 @@ ChatterboxAddFunction("pennySleeping", function(){
 		objDish.dishFull = false;
 	}
 	
-	global.todayDate++
+	if global.dayTime == false{
+		global.todayDate++}
 	
+	if global.dayTime == true && objPersistent.hours24 >= objPersistent.sunriseHour{
+		global.todayDate++}
 });
 
 ChatterboxAddFunction("endPennySleeping", function(){
