@@ -19,7 +19,7 @@ if (knitProgress < knitInterval) && objPenny.pennyKnitting == true{
 	}
 	
 
-if room == computerRoom {
+if room == computerRoom or room == creditsRoom{
 	
 visible = false}
 else {visible = true}

@@ -1,6 +1,6 @@
 //time math and functions
 
-global.time = (global.time + (1*global.timeSpeed)) mod global.dayLength;
+if room != startRoom {global.time = (global.time + (1*global.timeSpeed)) mod global.dayLength;}
 
 var total_seconds = global.time;
 var total_minutes = total_seconds div 60;
@@ -139,7 +139,12 @@ if keyboard_check_pressed(vk_tab) && instance_exists(objChatterbox) && objPenny.
 	
 }
 
+//game restart button
 
+if keyboard_check_pressed(vk_control){
+	ChatterboxVariablesResetAll();
+	game_restart();
 
+	}
 
 
