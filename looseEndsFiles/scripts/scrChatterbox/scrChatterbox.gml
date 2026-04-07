@@ -69,28 +69,46 @@ ChatterboxAddFunction("fillDish", function(){
 });
 
 
-ChatterboxAddFunction("pennyKnitting", function(_sprKnit){
-	
-	objPenny.pennyKnitting = true;
-	global.timeSpeed = global.constantTimeSpeed*5;
-	if !instance_exists(objCraftManager){
-		instance_create_layer(0, 0, "textLayer", objCraftManager)
-		objCraftManager.spriteKnit = _sprKnit;}
-	if instance_exists(objCraftManager) && (objCraftManager.spriteKnit != _sprKnit){
-		instance_deactivate_object(objCraftManager);
-		instance_create_layer(0, 0, "textLayer", objCraftManager);
-		objCraftManager.spriteKnit = _sprKnit;
-		}
-	
+
+ChatterboxAddFunction("pennyKnitting", function(_sprKnit) {
+    objPenny.pennyKnitting  = true;
+    global.timeSpeed        = global.constantTimeSpeed * 5;
+
+    if (!instance_exists(objCraftManager)) {
+        instance_create_layer(0, 0, "textLayer", objCraftManager);
+    }
+
+    var _key = string(_sprKnit);
+    if (!variable_struct_exists(objCraftManager.projects, _key)) {
+        objCraftManager.projects[$ _key] = {
+            progress: 0,
+            finished: false
+        };
+    }
+    
+    objCraftManager.activeProject = _key;
+});
+
+ChatterboxAddFunction("endPennyKnitting", function() {
+    objPenny.pennyKnitting  = false;
+    global.timeSpeed        = global.constantTimeSpeed;
 });
 
 
-ChatterboxAddFunction("endPennyKnitting", function(){
-	
-	objPenny.pennyKnitting = false;
-	global.timeSpeed = global.constantTimeSpeed;
+ChatterboxAddFunction("projectStarted", function(_sprKnit) {
+    var _key = string(_sprKnit);
+    if (!instance_exists(objCraftManager)) return false;
+    if (!variable_struct_exists(objCraftManager.projects, _key)) return false;
+    return objCraftManager.projects[$ _key].progress > 0;
+});
 
-}); //could take this out of chatterbox and call in GML — might give more flexibility, since objCraftManager is already separate
+
+ChatterboxAddFunction("projectFinished", function(_sprKnit) {
+    var _key = string(_sprKnit);
+    if (!instance_exists(objCraftManager)) return false;
+    if (!variable_struct_exists(objCraftManager.projects, _key)) return false;
+    return objCraftManager.projects[$ _key].finished;
+});
 
 ChatterboxAddFunction("pennySleeping", function(){
 	

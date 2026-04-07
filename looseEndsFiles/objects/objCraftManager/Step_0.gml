@@ -1,25 +1,29 @@
-if (objPenny.image_xscale == -1){
+var _projectIds = variable_struct_get_names(projects);
 
-knitX = objPenny.x - 7;
-knitY = objPenny.y - 11;
+for (var _i = 0; _i < array_length(_projectIds); _i++) {
+    var _key     = _projectIds[_i];
+    var _project = projects[$ _key];
 
-}else{
-knitX = objPenny.x - 12;
-knitY = objPenny.y - 11;
+    if (_project.progress >= knitInterval) {
+        _project.finished = true;
+        _project.progress = knitInterval;
+    }
+
+    if (!_project.finished && objPenny.pennyKnitting && _key == activeProject) {
+        _project.progress++;
+    }
 }
 
-if (knitProgress >= knitInterval){
-	projectFinished = true;
-	knitProgress = knitInterval;
-	}
+if (objPenny.image_xscale == -1) {
+    knitX = objPenny.x - 7;
+    knitY = objPenny.y - 11;
+} else {
+    knitX = objPenny.x - 12;
+    knitY = objPenny.y - 11;
+}
 
-if (knitProgress < knitInterval) && objPenny.pennyKnitting == true{
-	projectFinished = false;
-	knitProgress++;
-	}
-	
-
-if room == computerRoom or room == creditsRoom{
-	
-visible = false}
-else {visible = true}
+if (room == computerRoom || room == creditsRoom) {
+    visible = false;
+} else {
+    visible = true;
+}

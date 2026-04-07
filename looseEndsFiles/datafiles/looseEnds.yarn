@@ -33,7 +33,7 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1914,-943
+__PrivCrochet_position: -1915,-944
 __PrivCrochet_tags: 
 title: Email
 ---
@@ -118,7 +118,7 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -936,-1849
+__PrivCrochet_position: -938,-1851
 __PrivCrochet_tags: 
 title: emailNew
 ---
@@ -213,7 +213,7 @@ title: AboutGame
     <<jump Title>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: -2187,-1838
+__PrivCrochet_position: -2188,-1840
 __PrivCrochet_tags: 
 title: Cass2
 ---
@@ -352,25 +352,27 @@ Feed the cat?
     She's had enough for \nnow.
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2781,-885
+__PrivCrochet_position: -2784,-888
 __PrivCrochet_tags: 
 title: projectPage
 ---
 <<declare $hat0 = false>><<declare $sweater0 = false>><<declare $socks0 = false>>
 Choose a project to \nwork on:
--> Scarf <<if visited("Scarf0") == false>>
+-> Scarf <<if projectStarted(11) == false>>
     <<jump Scarf0>>
--> Scarf <<if visited("Scarf0") == true>>
+-> Scarf <<if projectStarted(11) == true>>
     <<jump Scarf1>>
--> Hat <<if !$hat0 == false>>
+-> Hat <<if $hat0 && !projectStarted(7)>>
     <<jump Hat0>>
--> Sweater <<if !$sweater0 == false>>
+-> Hat <<if $hat0 && projectStarted(7)>>
+    <<jump Hat1>>
+-> Sweater <<if $sweater0>>
     <<jump Sweater0>>
--> Socks <<if !$socks0 == false>>
+-> Socks <<if $socks0>>
     <<jump Socks0>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3006,-632
+__PrivCrochet_position: -3007,-633
 __PrivCrochet_tags: 
 title: Scarf0
 ---
@@ -433,8 +435,6 @@ It feels good.
 ...
 ...
 ...
-There. I'll mark the \nspot where I started 
-knitting and send it \noff.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 0
@@ -456,7 +456,7 @@ Too bad I don't like vests.)
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2255,-898
+__PrivCrochet_position: -2256,-899
 __PrivCrochet_tags: 
 title: Socks0
 ---
@@ -756,7 +756,7 @@ He really had a thing for iambs, huh...
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -682,-2150
+__PrivCrochet_position: -685,-2152
 __PrivCrochet_tags: 
 title: Job0
 ---
@@ -905,4 +905,14 @@ __PrivCrochet_tags:
 title: Game
 ---
 SCORE:
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2726,-1176
+__PrivCrochet_tags: 
+title: Hat1
+---
+<<movePenny(80,123)>><<pennyKnitting(7)>>
+There. I'll mark the \nspot where I started 
+knitting and send it \noff.
+<<endPennyKnitting()>>
 ===
