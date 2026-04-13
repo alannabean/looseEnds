@@ -223,30 +223,28 @@ it would be way more bearable with you. \nxoxoxoxo, \ncass
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3895,-812
+__PrivCrochet_position: -3901,-818
 __PrivCrochet_tags: 
 title: Fridge
 ---
 There's a note on \nthe fridge. Read it?
 
--> Yes
-    <<jump FridgeNote>>
-
+-> Yes <<if visited("FridgeNote0") == false>>
+    <<jump FridgeNote0>>
+-> Yes <<if visited("FridgeNote0") == true>>
+    <<jump FridgeNote1>>
 -> No
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -3911,-573
+__PrivCrochet_position: -3913,-579
 __PrivCrochet_tags: 
-title: FridgeNote
+title: FridgeNote1
 ---
-Hi honey,
-Thanks so much for \ntaking care of 
-{$catName} while I'm away! Don't let her trick
-you into giving her \ntwo breakfasts.
-Call me at Grandma's if you need anything --
-I should be back on the 30th.
-Love, Mom
+Remember to: \n- Feed {$catName}
+- Feed self \n- Bathe 
+- Maintain contact with outside world
+- Sleep
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -3403,-810
@@ -391,7 +389,7 @@ quieted my brain.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3399,-1064
+__PrivCrochet_position: -3404,-1063
 __PrivCrochet_tags: 
 title: knittingBasket
 ---
@@ -915,4 +913,17 @@ title: Hat1
 There. I'll mark the \nspot where I started 
 knitting and send it \noff.
 <<endPennyKnitting()>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3678,-577
+__PrivCrochet_tags: 
+title: FridgeNote0
+---
+Hi honey,
+Thanks so much for \ntaking care of 
+{$catName} while I'm away! Don't let her trick
+you into giving her \ntwo breakfasts.
+Call me at Grandma's if you need anything --
+I should be back on the 30th.
+Love, Mom
 ===
