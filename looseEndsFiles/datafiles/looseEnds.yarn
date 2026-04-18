@@ -271,11 +271,12 @@ Go into Mom's room?
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4164,-556
+__PrivCrochet_position: -4167,-559
 __PrivCrochet_tags: 
 title: outside
 ---
-It's too rainy to go \nout right now...
+<<changeRoom("streetRoom0")>>
+<<movePenny(160,136)>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -4168,-811
@@ -926,4 +927,11 @@ you into giving her \ntwo breakfasts.
 Call me at Grandma's if you need anything --
 I should be back on the 30th.
 Love, Mom
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4435,-558
+__PrivCrochet_tags: 
+title: inside
+---
+<<changeRoom("livingRoom")>>
 ===

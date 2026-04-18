@@ -14,6 +14,7 @@ hours = ((hours24 + 11) mod 12) + 1;
 if (hours24 < 12) {global.dayTime = true}
 else{global.dayTime = false}
 
+
 if global.time >= 86390 && global.time < 86400{
 	global.todayDate++}
 
@@ -21,6 +22,11 @@ if room == livingRoom && !audio_is_playing(sndRain) && global.weatherRainy == tr
 	audio_play_sound(sndRain, 0, true);	
 }
 
+
+
+
+		
+	
 if global.todayDate >= 1 && global.todayDate < 7{
 	
 	if hours24 >= sunsetHour or hours24 < sunriseHour{

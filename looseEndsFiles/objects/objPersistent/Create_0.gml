@@ -17,7 +17,7 @@ sunriseHour = 7;
 sunsetHour = 19;
 
 timeTextX = 208;
-timeTextY = 16;
+timeTextY = 19;
 
 rainyDay = random_range(16,21);
 sunnyDay = rainyDay + random_range(1,3);

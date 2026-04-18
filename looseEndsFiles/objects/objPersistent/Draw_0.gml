@@ -10,15 +10,11 @@ draw_text((room_width/4) - 16, (room_height/4) - 8, "l o o s e  e n d s");
 //actual rooms
 
 
-if room == livingRoom 
-or room == momRoom 
-or room == bedRoom 
-or room == bathRoom{
+if room != startRoom && room != creditsRoom && room != computerRoom{
 	
 	draw_set_font(fntZelda);
 	draw_set_color(#C7CFCC);
-	draw_text(40, 16, "June " + string(global.todayDate) + ", 2009")
-	draw_set_color(c_white);
+	draw_text(40, timeTextY, "June " + string(global.todayDate) + ", 2009");
 	
 	
 	if minutes <= 9 && global.dayTime == true{
@@ -47,3 +43,14 @@ or room == bathRoom{
 	//draw_text(16, 32, string(global.timeSpeed)) //debugging only
 }
 
+if hours24 >= sunsetHour or hours24 < sunriseHour{
+
+	layer_destroy("dayLayer");
+	layer_create(700, "nightLayer")
+}
+	
+	else if hours24 > sunriseHour or hours24 <= sunsetHour{
+			layer_destroy("nightLayer");
+	layer_create(600, "dayLayer")
+	
+	}
