@@ -39,18 +39,18 @@ if room != startRoom && room != creditsRoom && room != computerRoom{
 	
 	}
 	
-
+draw_set_color(c_white);
 	//draw_text(16, 32, string(global.timeSpeed)) //debugging only
 }
 
 if hours24 >= sunsetHour or hours24 < sunriseHour{
-
 	layer_destroy("dayLayer");
 	layer_create(700, "nightLayer")
 }
 	
 	else if hours24 > sunriseHour or hours24 <= sunsetHour{
-			layer_destroy("nightLayer");
+
+	layer_destroy("nightLayer");
 	layer_create(600, "dayLayer")
 	
 	}

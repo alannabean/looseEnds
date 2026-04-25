@@ -13,7 +13,7 @@ config = {
 	cTextboxX: 108,
 	cTextboxY: 116,
 	cTextX: 114,
-	cTextY: 32,
+	cTextY: 40,
 	cTextSep: 13,
 	cTextW: 128,
 	cXScale: .5,

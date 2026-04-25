@@ -27,7 +27,7 @@ if room == livingRoom && !audio_is_playing(sndRain) && global.weatherRainy == tr
 
 		
 	
-if global.todayDate >= 1 && global.todayDate < 7{
+if global.todayDate >= 1 && global.todayDate < 3{
 	
 	if hours24 >= sunsetHour or hours24 < sunriseHour{
 	global.weatherRainy = false;
@@ -46,7 +46,7 @@ if global.todayDate >= 1 && global.todayDate < 7{
 }
 
 
-if global.todayDate >= 7 && global.todayDate < (rainyDay) &&  hours24 >= sunriseHour{
+if global.todayDate >= 3 && global.todayDate < (rainyDay) &&  hours24 >= sunriseHour{
 	
 	global.weatherRainy = false;
 	global.weatherSunny = true;
@@ -114,7 +114,7 @@ if global.todayDate >= (sunnyDay) && hours24  >  sunsetHour{
 	
 }
 
-if global.todayDate >= 7 && room != creditsRoom {room_goto(creditsRoom)};
+if global.todayDate >= 8 && room != creditsRoom {room_goto(creditsRoom)};
 
 //back button -- move inside objPenny? 
 

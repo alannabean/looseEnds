@@ -1,6 +1,6 @@
 randomize();
 event_inherited();
-_catX1 = random_range(80, 150);
+_catX1 = random_range(80, 130);
 _catX2 = random_range(190, 220);
 
 

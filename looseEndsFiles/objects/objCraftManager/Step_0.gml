@@ -22,7 +22,7 @@ if (objPenny.image_xscale == -1) {
     knitY = objPenny.y - 11;
 }
 
-if (room == computerRoom || room == creditsRoom) {
+if (room == computerRoom || room == creditsRoom || room == streetRoom0 || room == streetRoom1 || room == streetRoom2 || room == streetRoom3) {
     visible = false;
 } else {
     visible = true;

@@ -4,7 +4,7 @@ __PrivCrochet_position: -1442,-1040
 __PrivCrochet_tags: 
 title: Start
 ---
-<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>><<declare $readCass0 = false>><<declare $readCass1 = false>><<declare $readCass2 = false>><<declare $readMax0 = false>><<declare $readWIP0 = false>><<declare $readWIP1 = false>><<declare $readMom0 = false>><<declare $readJob0 = false>><<declare $readJob1 = false>>\n
+<<declare $todayDate = 0>><<set $todayDate = getTodayDate()>><<declare $readCass0 = false>><<declare $readCass1 = false>><<declare $readCass2 = false>><<declare $readMax0 = false>><<declare $readWIP0 = false>><<declare $readWIP1 = false>><<declare $readMom0 = false>><<declare $readJob0 = false>><<declare $readJob1 = false>><<declare $readMom1 = false>><<declare $readJob2 = false>><<declare $readWIP2 = false>>\n
 ->      ---EMAIL---     
     <<jump Email>>
 ->      ---DOCS---
@@ -33,19 +33,25 @@ title: Trash
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1915,-944
+__PrivCrochet_position: -1919,-949
 __PrivCrochet_tags: 
 title: Email
 ---
 <<set $emailExists = 0>>
 <<set $emailRead = 0>>
 
+<<if $todayDate >= 7 && $todayDate < 10>><<set $emailExists += 2>><<endif>>
+<<if $todayDate >= 6 && $todayDate < 9>><<set $emailExists += 1>><<endif>>
 <<if $todayDate >= 5 && $todayDate < 8>><<set $emailExists += 2>><<endif>>
 <<if $todayDate >= 4 && $todayDate < 7>><<set $emailExists += 2>><<endif>>
 <<if $todayDate >= 3 && $todayDate < 6>><<set $emailExists += 1>><<endif>>
 <<if $todayDate >= 2 && $todayDate < 5>><<set $emailExists += 2>><<endif>>
 <<if $todayDate >= 1 && $todayDate < 4>><<set $emailExists += 2>><<endif>>
 
+
+<<if $readMom1 && $todayDate >= 7 && $todayDate < 10>><<set $emailRead += 1>><<endif>>
+<<if $readWIP2 && $todayDate >= 7 && $todayDate < 10>><<set $emailRead += 1>><<endif>>
+<<if $readJob2 && $todayDate >= 6 && $todayDate < 9>><<set $emailRead += 1>><<endif>>
 <<if $readMom0 && $todayDate >= 5 && $todayDate < 8>><<set $emailRead += 1>><<endif>>
 <<if $readCass2 && $todayDate >= 5 && $todayDate < 8>><<set $emailRead += 1>><<endif>>
 
@@ -88,7 +94,7 @@ title: Calendar
     <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -805,-1239
+__PrivCrochet_position: -856,-1235
 __PrivCrochet_tags: 
 title: Help
 ---
@@ -118,11 +124,17 @@ corporate america never ceases to amaze. consider yourself lucky that right now 
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -938,-1851
+__PrivCrochet_position: -939,-1852
 __PrivCrochet_tags: 
 title: emailNew
 ---
 \n
+-> Mom: june 7, 2009 <<if $todayDate >= 7 && $todayDate < 10>>
+    <<jump Mom1>>
+-> WIP: june 7, 2009 <<if $todayDate >= 7 && $todayDate < 10>>
+    <<jump WIP2>>
+-> Job: june 6, 2009 <<if $todayDate >= 6 && $todayDate < 9>>
+    <<jump Job2>>
 -> Cass: june 5, 2009 <<if $todayDate >= 5 && $todayDate < 8>>
     <<jump Cass2>>
 -> Mom: june 5, 2009 <<if $todayDate >= 5 && $todayDate < 8>>
@@ -163,11 +175,11 @@ title: Resume
 <<jump Docs>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1948,-1839
+__PrivCrochet_position: -2171,-1839
 __PrivCrochet_tags: 
-title: Cass1
+title: Cass2
 ---
-<<set $readCass1 = true>>To: Penny \nFrom: Cass \nSubject: re: literally the only thing i know how to do is knit
+<<set $readCass2 = true>>To: Penny \nFrom: Cass \nSubject: re: literally the only thing i know how to do is knit
 that's not true! if i recall from college, you're also very adept at downing a $2 bottle of wine and beating everyone's high score in Mario Kart. don't be so hard on yourself! 
 
 for real, though, i know it's tough right now, but i don't worry about you for a second. you'll find something great soon. \nxoxoxoxo, \ncass
@@ -185,11 +197,11 @@ Yours in fiber, \nWIP
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -1794,-171
+__PrivCrochet_position: -1801,-181
 __PrivCrochet_tags: 
 title: Title
 ---
-\n \n \n  a game about \n knitting & grief \n- - - - - - - - -
+\n \n - - - - - - - - \n  a game about \n      knitting \n - - - - - - - - 
 -> Start
     <<jump StartGame>>
 -> About
@@ -200,25 +212,24 @@ __PrivCrochet_position: -1480,-242
 __PrivCrochet_tags: 
 title: StartGame
 ---
-<<set $catName = getCatName()>><<set $randomJob0 = getRandomJob(0)>><<set $randomCompany0 = getRandomCompany(0)>><<set $randomRecruiter0 to getRandomRecruiter(0)>><<set $randomJob1 = getRandomJob(1)>><<set $randomCompany1 = getRandomCompany(1)>><<set $randomRecruiter1 to getRandomRecruiter(1)>><<set $randomJob2 = getRandomJob(2)>><<set $randomCompany2 = getRandomCompany(2)>><<set $randomRecruiter2 to getRandomRecruiter(2)>><<set $randomJob3 = getRandomJob(3)>><<set $randomCompany3 = getRandomCompany(3)>><<set $randomRecruiter3 to getRandomRecruiter(3)>><<set $randomJob4 = getRandomJob(4)>><<set $randomCompany4 = getRandomCompany(4)>><<set $randomRecruiter4 to getRandomRecruiter(4)>><<changeRoom("livingRoom")>>
+<<set $catName = getCatName()>><<set $randomJob0 = getRandomJob(0)>><<set $randomCompany0 = getRandomCompany(0)>><<set $randomRecruiter0 to getRandomRecruiter(0)>><<set $randomJob1 = getRandomJob(1)>><<set $randomCompany1 = getRandomCompany(1)>><<set $randomRecruiter1 to getRandomRecruiter(1)>><<set $randomJob2 = getRandomJob(2)>><<set $randomCompany2 = getRandomCompany(2)>><<set $randomRecruiter2 to getRandomRecruiter(2)>><<set $randomJob3 = getRandomJob(3)>><<set $randomCompany3 = getRandomCompany(3)>><<set $randomRecruiter3 to getRandomRecruiter(3)>><<set $randomJob4 = getRandomJob(4)>><<set $randomCompany4 = getRandomCompany(4)>><<set $randomRecruiter4 to getRandomRecruiter(4)>><<set $sockName to getRandomMood()>><<changeRoom("livingRoom")>>
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -1714,-466
+__PrivCrochet_position: -1716,-468
 __PrivCrochet_tags: 
 title: AboutGame
 ---
-\n \n \n by alanna okun \n   spring 2026   \n  itp nyu thesis
-
+\n \n - - - - - - - - \n by alanna okun\n   itp nyu 2026\n - - - - - - - - 
 -> back
     <<jump Title>>
 ===
 __PrivCrochet_colorID: 7
-__PrivCrochet_position: -2188,-1840
+__PrivCrochet_position: -1938,-1835
 __PrivCrochet_tags: 
-title: Cass2
+title: Cass1
 ---
-<<set $readCass2 = true>>To: Penny \nFrom: Cass \nSubject: re: if this rain doesn't stop soon i swear to god
-if it makes you feel any better, it's been hella muggy here in NYC. My roommate is too cheap to let us turn up the window AC so I'm sweating like a dog. Wish you were here -- 
+<<set $readCass1 = true>>To: Penny \nFrom: Cass \nSubject: re: if this rain doesn't stop soon i swear to god
+if it makes you feel any better, it's been hella muggy here in the city. My roommate is too cheap to let us turn up the window AC so I'm sweating like a dog. Wish you were here -- 
 it would be way more bearable with you. \nxoxoxoxo, \ncass
 <<jump Email>>
 ===
@@ -259,24 +270,31 @@ Pick up a project?
     <<stop>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3653,-1066
+__PrivCrochet_position: -3654,-1067
 __PrivCrochet_tags: 
 title: momsRoom
 ---
 Go into Mom's room?
-    -> Yes<<if $readMom0 == true>>
-        <<changeRoom("momRoom")>>
-    -> No
-        <<if $readMom0 == false>>Better not snoop \nwithout permission.
+-> Yes<<if $readMom0 == false>>
+    Better not snoop \nwithout permission.
+-> Yes<<if $readMom0 == true>>
+    <<changeRoom("momRoom")>>
+-> No
     <<stop>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4167,-559
+__PrivCrochet_position: -4409,-1580
 __PrivCrochet_tags: 
 title: outside
 ---
+<<if $todayDate >= 3>>
 <<changeRoom("streetRoom0")>>
 <<movePenny(160,136)>>
+<<endif>>
+<<if $todayDate < 3>>
+It's too rainy to go \nout right now.
+<<stop>>
+<<endif>>
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -4168,-811
@@ -351,27 +369,31 @@ Feed the cat?
     She's had enough for \nnow.
 ===
 __PrivCrochet_colorID: 1
-__PrivCrochet_position: -2784,-888
+__PrivCrochet_position: -2787,-890
 __PrivCrochet_tags: 
 title: projectPage
 ---
 <<declare $hat0 = false>><<declare $sweater0 = false>><<declare $socks0 = false>>
 Choose a project to \nwork on:
--> Scarf <<if projectStarted(11) == false>>
+-> Scarf <<if !projectStarted(11)>>
     <<jump Scarf0>>
--> Scarf <<if projectStarted(11) == true>>
+-> Scarf <<if projectStarted(11) && !projectFinished(11)>>
     <<jump Scarf1>>
+-> Scarf <<if projectFinished(11)>>
+    <<jump finished>>
 -> Hat <<if $hat0 && !projectStarted(7)>>
     <<jump Hat0>>
--> Hat <<if $hat0 && projectStarted(7)>>
+-> Hat <<if $hat0 && projectStarted(7) && !projectFinished(7)>>
     <<jump Hat1>>
+-> Hat <<if $hat0 && projectFinished(7)>>
+    <<jump finished>>
 -> Sweater <<if $sweater0>>
     <<jump Sweater0>>
 -> Socks <<if $socks0>>
     <<jump Socks0>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -3007,-633
+__PrivCrochet_position: -2928,-158
 __PrivCrochet_tags: 
 title: Scarf0
 ---
@@ -419,7 +441,7 @@ Yours in fiber, \nWIP
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2561,-500
+__PrivCrochet_position: -2462,-384
 __PrivCrochet_tags: 
 title: Hat0
 ---
@@ -473,7 +495,7 @@ me as pretty misogynistic...
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2285,-2585
+__PrivCrochet_position: -2286,-2587
 __PrivCrochet_tags: 
 title: WIP3
 ---
@@ -490,7 +512,7 @@ Yours in fiber, \nWIP
     <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2866,-346
+__PrivCrochet_position: -2717,-156
 __PrivCrochet_tags: 
 title: Scarf1
 ---
@@ -504,13 +526,15 @@ Making scarves can \nfeel endless.
 <<endPennyKnitting()>>
 ===
 __PrivCrochet_colorID: 8
-__PrivCrochet_position: -2069,-2580
+__PrivCrochet_position: -2071,-2584
 __PrivCrochet_tags: 
 title: WIP2
 ---
 <<set $readWIP2 = true>>To: Penny \nFrom: Info@WIP.org \nSubject: Many thanks
-Dear Penelope, \nThank you for your generous completion of Rhonda Milstein's hat. We'll be sending along a new assignment shortly.
+<<if projectFinished(7)>>Dear Penelope, \nThank you for your generous completion of Rhonda Milstein's hat. We'll be sending along a new assignment shortly.
 Yours in fiber, \nWIP
+<<endif>>
+<<if !projectFinished(7)>>test test<<endif>>
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
@@ -525,11 +549,11 @@ Did I mention I miss you? \nMom
 <<jump Email>>
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2821,-2083
+__PrivCrochet_position: -2822,-2084
 __PrivCrochet_tags: 
 title: Mom1
 ---
-To: Penny \nFrom: pennysmom87@aol.com \nSubject: Re: another rejection
+<<set $readMom1 = true>>To: Penny \nFrom: pennysmom87@aol.com \nSubject: Re: another rejection
 Hi sweetie, \nI just wanted to remind you that you're great, and that you're trying, and that you're dealing with a lot more than I had to at your age.
 The world can feel really daunting sometimes, but it'll be there when you're ready for it. 
 Love you,\nMom
@@ -576,13 +600,6 @@ title: OvenMenu
             Mmm.
            <<endPennyCooking()>>
         -> No
-===
-__PrivCrochet_colorID: 0
-__PrivCrochet_position: -3948,-310
-__PrivCrochet_tags: 
-title: finishedProject
----
-You finished a project! Time to bind off.
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -4430,-1075
@@ -659,7 +676,6 @@ __PrivCrochet_position: -3652,-1556
 __PrivCrochet_tags: 
 title: toilet
 ---
-<<set $todayDate = getTodayDate()>>
 *gurgle*
 ===
 __PrivCrochet_colorID: 0
@@ -781,7 +797,7 @@ __PrivCrochet_position: -177,-2148
 __PrivCrochet_tags: 
 title: Job2
 ---
-To: Penny \nFrom: {$randomCompany2} HR\nSubject: Your job application
+<<set $readJob2 = true>>To: Penny \nFrom: {$randomCompany2} HR\nSubject: Your job application
 Dear Penelope, \nThank you for your interest in the junior {$randomJob2} role. Unfortunately we will not be moving forward with your application,
 as we've had an extremely competitive candidate pool. Please don't hesitate to apply to open roles with {$randomCompany2} in the future. 
 Best,\n{$randomRecruiter2}, Recruiter, {$randomCompany2}
@@ -818,7 +834,6 @@ To be continued...
 Written, directed, and developed by Alanna Okun
 Music by Matthew Okun
 Special thanks to Darius Kazemi and Project Gutenberg for use of open source text;
-To Allison Parrish, Luisa Pereira, and Simone Salvo for guidance and instruction;
 To all my playtesters, classmates, and professors at NYU ITP;
 To my family and friends for their unending support;
 And to Brendan Klinkenberg, for everything, always.
@@ -894,9 +909,9 @@ __PrivCrochet_position: -4161,-1577
 __PrivCrochet_tags: 
 title: grandmaSocks
 ---
-<<set $mood = getRandomMood()>>These thick wool socks must be what she's
+These thick wool socks must be what she's
 looking for. They're by a brand called
-{$mood}wool.
+{$sockName}wool.
 ===
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -846,-468
@@ -906,7 +921,7 @@ title: Game
 SCORE:
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -2726,-1176
+__PrivCrochet_position: -2238,-381
 __PrivCrochet_tags: 
 title: Hat1
 ---
@@ -929,9 +944,78 @@ I should be back on the 30th.
 Love, Mom
 ===
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -4435,-558
+__PrivCrochet_position: -4643,-1579
 __PrivCrochet_tags: 
 title: inside
 ---
-<<changeRoom("livingRoom")>>
+Go inside?
+-> Yes
+    <<changeRoom("livingRoom")>>
+-> No
+    <<stop>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4415,-1341
+__PrivCrochet_tags: 
+title: frontDoor
+---
+<<set $todayDate = getTodayDate()>>Go outside?
+-> Yes
+    <<jump outside>>
+-> No
+    <<stop>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4411,-1824
+__PrivCrochet_tags: 
+title: bench0
+---
+There's a plaque on the bench. Read it?
+-> Yes
+    <<jump bench1>>
+-> No
+    <<stop>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4163,-1818
+__PrivCrochet_tags: 
+title: bench1
+---
+For Patricia \n1929-2021 
+Who always loved to \nlook at the sea.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4429,-574
+__PrivCrochet_tags: 
+title: garage
+---
+I don't feel like \ndriving today.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -2655,-1164
+__PrivCrochet_tags: 
+title: finished
+---
+You're done already!
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -3896,-1815
+__PrivCrochet_tags: 
+title: dockSign
+---
+Ferry service will \nresume in July.
+===
+__PrivCrochet_colorID: 8
+__PrivCrochet_position: -4665,-1819
+__PrivCrochet_tags: 
+title: trashCan
+---
+Yuck.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -4887,-1824
+__PrivCrochet_tags: 
+title: mailbox
+---
+No new mail today.
 ===

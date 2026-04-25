@@ -8,9 +8,10 @@ if place_meeting(x, y, objPenny){
 			ChatterboxJump(chatterbox, other.yarnNode);
 			chatterbox_update();
 			config = other.chatterbox_config;
-		}
+		}		if !audio_is_playing(sndText){
+		audio_play_sound(sndText, 1, false)}
 		
-		
+
 		global.newDayFlag = true;
 		
 	}
