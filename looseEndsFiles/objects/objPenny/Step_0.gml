@@ -110,8 +110,8 @@ sprite_index = sprBack;
 
 
 
-if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true) 
-or (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && (global.newDayFlag == true) && pennySleeping = true)
+if (place_meeting(x + xspd, y, objBed) && xspd == 0 && yspd == 0 && pennySleeping = true) 
+or (place_meeting (x, y + yspd, objBed) && xspd == 0 && yspd == 0 && pennySleeping = true)
 {
 sprite_index = sprSleep;
 depth = objBed.depth + 1;

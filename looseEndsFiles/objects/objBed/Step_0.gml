@@ -1,22 +1,16 @@
 
 if place_meeting(x, y, objPenny){
 
-		if !instance_exists(objChatterbox) && keyboard_check_pressed(vk_space) && global.newDayFlag == false{
+		if !instance_exists(objChatterbox) && keyboard_check_pressed(vk_space) && bedDebounce == false
+		{
 		var _chat = instance_create_layer(x, y, "textLayer", objChatterbox);
 		with (_chat)
 		{
 			ChatterboxJump(chatterbox, other.yarnNode);
 			chatterbox_update();
 			config = other.chatterbox_config;
-		}		if !audio_is_playing(sndText){
-		audio_play_sound(sndText, 1, false)}
-		
-
-		global.newDayFlag = true;
-		
-	}
-	
-}else {
-	
-	 global.newDayFlag = false;
-}
+		}
+			if !audio_is_playing(sndText){
+				audio_play_sound(sndText, 1, false)}
+				bedDebounce = true;}
+	}else{bedDebounce = false}

@@ -16,7 +16,8 @@ ChatterboxAddFunction("getTodayDate", function(){
 	});
 	
 ChatterboxAddFunction("endGame", function(){
-	game_end();
+	ChatterboxVariablesResetAll();
+	game_restart();
 	});
 
 //text randomizer functions

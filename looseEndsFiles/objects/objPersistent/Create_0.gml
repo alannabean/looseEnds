@@ -6,9 +6,10 @@ global.weatherClearNight = false;
 global.dayTime = true;
 global.constantTimeSpeed = 3;
 global.timeSpeed = global.constantTimeSpeed;
-global.newDayFlag = false;
 global.dayLength = 86400;
 global.time = global.dayLength/2;
+global.dayFlag = false;
+global.dayFlagAlarm = 0;
 
 randomize();
 
@@ -18,9 +19,6 @@ sunsetHour = 19;
 
 timeTextX = 208;
 timeTextY = 19;
-
-rainyDay = random_range(16,21);
-sunnyDay = rainyDay + random_range(1,3);
 
 audio_play_sound(sndBackground, 1, true);
 

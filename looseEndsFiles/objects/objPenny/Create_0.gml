@@ -1,8 +1,6 @@
 
 movSpd = .75;
 
-knitLevel = 1;
-
 pennyKnitting = false;
 pennySleeping = false;
 pennyCooking = false;

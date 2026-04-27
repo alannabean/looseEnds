@@ -14,18 +14,24 @@ hours = ((hours24 + 11) mod 12) + 1;
 if (hours24 < 12) {global.dayTime = true}
 else{global.dayTime = false}
 
+if global.time >= 86300 && global.time < 86400 && global.dayFlag == false{
+	global.todayDate++;
+	global.time = 0;
+	global.dayFlag = true;
+}
 
-if global.time >= 86390 && global.time < 86400{
-	global.todayDate++}
+if global.dayFlag == true{
+	global.dayFlagAlarm++}
+	
+if global.dayFlagAlarm >= 100{
+	global.dayFlag = false;
+	global.dayFlagAlarm = 0;
+	}
 
 if room == livingRoom && !audio_is_playing(sndRain) && global.weatherRainy == true{
 	audio_play_sound(sndRain, 0, true);	
 }
 
-
-
-
-		
 	
 if global.todayDate >= 1 && global.todayDate < 3{
 	
@@ -46,7 +52,9 @@ if global.todayDate >= 1 && global.todayDate < 3{
 }
 
 
-if global.todayDate >= 3 && global.todayDate < (rainyDay) &&  hours24 >= sunriseHour{
+if global.todayDate >= 3 {
+
+if hours24 >= sunriseHour {
 	
 	global.weatherRainy = false;
 	global.weatherSunny = true;
@@ -54,10 +62,9 @@ if global.todayDate >= 3 && global.todayDate < (rainyDay) &&  hours24 >= sunrise
 	global.weatherClearNight = false;
 	if audio_is_playing(sndRain){	
 	audio_stop_sound(sndRain)};
-	
 }
-
-if global.todayDate >= 7 && global.todayDate < (rainyDay) && hours24  >  sunsetHour{
+	
+	if hours24 >= sunsetHour{
 	
 	global.weatherRainy = false;
 	global.weatherSunny = false;
@@ -65,60 +72,18 @@ if global.todayDate >= 7 && global.todayDate < (rainyDay) && hours24  >  sunsetH
 	global.weatherClearNight = true;
 	if audio_is_playing(sndRain){	
 	audio_stop_sound(sndRain)};
+	}
 	
 }
 
 
 
-if global.todayDate >= (rainyDay) && hours24 >= sunriseHour{
-	
-	global.weatherRainy = true;
-	global.weatherSunny = false;
-	global.weatherRainyNight = false;
-	global.weatherClearNight = false;
-	if !audio_is_playing(sndRain){	
-	audio_play_sound(sndRain, 0, true)};
-	
-}
-
-if global.todayDate >= (rainyDay) && hours24  >  sunsetHour{
-	
-	global.weatherRainy = false;
-	global.weatherSunny = false;
-	global.weatherRainyNight = true;
-	global.weatherClearNight = false;
-	if !audio_is_playing(sndRain){	
-	audio_play_sound(sndRain, 0, true)};
-	
-}
-
-if global.todayDate >= (sunnyDay) && hours24 >= sunriseHour{
-	
-	global.weatherRainy = false;
-	global.weatherSunny = true;
-	global.weatherRainyNight = false;
-	global.weatherClearNight = false;
-	if audio_is_playing(sndRain){	
-	audio_stop_sound(sndRain)};
-	
-}
-
-if global.todayDate >= (sunnyDay) && hours24  >  sunsetHour{
-	
-	global.weatherRainy = false;
-	global.weatherSunny = false;
-	global.weatherRainyNight = false;
-	global.weatherClearNight = true;
-	if audio_is_playing(sndRain){	
-	audio_stop_sound(sndRain)};
-	
-}
 
 if global.todayDate >= 8 && room != creditsRoom {room_goto(creditsRoom)};
 
 //back button -- move inside objPenny? 
 
-if keyboard_check_pressed(vk_tab) && instance_exists(objChatterbox) && objPenny.pennySleeping == false{
+if room != startRoom && keyboard_check_pressed(vk_tab) && instance_exists(objChatterbox) && objPenny.pennySleeping == false{
 	
 	instance_destroy(objChatterbox)
 	
